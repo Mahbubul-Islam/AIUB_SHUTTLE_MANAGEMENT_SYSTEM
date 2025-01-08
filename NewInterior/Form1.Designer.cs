@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnlDisplay = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.pnlTitle = new System.Windows.Forms.Panel();
             this.btnMinimize = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.closeBtn = new System.Windows.Forms.PictureBox();
@@ -79,7 +79,7 @@
             this.sidebarTransition = new System.Windows.Forms.Timer(this.components);
             this.settingsTransition = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.pnlTitle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.closeBtn)).BeginInit();
@@ -117,7 +117,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(108)))), ((int)(((byte)(113)))));
             this.panel1.Controls.Add(this.pnlDisplay);
-            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.pnlTitle);
             this.panel1.Controls.Add(this.sidebar);
             this.panel1.Location = new System.Drawing.Point(0, 2);
             this.panel1.Name = "panel1";
@@ -133,20 +133,20 @@
             this.pnlDisplay.Size = new System.Drawing.Size(800, 643);
             this.pnlDisplay.TabIndex = 6;
             // 
-            // panel2
+            // pnlTitle
             // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.btnMinimize);
-            this.panel2.Controls.Add(this.pictureBox6);
-            this.panel2.Controls.Add(this.closeBtn);
-            this.panel2.Controls.Add(this.lblTitle);
-            this.panel2.Controls.Add(this.btnHam);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1050, 37);
-            this.panel2.TabIndex = 5;
+            this.pnlTitle.BackColor = System.Drawing.Color.White;
+            this.pnlTitle.Controls.Add(this.btnMinimize);
+            this.pnlTitle.Controls.Add(this.pictureBox6);
+            this.pnlTitle.Controls.Add(this.closeBtn);
+            this.pnlTitle.Controls.Add(this.lblTitle);
+            this.pnlTitle.Controls.Add(this.btnHam);
+            this.pnlTitle.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlTitle.Location = new System.Drawing.Point(0, 0);
+            this.pnlTitle.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlTitle.Name = "pnlTitle";
+            this.pnlTitle.Size = new System.Drawing.Size(1050, 37);
+            this.pnlTitle.TabIndex = 5;
             // 
             // btnMinimize
             // 
@@ -163,7 +163,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = global::NewInterior.Properties.Resources.school_bus;
-            this.pictureBox6.Location = new System.Drawing.Point(54, 3);
+            this.pictureBox6.Location = new System.Drawing.Point(89, 3);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(42, 34);
@@ -187,7 +187,7 @@
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(105, 7);
+            this.lblTitle.Location = new System.Drawing.Point(140, 7);
             this.lblTitle.Margin = new System.Windows.Forms.Padding(0);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(340, 23);
@@ -681,8 +681,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.pnlTitle.ResumeLayout(false);
+            this.pnlTitle.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.closeBtn)).EndInit();
@@ -770,7 +770,7 @@
         private System.Windows.Forms.Panel pnlAboutUs;
         private System.Windows.Forms.PictureBox picboxAboutUs;
         private System.Windows.Forms.Label lblAboutUS;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel pnlTitle;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox closeBtn;
         private System.Windows.Forms.Label lblTitle;
