@@ -30,13 +30,13 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pnlDisplay = new System.Windows.Forms.Panel();
-            this.pnlTitle = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.closeBtn = new System.Windows.Forms.PictureBox();
             this.btnMinimize = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.closeBtn = new System.Windows.Forms.PictureBox();
-            this.lblTitle = new System.Windows.Forms.Label();
             this.btnHam = new System.Windows.Forms.PictureBox();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.pnlDisplay = new System.Windows.Forms.Panel();
             this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
             this.homePannel = new System.Windows.Forms.Panel();
             this.picboxHome = new System.Windows.Forms.PictureBox();
@@ -79,10 +79,10 @@
             this.sidebarTransition = new System.Windows.Forms.Timer(this.components);
             this.settingsTransition = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
-            this.pnlTitle.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.closeBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.closeBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnHam)).BeginInit();
             this.sidebar.SuspendLayout();
             this.homePannel.SuspendLayout();
@@ -115,61 +115,29 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(108)))), ((int)(((byte)(113)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(85)))), ((int)(((byte)(58)))));
+            this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.pnlDisplay);
-            this.panel1.Controls.Add(this.pnlTitle);
             this.panel1.Controls.Add(this.sidebar);
-            this.panel1.Location = new System.Drawing.Point(0, 2);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1050, 680);
             this.panel1.TabIndex = 0;
             // 
-            // pnlDisplay
+            // panel2
             // 
-            this.pnlDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(108)))), ((int)(((byte)(113)))));
-            this.pnlDisplay.Location = new System.Drawing.Point(250, 37);
-            this.pnlDisplay.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlDisplay.Name = "pnlDisplay";
-            this.pnlDisplay.Size = new System.Drawing.Size(800, 643);
-            this.pnlDisplay.TabIndex = 6;
-            // 
-            // pnlTitle
-            // 
-            this.pnlTitle.BackColor = System.Drawing.Color.White;
-            this.pnlTitle.Controls.Add(this.btnMinimize);
-            this.pnlTitle.Controls.Add(this.pictureBox6);
-            this.pnlTitle.Controls.Add(this.closeBtn);
-            this.pnlTitle.Controls.Add(this.lblTitle);
-            this.pnlTitle.Controls.Add(this.btnHam);
-            this.pnlTitle.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlTitle.Location = new System.Drawing.Point(0, 0);
-            this.pnlTitle.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlTitle.Name = "pnlTitle";
-            this.pnlTitle.Size = new System.Drawing.Size(1050, 37);
-            this.pnlTitle.TabIndex = 5;
-            // 
-            // btnMinimize
-            // 
-            this.btnMinimize.Image = global::NewInterior.Properties.Resources.minimize;
-            this.btnMinimize.Location = new System.Drawing.Point(912, 0);
-            this.btnMinimize.Margin = new System.Windows.Forms.Padding(0);
-            this.btnMinimize.Name = "btnMinimize";
-            this.btnMinimize.Size = new System.Drawing.Size(45, 37);
-            this.btnMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMinimize.TabIndex = 5;
-            this.btnMinimize.TabStop = false;
-            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::NewInterior.Properties.Resources.school_bus;
-            this.pictureBox6.Location = new System.Drawing.Point(89, 3);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(42, 34);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 4;
-            this.pictureBox6.TabStop = false;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(88)))), ((int)(((byte)(70)))));
+            this.panel2.Controls.Add(this.closeBtn);
+            this.panel2.Controls.Add(this.btnMinimize);
+            this.panel2.Controls.Add(this.pictureBox6);
+            this.panel2.Controls.Add(this.btnHam);
+            this.panel2.Controls.Add(this.lblTitle);
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1050, 37);
+            this.panel2.TabIndex = 7;
             // 
             // closeBtn
             // 
@@ -183,21 +151,33 @@
             this.closeBtn.TabStop = false;
             this.closeBtn.Click += new System.EventHandler(this.closeBtn_Click);
             // 
-            // lblTitle
+            // btnMinimize
             // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(140, 7);
-            this.lblTitle.Margin = new System.Windows.Forms.Padding(0);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(340, 23);
-            this.lblTitle.TabIndex = 2;
-            this.lblTitle.Text = "AIUB Shuttle Management System";
+            this.btnMinimize.Image = global::NewInterior.Properties.Resources.minimize;
+            this.btnMinimize.Location = new System.Drawing.Point(916, 0);
+            this.btnMinimize.Margin = new System.Windows.Forms.Padding(0);
+            this.btnMinimize.Name = "btnMinimize";
+            this.btnMinimize.Size = new System.Drawing.Size(45, 37);
+            this.btnMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnMinimize.TabIndex = 5;
+            this.btnMinimize.TabStop = false;
+            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::NewInterior.Properties.Resources.school_bus;
+            this.pictureBox6.Location = new System.Drawing.Point(93, 3);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(42, 34);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 4;
+            this.pictureBox6.TabStop = false;
             // 
             // btnHam
             // 
             this.btnHam.Image = global::NewInterior.Properties.Resources.slidebar_24px1;
-            this.btnHam.Location = new System.Drawing.Point(0, 0);
+            this.btnHam.Location = new System.Drawing.Point(4, 0);
             this.btnHam.Margin = new System.Windows.Forms.Padding(0);
             this.btnHam.Name = "btnHam";
             this.btnHam.Size = new System.Drawing.Size(45, 37);
@@ -206,9 +186,29 @@
             this.btnHam.TabStop = false;
             this.btnHam.Click += new System.EventHandler(this.btnHam_Click);
             // 
+            // lblTitle
+            // 
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Location = new System.Drawing.Point(144, 7);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(0);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(340, 23);
+            this.lblTitle.TabIndex = 2;
+            this.lblTitle.Text = "AIUB Shuttle Management System";
+            // 
+            // pnlDisplay
+            // 
+            this.pnlDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(85)))), ((int)(((byte)(58)))));
+            this.pnlDisplay.Location = new System.Drawing.Point(250, 37);
+            this.pnlDisplay.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlDisplay.Name = "pnlDisplay";
+            this.pnlDisplay.Size = new System.Drawing.Size(800, 643);
+            this.pnlDisplay.TabIndex = 6;
+            // 
             // sidebar
             // 
-            this.sidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(40)))), ((int)(((byte)(51)))));
+            this.sidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(88)))), ((int)(((byte)(70)))));
             this.sidebar.Controls.Add(this.homePannel);
             this.sidebar.Controls.Add(this.profilePannel);
             this.sidebar.Controls.Add(this.usertoolsContainer);
@@ -223,7 +223,7 @@
             // 
             // homePannel
             // 
-            this.homePannel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(40)))), ((int)(((byte)(51)))));
+            this.homePannel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(88)))), ((int)(((byte)(70)))));
             this.homePannel.Controls.Add(this.picboxHome);
             this.homePannel.Controls.Add(this.lblHome);
             this.homePannel.ForeColor = System.Drawing.Color.WhiteSmoke;
@@ -258,7 +258,7 @@
             // 
             // profilePannel
             // 
-            this.profilePannel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(40)))), ((int)(((byte)(51)))));
+            this.profilePannel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(88)))), ((int)(((byte)(70)))));
             this.profilePannel.Controls.Add(this.picboxProfile);
             this.profilePannel.Controls.Add(this.lblProfile);
             this.profilePannel.ForeColor = System.Drawing.Color.WhiteSmoke;
@@ -306,7 +306,7 @@
             // 
             // usertoolsPanel
             // 
-            this.usertoolsPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(40)))), ((int)(((byte)(51)))));
+            this.usertoolsPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(88)))), ((int)(((byte)(70)))));
             this.usertoolsPanel.Controls.Add(this.usertoolsDropdown);
             this.usertoolsPanel.Controls.Add(this.usertoolsIcon);
             this.usertoolsPanel.Controls.Add(this.usertoolsLabel);
@@ -343,6 +343,7 @@
             // usertoolsLabel
             // 
             this.usertoolsLabel.AutoSize = true;
+            this.usertoolsLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(88)))), ((int)(((byte)(70)))));
             this.usertoolsLabel.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usertoolsLabel.Location = new System.Drawing.Point(67, 15);
             this.usertoolsLabel.Name = "usertoolsLabel";
@@ -353,7 +354,7 @@
             // 
             // shuttleschedulePanel
             // 
-            this.shuttleschedulePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.shuttleschedulePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.shuttleschedulePanel.Controls.Add(this.shuttlescheduleIcon);
             this.shuttleschedulePanel.Controls.Add(this.shuttlescheduleLabel);
             this.shuttleschedulePanel.ForeColor = System.Drawing.Color.WhiteSmoke;
@@ -389,7 +390,7 @@
             // 
             // bookaseatPanel
             // 
-            this.bookaseatPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.bookaseatPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.bookaseatPanel.Controls.Add(this.bookaseatIcon);
             this.bookaseatPanel.Controls.Add(this.bookaseatLabel);
             this.bookaseatPanel.ForeColor = System.Drawing.Color.WhiteSmoke;
@@ -425,7 +426,7 @@
             // 
             // pnlMyBooking
             // 
-            this.pnlMyBooking.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.pnlMyBooking.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.pnlMyBooking.Controls.Add(this.picboxMyBooking);
             this.pnlMyBooking.Controls.Add(this.lblMyBooking);
             this.pnlMyBooking.ForeColor = System.Drawing.Color.WhiteSmoke;
@@ -460,7 +461,7 @@
             // 
             // pnlNotification
             // 
-            this.pnlNotification.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.pnlNotification.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.pnlNotification.Controls.Add(this.picboxNotification);
             this.pnlNotification.Controls.Add(this.lblNotification);
             this.pnlNotification.ForeColor = System.Drawing.Color.WhiteSmoke;
@@ -508,7 +509,7 @@
             // 
             // settingsPanel
             // 
-            this.settingsPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(40)))), ((int)(((byte)(51)))));
+            this.settingsPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(88)))), ((int)(((byte)(70)))));
             this.settingsPanel.Controls.Add(this.settingsDropdown);
             this.settingsPanel.Controls.Add(this.settingsIcon);
             this.settingsPanel.Controls.Add(this.settingsLabel);
@@ -555,7 +556,7 @@
             // 
             // pnlManageAccont
             // 
-            this.pnlManageAccont.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.pnlManageAccont.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.pnlManageAccont.Controls.Add(this.picboxManageAccount);
             this.pnlManageAccont.Controls.Add(this.lblManageAccount);
             this.pnlManageAccont.ForeColor = System.Drawing.Color.WhiteSmoke;
@@ -590,7 +591,7 @@
             // 
             // pnlLogOut
             // 
-            this.pnlLogOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.pnlLogOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.pnlLogOut.Controls.Add(this.picboxLogOut);
             this.pnlLogOut.Controls.Add(this.lblLogOut);
             this.pnlLogOut.ForeColor = System.Drawing.Color.WhiteSmoke;
@@ -622,7 +623,7 @@
             // 
             // pnlAboutUs
             // 
-            this.pnlAboutUs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(40)))), ((int)(((byte)(51)))));
+            this.pnlAboutUs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(88)))), ((int)(((byte)(70)))));
             this.pnlAboutUs.Controls.Add(this.picboxAboutUs);
             this.pnlAboutUs.Controls.Add(this.lblAboutUS);
             this.pnlAboutUs.ForeColor = System.Drawing.Color.WhiteSmoke;
@@ -675,17 +676,18 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1050, 680);
+            this.ControlBox = false;
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
-            this.pnlTitle.ResumeLayout(false);
-            this.pnlTitle.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.closeBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.closeBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnHam)).EndInit();
             this.sidebar.ResumeLayout(false);
             this.homePannel.ResumeLayout(false);
@@ -770,7 +772,6 @@
         private System.Windows.Forms.Panel pnlAboutUs;
         private System.Windows.Forms.PictureBox picboxAboutUs;
         private System.Windows.Forms.Label lblAboutUS;
-        private System.Windows.Forms.Panel pnlTitle;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox closeBtn;
         private System.Windows.Forms.Label lblTitle;
@@ -780,6 +781,7 @@
         private System.Windows.Forms.Timer settingsTransition;
         private System.Windows.Forms.Panel pnlDisplay;
         private System.Windows.Forms.PictureBox btnMinimize;
+        private System.Windows.Forms.Panel panel2;
     }
 }
 
