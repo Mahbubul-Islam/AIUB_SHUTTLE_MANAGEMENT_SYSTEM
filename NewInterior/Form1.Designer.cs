@@ -127,7 +127,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(88)))), ((int)(((byte)(70)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
             this.panel2.Controls.Add(this.closeBtn);
             this.panel2.Controls.Add(this.btnMinimize);
             this.panel2.Controls.Add(this.pictureBox6);
@@ -190,6 +190,7 @@
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.lblTitle.Location = new System.Drawing.Point(144, 7);
             this.lblTitle.Margin = new System.Windows.Forms.Padding(0);
             this.lblTitle.Name = "lblTitle";
@@ -208,7 +209,7 @@
             // 
             // sidebar
             // 
-            this.sidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(88)))), ((int)(((byte)(70)))));
+            this.sidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
             this.sidebar.Controls.Add(this.homePannel);
             this.sidebar.Controls.Add(this.profilePannel);
             this.sidebar.Controls.Add(this.usertoolsContainer);
@@ -223,7 +224,7 @@
             // 
             // homePannel
             // 
-            this.homePannel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(88)))), ((int)(((byte)(70)))));
+            this.homePannel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
             this.homePannel.Controls.Add(this.picboxHome);
             this.homePannel.Controls.Add(this.lblHome);
             this.homePannel.ForeColor = System.Drawing.Color.WhiteSmoke;
@@ -258,7 +259,7 @@
             // 
             // profilePannel
             // 
-            this.profilePannel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(88)))), ((int)(((byte)(70)))));
+            this.profilePannel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
             this.profilePannel.Controls.Add(this.picboxProfile);
             this.profilePannel.Controls.Add(this.lblProfile);
             this.profilePannel.ForeColor = System.Drawing.Color.WhiteSmoke;
@@ -306,7 +307,7 @@
             // 
             // usertoolsPanel
             // 
-            this.usertoolsPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(88)))), ((int)(((byte)(70)))));
+            this.usertoolsPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
             this.usertoolsPanel.Controls.Add(this.usertoolsDropdown);
             this.usertoolsPanel.Controls.Add(this.usertoolsIcon);
             this.usertoolsPanel.Controls.Add(this.usertoolsLabel);
@@ -343,7 +344,7 @@
             // usertoolsLabel
             // 
             this.usertoolsLabel.AutoSize = true;
-            this.usertoolsLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(88)))), ((int)(((byte)(70)))));
+            this.usertoolsLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
             this.usertoolsLabel.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usertoolsLabel.Location = new System.Drawing.Point(67, 15);
             this.usertoolsLabel.Name = "usertoolsLabel";
@@ -509,7 +510,7 @@
             // 
             // settingsPanel
             // 
-            this.settingsPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(88)))), ((int)(((byte)(70)))));
+            this.settingsPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
             this.settingsPanel.Controls.Add(this.settingsDropdown);
             this.settingsPanel.Controls.Add(this.settingsIcon);
             this.settingsPanel.Controls.Add(this.settingsLabel);
@@ -623,7 +624,7 @@
             // 
             // pnlAboutUs
             // 
-            this.pnlAboutUs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(88)))), ((int)(((byte)(70)))));
+            this.pnlAboutUs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
             this.pnlAboutUs.Controls.Add(this.picboxAboutUs);
             this.pnlAboutUs.Controls.Add(this.lblAboutUS);
             this.pnlAboutUs.ForeColor = System.Drawing.Color.WhiteSmoke;
