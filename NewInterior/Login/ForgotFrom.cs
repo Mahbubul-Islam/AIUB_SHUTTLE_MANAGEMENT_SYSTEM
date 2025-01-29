@@ -16,5 +16,17 @@ namespace NewInterior.Login
         {
             InitializeComponent();
         }
+
+        private void btnLoginHerelb_Click(object sender, EventArgs e)
+        {
+            LoginFrom login = new LoginFrom();
+            login.Show();
+            this.Hide();
+        }
+
+        private void ForgotFrom_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

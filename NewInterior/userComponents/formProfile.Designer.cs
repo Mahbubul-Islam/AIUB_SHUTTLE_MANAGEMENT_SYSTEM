@@ -28,25 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblId = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // lblId
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(347, 281);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 33);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Profile";
+            this.lblId.AutoSize = true;
+            this.lblId.Font = new System.Drawing.Font("Century", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblId.Location = new System.Drawing.Point(347, 281);
+            this.lblId.Name = "lblId";
+            this.lblId.Size = new System.Drawing.Size(108, 33);
+            this.lblId.TabIndex = 0;
+            this.lblId.Text = "Profile";
             // 
             // formProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(85)))), ((int)(((byte)(58)))));
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblId);
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "formProfile";
             this.Size = new System.Drawing.Size(800, 643);
@@ -57,6 +57,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblId;
     }
 }

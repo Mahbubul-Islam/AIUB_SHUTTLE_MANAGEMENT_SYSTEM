@@ -13,8 +13,9 @@ namespace NewInterior
 {
     public partial class Form1 : Form
     {
+        string _userId;
         formHome home = new formHome();
-        formProfile profile = new formProfile();
+        
         formAboutUs aboutUs = new formAboutUs();
         formNotification notification = new formNotification();
         formManageAccount manageAccount = new formManageAccount();
@@ -30,7 +31,7 @@ namespace NewInterior
             userControl.BringToFront();
 
         }
-        public Form1()
+        public Form1(string userId)
         {
             InitializeComponent();
             sidebar.Width = 43; // Set to collapsed width
@@ -39,6 +40,7 @@ namespace NewInterior
             sidebarExpand = false;
             settingsExpand = false;
             addUserControl(home);
+            _userId = userId;
         }
         private void closeBtn_Click(object sender, EventArgs e)
         {
@@ -193,16 +195,19 @@ namespace NewInterior
 
         private void picboxProfile_Click(object sender, EventArgs e)
         {
+            formProfile profile = new formProfile(_userId);
             addUserControl(profile);
         }
 
         private void lblProfile_Click(object sender, EventArgs e)
         {
+            formProfile profile = new formProfile(_userId);
             addUserControl(profile);
         }
 
         private void profilePannel_Click(object sender, EventArgs e)
         {
+            formProfile profile = new formProfile(_userId);
             addUserControl(profile);
         }
 
