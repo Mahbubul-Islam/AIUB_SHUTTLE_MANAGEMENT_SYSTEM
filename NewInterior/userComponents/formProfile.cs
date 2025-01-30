@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NewInterior.Views;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,9 +22,10 @@ namespace NewInterior.userComponents
             //lblId.Text = _userId;
         }
 
-        private void formProfile_Load(object sender, EventArgs e)
+        private void Lbleditinfo_Click(object sender, EventArgs e)
         {
-
+            Edit_Profile edit_Profile = new Edit_Profile();
+            edit_Profile.Show();
         }
     }
 }

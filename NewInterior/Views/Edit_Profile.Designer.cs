@@ -247,7 +247,6 @@
             this.txtemail.Size = new System.Drawing.Size(276, 30);
             this.txtemail.TabIndex = 69;
             this.txtemail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtemail.TextChanged += new System.EventHandler(this.emailTB_TextChanged);
             // 
             // lblname
             // 
@@ -273,7 +272,6 @@
             this.txtname.Size = new System.Drawing.Size(276, 30);
             this.txtname.TabIndex = 66;
             this.txtname.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtname.TextChanged += new System.EventHandler(this.nameTB_TextChanged);
             // 
             // nameLogo
             // 
@@ -309,6 +307,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox2
             // 

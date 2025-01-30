@@ -42,11 +42,6 @@ namespace NewInterior.Views
 
         }
 
-        private void emailTB_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void houseOrBuildingOrFlatNumberLabel_Click(object sender, EventArgs e)
         {
 
@@ -67,14 +62,14 @@ namespace NewInterior.Views
 
         }
 
-        private void nameTB_TextChanged(object sender, EventArgs e)
+        private void emailLabel_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void emailLabel_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
     }
 }

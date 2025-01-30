@@ -30,10 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formProfile));
             this.lbProfile = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.detailsPanel = new System.Windows.Forms.Panel();
             this.GenderValue = new System.Windows.Forms.Label();
-            this.pbEditinfo = new System.Windows.Forms.PictureBox();
             this.BloodGroupValue = new System.Windows.Forms.Label();
             this.lblpBloodGroup = new System.Windows.Forms.Label();
             this.ruleValue = new System.Windows.Forms.Label();
@@ -55,8 +53,10 @@
             this.NationalityValue = new System.Windows.Forms.Label();
             this.lbladdress = new System.Windows.Forms.Label();
             this.lblid = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pbEditinfo = new System.Windows.Forms.PictureBox();
             this.detailsPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbEditinfo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,17 +69,6 @@
             this.lbProfile.Size = new System.Drawing.Size(183, 33);
             this.lbProfile.TabIndex = 0;
             this.lbProfile.Text = "User Profile";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(402, 57);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(199, 171);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 33;
-            this.pictureBox2.TabStop = false;
             // 
             // detailsPanel
             // 
@@ -123,17 +112,6 @@
             this.GenderValue.Size = new System.Drawing.Size(42, 17);
             this.GenderValue.TabIndex = 32;
             this.GenderValue.Text = "Male";
-            // 
-            // pbEditinfo
-            // 
-            this.pbEditinfo.Image = ((System.Drawing.Image)(resources.GetObject("pbEditinfo.Image")));
-            this.pbEditinfo.Location = new System.Drawing.Point(326, 261);
-            this.pbEditinfo.Margin = new System.Windows.Forms.Padding(4);
-            this.pbEditinfo.Name = "pbEditinfo";
-            this.pbEditinfo.Size = new System.Drawing.Size(64, 64);
-            this.pbEditinfo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pbEditinfo.TabIndex = 31;
-            this.pbEditinfo.TabStop = false;
             // 
             // BloodGroupValue
             // 
@@ -187,6 +165,7 @@
             this.Lbleditinfo.Size = new System.Drawing.Size(114, 29);
             this.Lbleditinfo.TabIndex = 25;
             this.Lbleditinfo.Text = "Edit Info";
+            this.Lbleditinfo.Click += new System.EventHandler(this.Lbleditinfo_Click);
             // 
             // lblname
             // 
@@ -364,6 +343,28 @@
             this.lblid.TabIndex = 33;
             this.lblid.Text = "ID :";
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(402, 57);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(199, 171);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 33;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pbEditinfo
+            // 
+            this.pbEditinfo.Image = ((System.Drawing.Image)(resources.GetObject("pbEditinfo.Image")));
+            this.pbEditinfo.Location = new System.Drawing.Point(326, 261);
+            this.pbEditinfo.Margin = new System.Windows.Forms.Padding(4);
+            this.pbEditinfo.Name = "pbEditinfo";
+            this.pbEditinfo.Size = new System.Drawing.Size(64, 64);
+            this.pbEditinfo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pbEditinfo.TabIndex = 31;
+            this.pbEditinfo.TabStop = false;
+            // 
             // formProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -375,10 +376,9 @@
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "formProfile";
             this.Size = new System.Drawing.Size(1005, 643);
-            this.Load += new System.EventHandler(this.formProfile_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.detailsPanel.ResumeLayout(false);
             this.detailsPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbEditinfo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
