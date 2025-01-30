@@ -20,5 +20,10 @@ namespace NewInterior.userComponents
             _userId = userId;
             lblId.Text = _userId;
         }
+
+        private void formProfile_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

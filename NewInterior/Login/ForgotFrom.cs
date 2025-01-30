@@ -28,5 +28,15 @@ namespace NewInterior.Login
         {
             Application.Exit();
         }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ForgotFrom_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
