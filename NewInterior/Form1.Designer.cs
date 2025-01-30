@@ -117,8 +117,8 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(85)))), ((int)(((byte)(58)))));
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.pnlDisplay);
             this.panel1.Controls.Add(this.sidebar);
+            this.panel1.Controls.Add(this.pnlDisplay);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
@@ -201,10 +201,10 @@
             // pnlDisplay
             // 
             this.pnlDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(85)))), ((int)(((byte)(58)))));
-            this.pnlDisplay.Location = new System.Drawing.Point(250, 37);
+            this.pnlDisplay.Location = new System.Drawing.Point(0, 37);
             this.pnlDisplay.Margin = new System.Windows.Forms.Padding(0);
             this.pnlDisplay.Name = "pnlDisplay";
-            this.pnlDisplay.Size = new System.Drawing.Size(800, 643);
+            this.pnlDisplay.Size = new System.Drawing.Size(1050, 643);
             this.pnlDisplay.TabIndex = 6;
             // 
             // sidebar

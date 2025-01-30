@@ -7,6 +7,12 @@ namespace NewInterior.Login
 {
     public partial class RegisterForm : Form
     {
+        string name;
+        string userId;
+        string password;
+        string confirmPassword;
+        string email;
+        string role;
         public RegisterForm()
         {
             InitializeComponent();
@@ -21,12 +27,12 @@ namespace NewInterior.Login
 
         private void btnSignUp_Click(object sender, EventArgs e)
         {
-            string name = txtName.Text.Trim();
-            string userId = txtUserId.Text.Trim();
-            string password = txtPassword.Text.Trim();
-            string confirmPassword = txtConfirmPassword.Text.Trim();
-            string email = txtEmail.Text.Trim();
-            string role = "";
+            name = txtName.Text.Trim();
+            userId = txtUserId.Text.Trim();
+            password = txtPassword.Text.Trim();
+            confirmPassword = txtConfirmPassword.Text.Trim();
+            email = txtEmail.Text.Trim();
+            role = "";
 
             if (rbFaculty.Checked)
             {

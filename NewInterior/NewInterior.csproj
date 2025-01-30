@@ -88,6 +88,12 @@
     <Compile Include="userComponents\formBookSeat.Designer.cs">
       <DependentUpon>formBookSeat.cs</DependentUpon>
     </Compile>
+    <Compile Include="userComponents\formDashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userComponents\formDashboard.Designer.cs">
+      <DependentUpon>formDashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="userComponents\formHome.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -151,6 +157,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="userComponents\formBookSeat.resx">
       <DependentUpon>formBookSeat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userComponents\formDashboard.resx">
+      <DependentUpon>formDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="userComponents\formHome.resx">
       <DependentUpon>formHome.cs</DependentUpon>
@@ -232,6 +241,8 @@
   <ItemGroup>
     <None Include="Resources\minimize.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Component Card\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

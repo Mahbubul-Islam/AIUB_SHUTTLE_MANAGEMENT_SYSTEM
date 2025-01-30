@@ -49,7 +49,7 @@
             this.Controls.Add(this.lblId);
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "formProfile";
-            this.Size = new System.Drawing.Size(800, 643);
+            this.Size = new System.Drawing.Size(1050, 643);
             this.ResumeLayout(false);
             this.PerformLayout();
 
