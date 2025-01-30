@@ -142,6 +142,12 @@
     <Compile Include="userComponents\formShuttleSchedule.Designer.cs">
       <DependentUpon>formShuttleSchedule.cs</DependentUpon>
     </Compile>
+    <Compile Include="userComponents\formUserManageAccount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userComponents\formUserManageAccount.Designer.cs">
+      <DependentUpon>formUserManageAccount.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Edit_Profile.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -220,6 +226,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="userComponents\formShuttleSchedule.resx">
       <DependentUpon>formShuttleSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userComponents\formUserManageAccount.resx">
+      <DependentUpon>formUserManageAccount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Edit_Profile.resx">
       <DependentUpon>Edit_Profile.cs</DependentUpon>
