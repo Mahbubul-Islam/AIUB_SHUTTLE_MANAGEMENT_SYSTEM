@@ -315,7 +315,7 @@
             this.lblNationality.AutoSize = true;
             this.lblNationality.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNationality.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblNationality.Location = new System.Drawing.Point(420, 112);
+            this.lblNationality.Location = new System.Drawing.Point(420, 109);
             this.lblNationality.Name = "lblNationality";
             this.lblNationality.Size = new System.Drawing.Size(104, 20);
             this.lblNationality.TabIndex = 12;
@@ -338,7 +338,7 @@
             this.NationalityValue.AutoSize = true;
             this.NationalityValue.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NationalityValue.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.NationalityValue.Location = new System.Drawing.Point(530, 115);
+            this.NationalityValue.Location = new System.Drawing.Point(530, 110);
             this.NationalityValue.Name = "NationalityValue";
             this.NationalityValue.Size = new System.Drawing.Size(98, 17);
             this.NationalityValue.TabIndex = 13;
@@ -349,7 +349,7 @@
             this.lbladdress.AutoSize = true;
             this.lbladdress.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbladdress.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbladdress.Location = new System.Drawing.Point(440, 83);
+            this.lbladdress.Location = new System.Drawing.Point(440, 80);
             this.lbladdress.Name = "lbladdress";
             this.lbladdress.Size = new System.Drawing.Size(84, 20);
             this.lbladdress.TabIndex = 14;
