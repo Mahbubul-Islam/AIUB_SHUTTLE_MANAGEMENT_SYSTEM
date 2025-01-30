@@ -12,13 +12,13 @@ namespace NewInterior.userComponents
 {
     public partial class formProfile : UserControl
     {
-        string _userId;
+        //string _userId;
 
         public formProfile(string userId)
         {
             InitializeComponent();
-            _userId = userId;
-            lblId.Text = _userId;
+            //_userId = userId;
+            //lblId.Text = _userId;
         }
 
         private void formProfile_Load(object sender, EventArgs e)
