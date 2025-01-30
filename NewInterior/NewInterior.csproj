@@ -160,6 +160,24 @@
     <Compile Include="Views\formAddStuff.Designer.cs">
       <DependentUpon>formAddStuff.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\formEditFaculty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\formEditFaculty.Designer.cs">
+      <DependentUpon>formEditFaculty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\formEditStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\formEditStudent.Designer.cs">
+      <DependentUpon>formEditStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\formEditStuff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\formEditStuff.Designer.cs">
+      <DependentUpon>formEditStuff.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="componentCards\notificationCard.resx">
       <DependentUpon>notificationCard.cs</DependentUpon>
     </EmbeddedResource>
@@ -214,6 +232,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="userComponents\formShuttleSchedule.resx">
       <DependentUpon>formShuttleSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\formAddFaculty.resx">
+      <DependentUpon>formAddFaculty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\formAddStudent.resx">
+      <DependentUpon>formAddStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\formAddStuff.resx">
+      <DependentUpon>formAddStuff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\formEditFaculty.resx">
+      <DependentUpon>formEditFaculty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\formEditStudent.resx">
+      <DependentUpon>formEditStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\formEditStuff.resx">
+      <DependentUpon>formEditStuff.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.manifest" />
     <None Include="Properties\Settings.settings">
@@ -277,6 +313,8 @@
   <ItemGroup>
     <None Include="Resources\minimize.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\adminDashboardIcon.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace NewInterior.Views
 {
-    public partial class formAddStuff : Form
+    public partial class formEditFaculty : Form
     {
-        public formAddStuff()
+        public formEditFaculty()
         {
             InitializeComponent();
-        }
-
-        private void formAddStuff_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
