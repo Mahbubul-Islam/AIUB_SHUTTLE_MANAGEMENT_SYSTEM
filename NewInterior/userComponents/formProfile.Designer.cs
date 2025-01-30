@@ -31,7 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formProfile));
             this.lbProfile = new System.Windows.Forms.Label();
             this.detailsPanel = new System.Windows.Forms.Panel();
+            this.lblid = new System.Windows.Forms.Label();
             this.GenderValue = new System.Windows.Forms.Label();
+            this.pbEditinfo = new System.Windows.Forms.PictureBox();
             this.BloodGroupValue = new System.Windows.Forms.Label();
             this.lblpBloodGroup = new System.Windows.Forms.Label();
             this.ruleValue = new System.Windows.Forms.Label();
@@ -52,12 +54,10 @@
             this.houseBuildingFlatNumberValue = new System.Windows.Forms.Label();
             this.NationalityValue = new System.Windows.Forms.Label();
             this.lbladdress = new System.Windows.Forms.Label();
-            this.lblid = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pbEditinfo = new System.Windows.Forms.PictureBox();
             this.detailsPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbEditinfo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // lbProfile
@@ -102,6 +102,17 @@
             this.detailsPanel.Size = new System.Drawing.Size(702, 344);
             this.detailsPanel.TabIndex = 32;
             // 
+            // lblid
+            // 
+            this.lblid.AutoSize = true;
+            this.lblid.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblid.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblid.Location = new System.Drawing.Point(93, 80);
+            this.lblid.Name = "lblid";
+            this.lblid.Size = new System.Drawing.Size(40, 20);
+            this.lblid.TabIndex = 33;
+            this.lblid.Text = "ID :";
+            // 
             // GenderValue
             // 
             this.GenderValue.AutoSize = true;
@@ -113,12 +124,23 @@
             this.GenderValue.TabIndex = 32;
             this.GenderValue.Text = "Male";
             // 
+            // pbEditinfo
+            // 
+            this.pbEditinfo.Image = ((System.Drawing.Image)(resources.GetObject("pbEditinfo.Image")));
+            this.pbEditinfo.Location = new System.Drawing.Point(326, 261);
+            this.pbEditinfo.Margin = new System.Windows.Forms.Padding(4);
+            this.pbEditinfo.Name = "pbEditinfo";
+            this.pbEditinfo.Size = new System.Drawing.Size(64, 64);
+            this.pbEditinfo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pbEditinfo.TabIndex = 31;
+            this.pbEditinfo.TabStop = false;
+            // 
             // BloodGroupValue
             // 
             this.BloodGroupValue.AutoSize = true;
             this.BloodGroupValue.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BloodGroupValue.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.BloodGroupValue.Location = new System.Drawing.Point(530, 210);
+            this.BloodGroupValue.Location = new System.Drawing.Point(530, 149);
             this.BloodGroupValue.Name = "BloodGroupValue";
             this.BloodGroupValue.Size = new System.Drawing.Size(28, 17);
             this.BloodGroupValue.TabIndex = 30;
@@ -129,7 +151,7 @@
             this.lblpBloodGroup.AutoSize = true;
             this.lblpBloodGroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblpBloodGroup.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblpBloodGroup.Location = new System.Drawing.Point(404, 207);
+            this.lblpBloodGroup.Location = new System.Drawing.Point(404, 146);
             this.lblpBloodGroup.Name = "lblpBloodGroup";
             this.lblpBloodGroup.Size = new System.Drawing.Size(120, 20);
             this.lblpBloodGroup.TabIndex = 29;
@@ -260,7 +282,7 @@
             this.DobValue.AutoSize = true;
             this.DobValue.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DobValue.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.DobValue.Location = new System.Drawing.Point(530, 165);
+            this.DobValue.Location = new System.Drawing.Point(530, 181);
             this.DobValue.Name = "DobValue";
             this.DobValue.Size = new System.Drawing.Size(90, 17);
             this.DobValue.TabIndex = 17;
@@ -282,7 +304,7 @@
             this.lblDob.AutoSize = true;
             this.lblDob.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDob.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblDob.Location = new System.Drawing.Point(396, 162);
+            this.lblDob.Location = new System.Drawing.Point(396, 181);
             this.lblDob.Name = "lblDob";
             this.lblDob.Size = new System.Drawing.Size(128, 20);
             this.lblDob.TabIndex = 16;
@@ -293,11 +315,12 @@
             this.lblNationality.AutoSize = true;
             this.lblNationality.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNationality.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblNationality.Location = new System.Drawing.Point(420, 125);
+            this.lblNationality.Location = new System.Drawing.Point(420, 112);
             this.lblNationality.Name = "lblNationality";
             this.lblNationality.Size = new System.Drawing.Size(104, 20);
             this.lblNationality.TabIndex = 12;
             this.lblNationality.Text = "Nationality:";
+            this.lblNationality.Click += new System.EventHandler(this.lblNationality_Click);
             // 
             // houseBuildingFlatNumberValue
             // 
@@ -315,7 +338,7 @@
             this.NationalityValue.AutoSize = true;
             this.NationalityValue.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NationalityValue.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.NationalityValue.Location = new System.Drawing.Point(530, 128);
+            this.NationalityValue.Location = new System.Drawing.Point(530, 115);
             this.NationalityValue.Name = "NationalityValue";
             this.NationalityValue.Size = new System.Drawing.Size(98, 17);
             this.NationalityValue.TabIndex = 13;
@@ -332,17 +355,6 @@
             this.lbladdress.TabIndex = 14;
             this.lbladdress.Text = "Address:";
             // 
-            // lblid
-            // 
-            this.lblid.AutoSize = true;
-            this.lblid.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblid.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblid.Location = new System.Drawing.Point(93, 80);
-            this.lblid.Name = "lblid";
-            this.lblid.Size = new System.Drawing.Size(40, 20);
-            this.lblid.TabIndex = 33;
-            this.lblid.Text = "ID :";
-            // 
             // pictureBox2
             // 
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -353,17 +365,6 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 33;
             this.pictureBox2.TabStop = false;
-            // 
-            // pbEditinfo
-            // 
-            this.pbEditinfo.Image = ((System.Drawing.Image)(resources.GetObject("pbEditinfo.Image")));
-            this.pbEditinfo.Location = new System.Drawing.Point(326, 261);
-            this.pbEditinfo.Margin = new System.Windows.Forms.Padding(4);
-            this.pbEditinfo.Name = "pbEditinfo";
-            this.pbEditinfo.Size = new System.Drawing.Size(64, 64);
-            this.pbEditinfo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pbEditinfo.TabIndex = 31;
-            this.pbEditinfo.TabStop = false;
             // 
             // formProfile
             // 
@@ -378,8 +379,8 @@
             this.Size = new System.Drawing.Size(1005, 643);
             this.detailsPanel.ResumeLayout(false);
             this.detailsPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbEditinfo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

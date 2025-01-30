@@ -27,5 +27,10 @@ namespace NewInterior.userComponents
             Edit_Profile edit_Profile = new Edit_Profile();
             edit_Profile.Show();
         }
+
+        private void lblNationality_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
