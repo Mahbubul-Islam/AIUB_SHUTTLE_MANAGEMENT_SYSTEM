@@ -52,7 +52,7 @@
             this.lblgender = new System.Windows.Forms.Label();
             this.rbmale = new System.Windows.Forms.RadioButton();
             this.rbfemale = new System.Windows.Forms.RadioButton();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpDob = new System.Windows.Forms.DateTimePicker();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -90,7 +90,7 @@
             this.lblphonenumber.AutoSize = true;
             this.lblphonenumber.Font = new System.Drawing.Font("Century", 10.125F);
             this.lblphonenumber.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblphonenumber.Location = new System.Drawing.Point(74, 274);
+            this.lblphonenumber.Location = new System.Drawing.Point(106, 274);
             this.lblphonenumber.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblphonenumber.Name = "lblphonenumber";
             this.lblphonenumber.Size = new System.Drawing.Size(129, 21);
@@ -104,7 +104,7 @@
             this.txtphonenumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtphonenumber.Font = new System.Drawing.Font("Times New Roman", 12F);
             this.txtphonenumber.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtphonenumber.Location = new System.Drawing.Point(78, 308);
+            this.txtphonenumber.Location = new System.Drawing.Point(110, 308);
             this.txtphonenumber.Margin = new System.Windows.Forms.Padding(2);
             this.txtphonenumber.Name = "txtphonenumber";
             this.txtphonenumber.Size = new System.Drawing.Size(276, 30);
@@ -227,7 +227,7 @@
             this.lblemail.AutoSize = true;
             this.lblemail.Font = new System.Drawing.Font("Century", 10.125F);
             this.lblemail.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblemail.Location = new System.Drawing.Point(74, 184);
+            this.lblemail.Location = new System.Drawing.Point(106, 184);
             this.lblemail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblemail.Name = "lblemail";
             this.lblemail.Size = new System.Drawing.Size(56, 21);
@@ -241,7 +241,7 @@
             this.txtemail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtemail.Font = new System.Drawing.Font("Times New Roman", 12F);
             this.txtemail.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtemail.Location = new System.Drawing.Point(78, 207);
+            this.txtemail.Location = new System.Drawing.Point(110, 207);
             this.txtemail.Margin = new System.Windows.Forms.Padding(2);
             this.txtemail.Name = "txtemail";
             this.txtemail.Size = new System.Drawing.Size(276, 30);
@@ -253,7 +253,7 @@
             this.lblname.AutoSize = true;
             this.lblname.Font = new System.Drawing.Font("Century", 10.125F);
             this.lblname.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblname.Location = new System.Drawing.Point(74, 78);
+            this.lblname.Location = new System.Drawing.Point(106, 78);
             this.lblname.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblname.Name = "lblname";
             this.lblname.Size = new System.Drawing.Size(57, 21);
@@ -266,7 +266,7 @@
             this.txtname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtname.Font = new System.Drawing.Font("Times New Roman", 12F);
             this.txtname.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtname.Location = new System.Drawing.Point(78, 112);
+            this.txtname.Location = new System.Drawing.Point(110, 112);
             this.txtname.Margin = new System.Windows.Forms.Padding(2);
             this.txtname.Name = "txtname";
             this.txtname.Size = new System.Drawing.Size(276, 30);
@@ -276,7 +276,7 @@
             // nameLogo
             // 
             this.nameLogo.Image = ((System.Drawing.Image)(resources.GetObject("nameLogo.Image")));
-            this.nameLogo.Location = new System.Drawing.Point(14, 95);
+            this.nameLogo.Location = new System.Drawing.Point(46, 95);
             this.nameLogo.Margin = new System.Windows.Forms.Padding(2);
             this.nameLogo.Name = "nameLogo";
             this.nameLogo.Size = new System.Drawing.Size(49, 47);
@@ -338,7 +338,7 @@
             this.lblgender.AutoSize = true;
             this.lblgender.Font = new System.Drawing.Font("Century", 10.125F);
             this.lblgender.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblgender.Location = new System.Drawing.Point(74, 367);
+            this.lblgender.Location = new System.Drawing.Point(106, 367);
             this.lblgender.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblgender.Name = "lblgender";
             this.lblgender.Size = new System.Drawing.Size(69, 21);
@@ -348,7 +348,7 @@
             // rbmale
             // 
             this.rbmale.AutoSize = true;
-            this.rbmale.Location = new System.Drawing.Point(78, 402);
+            this.rbmale.Location = new System.Drawing.Point(110, 402);
             this.rbmale.Name = "rbmale";
             this.rbmale.Size = new System.Drawing.Size(58, 20);
             this.rbmale.TabIndex = 88;
@@ -359,7 +359,7 @@
             // rbfemale
             // 
             this.rbfemale.AutoSize = true;
-            this.rbfemale.Location = new System.Drawing.Point(151, 402);
+            this.rbfemale.Location = new System.Drawing.Point(183, 402);
             this.rbfemale.Name = "rbfemale";
             this.rbfemale.Size = new System.Drawing.Size(74, 20);
             this.rbfemale.TabIndex = 89;
@@ -367,17 +367,17 @@
             this.rbfemale.Text = "Female";
             this.rbfemale.UseVisualStyleBackColor = true;
             // 
-            // dateTimePicker1
+            // dtpDob
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(515, 377);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(245, 22);
-            this.dateTimePicker1.TabIndex = 90;
+            this.dtpDob.Location = new System.Drawing.Point(515, 377);
+            this.dtpDob.Name = "dtpDob";
+            this.dtpDob.Size = new System.Drawing.Size(245, 22);
+            this.dtpDob.TabIndex = 90;
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(14, 196);
+            this.pictureBox3.Location = new System.Drawing.Point(46, 196);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(49, 39);
@@ -388,7 +388,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(14, 296);
+            this.pictureBox4.Location = new System.Drawing.Point(46, 296);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(49, 42);
@@ -399,7 +399,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(14, 377);
+            this.pictureBox5.Location = new System.Drawing.Point(46, 377);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(49, 42);
@@ -455,6 +455,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(840, 596);
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.pictureBox8);
@@ -463,7 +464,7 @@
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dtpDob);
             this.Controls.Add(this.rbfemale);
             this.Controls.Add(this.rbmale);
             this.Controls.Add(this.lblgender);
@@ -531,7 +532,7 @@
         private System.Windows.Forms.Label lblgender;
         private System.Windows.Forms.RadioButton rbmale;
         private System.Windows.Forms.RadioButton rbfemale;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpDob;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
