@@ -243,6 +243,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Component Card\" />
+    <Folder Include="Views\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

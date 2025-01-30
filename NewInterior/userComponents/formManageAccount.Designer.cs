@@ -30,70 +30,71 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formManageAccount));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.addCustomerBtn = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.btnAddStaff = new System.Windows.Forms.Label();
+            this.btnAddCustomer = new System.Windows.Forms.PictureBox();
             this.addVolunteerBtn = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnAddFaculty = new System.Windows.Forms.PictureBox();
             this.addEmployeesBtn = new System.Windows.Forms.Label();
-            this.Addpic = new System.Windows.Forms.PictureBox();
-            this.customerRA = new System.Windows.Forms.RadioButton();
-            this.volunteerRA = new System.Windows.Forms.RadioButton();
-            this.employeesRA = new System.Windows.Forms.RadioButton();
-            this.searchBtn = new System.Windows.Forms.PictureBox();
+            this.btnAddStudent = new System.Windows.Forms.PictureBox();
+            this.rbStaff = new System.Windows.Forms.RadioButton();
+            this.rbFaculty = new System.Windows.Forms.RadioButton();
+            this.rbStudent = new System.Windows.Forms.RadioButton();
+            this.btnSearch = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.searchTB = new System.Windows.Forms.TextBox();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.pnlUserShow = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Addpic)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.searchBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAddCustomer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAddFaculty)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAddStudent)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.addCustomerBtn);
-            this.panel1.Controls.Add(this.pictureBox3);
+            this.panel1.Controls.Add(this.btnAddStaff);
+            this.panel1.Controls.Add(this.btnAddCustomer);
             this.panel1.Controls.Add(this.addVolunteerBtn);
-            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Controls.Add(this.btnAddFaculty);
             this.panel1.Controls.Add(this.addEmployeesBtn);
-            this.panel1.Controls.Add(this.Addpic);
-            this.panel1.Controls.Add(this.customerRA);
-            this.panel1.Controls.Add(this.volunteerRA);
-            this.panel1.Controls.Add(this.employeesRA);
-            this.panel1.Controls.Add(this.searchBtn);
+            this.panel1.Controls.Add(this.btnAddStudent);
+            this.panel1.Controls.Add(this.rbStaff);
+            this.panel1.Controls.Add(this.rbFaculty);
+            this.panel1.Controls.Add(this.rbStudent);
+            this.panel1.Controls.Add(this.btnSearch);
             this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.searchTB);
-            this.panel1.Location = new System.Drawing.Point(2, 2);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Controls.Add(this.txtSearch);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1048, 137);
+            this.panel1.Size = new System.Drawing.Size(1050, 139);
             this.panel1.TabIndex = 2;
             // 
-            // addCustomerBtn
+            // btnAddStaff
             // 
-            this.addCustomerBtn.AutoSize = true;
-            this.addCustomerBtn.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addCustomerBtn.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.addCustomerBtn.Location = new System.Drawing.Point(849, 99);
-            this.addCustomerBtn.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.addCustomerBtn.Name = "addCustomerBtn";
-            this.addCustomerBtn.Size = new System.Drawing.Size(114, 20);
-            this.addCustomerBtn.TabIndex = 26;
-            this.addCustomerBtn.Text = "Add Customer";
+            this.btnAddStaff.AutoSize = true;
+            this.btnAddStaff.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddStaff.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnAddStaff.Location = new System.Drawing.Point(849, 99);
+            this.btnAddStaff.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.btnAddStaff.Name = "btnAddStaff";
+            this.btnAddStaff.Size = new System.Drawing.Size(76, 20);
+            this.btnAddStaff.TabIndex = 26;
+            this.btnAddStaff.Text = "Add Staff";
             // 
-            // pictureBox3
+            // btnAddCustomer
             // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(807, 94);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(41, 31);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox3.TabIndex = 25;
-            this.pictureBox3.TabStop = false;
+            this.btnAddCustomer.Image = ((System.Drawing.Image)(resources.GetObject("btnAddCustomer.Image")));
+            this.btnAddCustomer.Location = new System.Drawing.Point(807, 94);
+            this.btnAddCustomer.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAddCustomer.Name = "btnAddCustomer";
+            this.btnAddCustomer.Size = new System.Drawing.Size(41, 31);
+            this.btnAddCustomer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.btnAddCustomer.TabIndex = 25;
+            this.btnAddCustomer.TabStop = false;
             // 
             // addVolunteerBtn
             // 
@@ -103,20 +104,20 @@
             this.addVolunteerBtn.Location = new System.Drawing.Point(849, 57);
             this.addVolunteerBtn.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.addVolunteerBtn.Name = "addVolunteerBtn";
-            this.addVolunteerBtn.Size = new System.Drawing.Size(116, 20);
+            this.addVolunteerBtn.Size = new System.Drawing.Size(96, 20);
             this.addVolunteerBtn.TabIndex = 24;
-            this.addVolunteerBtn.Text = "Add Volunteer";
+            this.addVolunteerBtn.Text = "Add Faculty";
             // 
-            // pictureBox2
+            // btnAddFaculty
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(807, 52);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(41, 31);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox2.TabIndex = 23;
-            this.pictureBox2.TabStop = false;
+            this.btnAddFaculty.Image = ((System.Drawing.Image)(resources.GetObject("btnAddFaculty.Image")));
+            this.btnAddFaculty.Location = new System.Drawing.Point(807, 52);
+            this.btnAddFaculty.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAddFaculty.Name = "btnAddFaculty";
+            this.btnAddFaculty.Size = new System.Drawing.Size(41, 31);
+            this.btnAddFaculty.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.btnAddFaculty.TabIndex = 23;
+            this.btnAddFaculty.TabStop = false;
             // 
             // addEmployeesBtn
             // 
@@ -126,77 +127,77 @@
             this.addEmployeesBtn.Location = new System.Drawing.Point(849, 15);
             this.addEmployeesBtn.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.addEmployeesBtn.Name = "addEmployeesBtn";
-            this.addEmployeesBtn.Size = new System.Drawing.Size(122, 20);
+            this.addEmployeesBtn.Size = new System.Drawing.Size(99, 20);
             this.addEmployeesBtn.TabIndex = 22;
-            this.addEmployeesBtn.Text = "Add Employees";
+            this.addEmployeesBtn.Text = "Add Student";
             this.addEmployeesBtn.Visible = false;
             // 
-            // Addpic
+            // btnAddStudent
             // 
-            this.Addpic.Image = ((System.Drawing.Image)(resources.GetObject("Addpic.Image")));
-            this.Addpic.Location = new System.Drawing.Point(807, 11);
-            this.Addpic.Margin = new System.Windows.Forms.Padding(2);
-            this.Addpic.Name = "Addpic";
-            this.Addpic.Size = new System.Drawing.Size(41, 31);
-            this.Addpic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.Addpic.TabIndex = 21;
-            this.Addpic.TabStop = false;
-            this.Addpic.Visible = false;
+            this.btnAddStudent.Image = ((System.Drawing.Image)(resources.GetObject("btnAddStudent.Image")));
+            this.btnAddStudent.Location = new System.Drawing.Point(807, 11);
+            this.btnAddStudent.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAddStudent.Name = "btnAddStudent";
+            this.btnAddStudent.Size = new System.Drawing.Size(41, 31);
+            this.btnAddStudent.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.btnAddStudent.TabIndex = 21;
+            this.btnAddStudent.TabStop = false;
+            this.btnAddStudent.Visible = false;
             // 
-            // customerRA
+            // rbStaff
             // 
-            this.customerRA.AutoSize = true;
-            this.customerRA.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customerRA.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.customerRA.Location = new System.Drawing.Point(296, 104);
-            this.customerRA.Margin = new System.Windows.Forms.Padding(2);
-            this.customerRA.Name = "customerRA";
-            this.customerRA.Size = new System.Drawing.Size(100, 24);
-            this.customerRA.TabIndex = 20;
-            this.customerRA.TabStop = true;
-            this.customerRA.Text = "Customer";
-            this.customerRA.UseVisualStyleBackColor = true;
+            this.rbStaff.AutoSize = true;
+            this.rbStaff.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbStaff.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.rbStaff.Location = new System.Drawing.Point(289, 104);
+            this.rbStaff.Margin = new System.Windows.Forms.Padding(2);
+            this.rbStaff.Name = "rbStaff";
+            this.rbStaff.Size = new System.Drawing.Size(62, 24);
+            this.rbStaff.TabIndex = 20;
+            this.rbStaff.TabStop = true;
+            this.rbStaff.Text = "Staff";
+            this.rbStaff.UseVisualStyleBackColor = true;
             // 
-            // volunteerRA
+            // rbFaculty
             // 
-            this.volunteerRA.AutoSize = true;
-            this.volunteerRA.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.volunteerRA.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.volunteerRA.Location = new System.Drawing.Point(190, 104);
-            this.volunteerRA.Margin = new System.Windows.Forms.Padding(2);
-            this.volunteerRA.Name = "volunteerRA";
-            this.volunteerRA.Size = new System.Drawing.Size(102, 24);
-            this.volunteerRA.TabIndex = 19;
-            this.volunteerRA.TabStop = true;
-            this.volunteerRA.Text = "Volunteer";
-            this.volunteerRA.UseVisualStyleBackColor = true;
+            this.rbFaculty.AutoSize = true;
+            this.rbFaculty.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbFaculty.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.rbFaculty.Location = new System.Drawing.Point(185, 104);
+            this.rbFaculty.Margin = new System.Windows.Forms.Padding(2);
+            this.rbFaculty.Name = "rbFaculty";
+            this.rbFaculty.Size = new System.Drawing.Size(82, 24);
+            this.rbFaculty.TabIndex = 19;
+            this.rbFaculty.TabStop = true;
+            this.rbFaculty.Text = "Faculty";
+            this.rbFaculty.UseVisualStyleBackColor = true;
             // 
-            // employeesRA
+            // rbStudent
             // 
-            this.employeesRA.AutoSize = true;
-            this.employeesRA.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.employeesRA.Location = new System.Drawing.Point(84, 104);
-            this.employeesRA.Margin = new System.Windows.Forms.Padding(2);
-            this.employeesRA.Name = "employeesRA";
-            this.employeesRA.Size = new System.Drawing.Size(102, 24);
-            this.employeesRA.TabIndex = 18;
-            this.employeesRA.TabStop = true;
-            this.employeesRA.Text = "Employee";
-            this.employeesRA.UseVisualStyleBackColor = true;
-            this.employeesRA.Visible = false;
+            this.rbStudent.AutoSize = true;
+            this.rbStudent.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbStudent.Location = new System.Drawing.Point(84, 104);
+            this.rbStudent.Margin = new System.Windows.Forms.Padding(2);
+            this.rbStudent.Name = "rbStudent";
+            this.rbStudent.Size = new System.Drawing.Size(85, 24);
+            this.rbStudent.TabIndex = 18;
+            this.rbStudent.TabStop = true;
+            this.rbStudent.Text = "Student";
+            this.rbStudent.UseVisualStyleBackColor = true;
+            this.rbStudent.Visible = false;
             // 
-            // searchBtn
+            // btnSearch
             // 
-            this.searchBtn.BackColor = System.Drawing.Color.Transparent;
-            this.searchBtn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.searchBtn.Image = ((System.Drawing.Image)(resources.GetObject("searchBtn.Image")));
-            this.searchBtn.Location = new System.Drawing.Point(627, 46);
-            this.searchBtn.Margin = new System.Windows.Forms.Padding(2);
-            this.searchBtn.Name = "searchBtn";
-            this.searchBtn.Size = new System.Drawing.Size(42, 32);
-            this.searchBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.searchBtn.TabIndex = 11;
-            this.searchBtn.TabStop = false;
+            this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(149)))), ((int)(((byte)(164)))));
+            this.btnSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
+            this.btnSearch.Location = new System.Drawing.Point(627, 46);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(42, 32);
+            this.btnSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.btnSearch.TabIndex = 11;
+            this.btnSearch.TabStop = false;
             // 
             // pictureBox4
             // 
@@ -221,34 +222,43 @@
             this.label2.TabIndex = 10;
             this.label2.Text = "Search :";
             // 
-            // searchTB
+            // txtSearch
             // 
-            this.searchTB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.searchTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.searchTB.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.searchTB.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.searchTB.Location = new System.Drawing.Point(337, 46);
-            this.searchTB.Margin = new System.Windows.Forms.Padding(2);
-            this.searchTB.Name = "searchTB";
-            this.searchTB.Size = new System.Drawing.Size(286, 30);
-            this.searchTB.TabIndex = 9;
-            this.searchTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtSearch.BackColor = System.Drawing.Color.White;
+            this.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtSearch.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtSearch.Location = new System.Drawing.Point(337, 46);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(286, 32);
+            this.txtSearch.TabIndex = 9;
+            this.txtSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pnlUserShow
+            // 
+            this.pnlUserShow.Location = new System.Drawing.Point(0, 153);
+            this.pnlUserShow.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlUserShow.Name = "pnlUserShow";
+            this.pnlUserShow.Size = new System.Drawing.Size(1050, 490);
+            this.pnlUserShow.TabIndex = 3;
             // 
             // formManageAccount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.Controls.Add(this.pnlUserShow);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "formManageAccount";
             this.Size = new System.Drawing.Size(1050, 643);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Addpic)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.searchBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAddCustomer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAddFaculty)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAddStudent)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
@@ -257,18 +267,19 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label addCustomerBtn;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label btnAddStaff;
+        private System.Windows.Forms.PictureBox btnAddCustomer;
         private System.Windows.Forms.Label addVolunteerBtn;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox btnAddFaculty;
         private System.Windows.Forms.Label addEmployeesBtn;
-        private System.Windows.Forms.PictureBox Addpic;
-        private System.Windows.Forms.RadioButton customerRA;
-        private System.Windows.Forms.RadioButton volunteerRA;
-        private System.Windows.Forms.RadioButton employeesRA;
-        private System.Windows.Forms.PictureBox searchBtn;
+        private System.Windows.Forms.PictureBox btnAddStudent;
+        private System.Windows.Forms.RadioButton rbStaff;
+        private System.Windows.Forms.RadioButton rbFaculty;
+        private System.Windows.Forms.RadioButton rbStudent;
+        private System.Windows.Forms.PictureBox btnSearch;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox searchTB;
+        private System.Windows.Forms.TextBox txtSearch;
+        private System.Windows.Forms.FlowLayoutPanel pnlUserShow;
     }
 }
