@@ -28,35 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.pnlNotificationShow = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
-            // label1
+            // pnlNotificationShow
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(353, 305);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(181, 33);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Notification";
+            this.pnlNotificationShow.Location = new System.Drawing.Point(0, 45);
+            this.pnlNotificationShow.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlNotificationShow.Name = "pnlNotificationShow";
+            this.pnlNotificationShow.Size = new System.Drawing.Size(1050, 598);
+            this.pnlNotificationShow.TabIndex = 0;
             // 
             // formNotification
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(85)))), ((int)(((byte)(58)))));
-            this.Controls.Add(this.label1);
+            this.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.Controls.Add(this.pnlNotificationShow);
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "formNotification";
             this.Size = new System.Drawing.Size(1050, 643);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.FlowLayoutPanel pnlNotificationShow;
     }
 }

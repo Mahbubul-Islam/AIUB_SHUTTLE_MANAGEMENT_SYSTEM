@@ -49,6 +49,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="componentCards\notificationCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="componentCards\notificationCard.Designer.cs">
+      <DependentUpon>notificationCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="componentCards\userCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="componentCards\userCard.Designer.cs">
+      <DependentUpon>userCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Database\DatabaseConnection.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -130,6 +142,12 @@
     <Compile Include="userComponents\formShuttleSchedule.Designer.cs">
       <DependentUpon>formShuttleSchedule.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="componentCards\notificationCard.resx">
+      <DependentUpon>notificationCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentCards\userCard.resx">
+      <DependentUpon>userCard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -242,7 +260,6 @@
     <None Include="Resources\minimize.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Component Card\" />
     <Folder Include="Views\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
