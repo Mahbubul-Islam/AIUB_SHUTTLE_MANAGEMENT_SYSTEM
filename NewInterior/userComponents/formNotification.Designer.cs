@@ -36,7 +36,7 @@
             this.pnlNotificationShow.Location = new System.Drawing.Point(0, 45);
             this.pnlNotificationShow.Margin = new System.Windows.Forms.Padding(0);
             this.pnlNotificationShow.Name = "pnlNotificationShow";
-            this.pnlNotificationShow.Size = new System.Drawing.Size(1050, 598);
+            this.pnlNotificationShow.Size = new System.Drawing.Size(1005, 598);
             this.pnlNotificationShow.TabIndex = 0;
             // 
             // formNotification
@@ -47,7 +47,7 @@
             this.Controls.Add(this.pnlNotificationShow);
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "formNotification";
-            this.Size = new System.Drawing.Size(1050, 643);
+            this.Size = new System.Drawing.Size(1005, 643);
             this.ResumeLayout(false);
 
         }

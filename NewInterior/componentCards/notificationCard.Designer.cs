@@ -78,7 +78,7 @@
             this.Controls.Add(this.lblNotificationDate);
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "notificationCard";
-            this.Size = new System.Drawing.Size(1013, 63);
+            this.Size = new System.Drawing.Size(1005, 63);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

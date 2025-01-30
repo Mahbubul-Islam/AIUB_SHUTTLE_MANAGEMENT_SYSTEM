@@ -35,22 +35,21 @@
             // 
             this.lblId.AutoSize = true;
             this.lblId.Font = new System.Drawing.Font("Century", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblId.Location = new System.Drawing.Point(328, 204);
-            this.lblId.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblId.Location = new System.Drawing.Point(437, 251);
             this.lblId.Name = "lblId";
-            this.lblId.Size = new System.Drawing.Size(87, 27);
+            this.lblId.Size = new System.Drawing.Size(108, 33);
             this.lblId.TabIndex = 0;
             this.lblId.Text = "Profile";
             // 
             // formProfile
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.Controls.Add(this.lblId);
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "formProfile";
-            this.Size = new System.Drawing.Size(788, 522);
+            this.Size = new System.Drawing.Size(1005, 643);
             this.Load += new System.EventHandler(this.formProfile_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
