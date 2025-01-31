@@ -30,22 +30,22 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formManageAccount));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnAddStaff = new System.Windows.Forms.Label();
-            this.btnAddCustomer = new System.Windows.Forms.PictureBox();
+            this.rbStudent = new System.Windows.Forms.RadioButton();
+            this.lblAddStaff = new System.Windows.Forms.Label();
+            this.btnAddStaff = new System.Windows.Forms.PictureBox();
             this.addVolunteerBtn = new System.Windows.Forms.Label();
             this.btnAddFaculty = new System.Windows.Forms.PictureBox();
             this.addEmployeesBtn = new System.Windows.Forms.Label();
             this.btnAddStudent = new System.Windows.Forms.PictureBox();
             this.rbStaff = new System.Windows.Forms.RadioButton();
             this.rbFaculty = new System.Windows.Forms.RadioButton();
-            this.rbStudent = new System.Windows.Forms.RadioButton();
             this.btnSearch = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.pnlUserShow = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnAddCustomer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAddStaff)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnAddFaculty)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnAddStudent)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).BeginInit();
@@ -55,8 +55,8 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.rbStudent);
+            this.panel1.Controls.Add(this.lblAddStaff);
             this.panel1.Controls.Add(this.btnAddStaff);
-            this.panel1.Controls.Add(this.btnAddCustomer);
             this.panel1.Controls.Add(this.addVolunteerBtn);
             this.panel1.Controls.Add(this.btnAddFaculty);
             this.panel1.Controls.Add(this.addEmployeesBtn);
@@ -73,28 +73,42 @@
             this.panel1.Size = new System.Drawing.Size(1005, 139);
             this.panel1.TabIndex = 2;
             // 
+            // rbStudent
+            // 
+            this.rbStudent.AutoSize = true;
+            this.rbStudent.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbStudent.Location = new System.Drawing.Point(84, 104);
+            this.rbStudent.Margin = new System.Windows.Forms.Padding(2);
+            this.rbStudent.Name = "rbStudent";
+            this.rbStudent.Size = new System.Drawing.Size(85, 24);
+            this.rbStudent.TabIndex = 18;
+            this.rbStudent.TabStop = true;
+            this.rbStudent.Text = "Student";
+            this.rbStudent.UseVisualStyleBackColor = true;
+            // 
+            // lblAddStaff
+            // 
+            this.lblAddStaff.AutoSize = true;
+            this.lblAddStaff.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAddStaff.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblAddStaff.Location = new System.Drawing.Point(849, 99);
+            this.lblAddStaff.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAddStaff.Name = "lblAddStaff";
+            this.lblAddStaff.Size = new System.Drawing.Size(76, 20);
+            this.lblAddStaff.TabIndex = 26;
+            this.lblAddStaff.Text = "Add Staff";
+            // 
             // btnAddStaff
             // 
-            this.btnAddStaff.AutoSize = true;
-            this.btnAddStaff.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddStaff.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnAddStaff.Location = new System.Drawing.Point(849, 99);
-            this.btnAddStaff.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.btnAddStaff.Image = ((System.Drawing.Image)(resources.GetObject("btnAddStaff.Image")));
+            this.btnAddStaff.Location = new System.Drawing.Point(807, 94);
+            this.btnAddStaff.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddStaff.Name = "btnAddStaff";
-            this.btnAddStaff.Size = new System.Drawing.Size(76, 20);
-            this.btnAddStaff.TabIndex = 26;
-            this.btnAddStaff.Text = "Add Staff";
-            // 
-            // btnAddCustomer
-            // 
-            this.btnAddCustomer.Image = ((System.Drawing.Image)(resources.GetObject("btnAddCustomer.Image")));
-            this.btnAddCustomer.Location = new System.Drawing.Point(807, 94);
-            this.btnAddCustomer.Margin = new System.Windows.Forms.Padding(2);
-            this.btnAddCustomer.Name = "btnAddCustomer";
-            this.btnAddCustomer.Size = new System.Drawing.Size(41, 31);
-            this.btnAddCustomer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.btnAddCustomer.TabIndex = 25;
-            this.btnAddCustomer.TabStop = false;
+            this.btnAddStaff.Size = new System.Drawing.Size(41, 31);
+            this.btnAddStaff.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.btnAddStaff.TabIndex = 25;
+            this.btnAddStaff.TabStop = false;
+            this.btnAddStaff.Click += new System.EventHandler(this.btnAddStaff_Click);
             // 
             // addVolunteerBtn
             // 
@@ -118,6 +132,7 @@
             this.btnAddFaculty.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.btnAddFaculty.TabIndex = 23;
             this.btnAddFaculty.TabStop = false;
+            this.btnAddFaculty.Click += new System.EventHandler(this.btnAddFaculty_Click);
             // 
             // addEmployeesBtn
             // 
@@ -141,6 +156,7 @@
             this.btnAddStudent.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.btnAddStudent.TabIndex = 21;
             this.btnAddStudent.TabStop = false;
+            this.btnAddStudent.Click += new System.EventHandler(this.btnAddStudent_Click);
             // 
             // rbStaff
             // 
@@ -169,19 +185,6 @@
             this.rbFaculty.TabStop = true;
             this.rbFaculty.Text = "Faculty";
             this.rbFaculty.UseVisualStyleBackColor = true;
-            // 
-            // rbStudent
-            // 
-            this.rbStudent.AutoSize = true;
-            this.rbStudent.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbStudent.Location = new System.Drawing.Point(84, 104);
-            this.rbStudent.Margin = new System.Windows.Forms.Padding(2);
-            this.rbStudent.Name = "rbStudent";
-            this.rbStudent.Size = new System.Drawing.Size(85, 24);
-            this.rbStudent.TabIndex = 18;
-            this.rbStudent.TabStop = true;
-            this.rbStudent.Text = "Student";
-            this.rbStudent.UseVisualStyleBackColor = true;
             // 
             // btnSearch
             // 
@@ -254,7 +257,7 @@
             this.Size = new System.Drawing.Size(1005, 643);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnAddCustomer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAddStaff)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnAddFaculty)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnAddStudent)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).EndInit();
@@ -266,8 +269,8 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label btnAddStaff;
-        private System.Windows.Forms.PictureBox btnAddCustomer;
+        private System.Windows.Forms.Label lblAddStaff;
+        private System.Windows.Forms.PictureBox btnAddStaff;
         private System.Windows.Forms.Label addVolunteerBtn;
         private System.Windows.Forms.PictureBox btnAddFaculty;
         private System.Windows.Forms.Label addEmployeesBtn;
