@@ -31,14 +31,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formProfile));
             this.lbProfile = new System.Windows.Forms.Label();
             this.detailsPanel = new System.Windows.Forms.Panel();
+            this.BookingStatusValue = new System.Windows.Forms.Label();
+            this.lblbookingstatus = new System.Windows.Forms.Label();
             this.lblid = new System.Windows.Forms.Label();
             this.GenderValue = new System.Windows.Forms.Label();
-            this.pbEditinfo = new System.Windows.Forms.PictureBox();
             this.BloodGroupValue = new System.Windows.Forms.Label();
             this.lblpBloodGroup = new System.Windows.Forms.Label();
             this.ruleValue = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.Lbleditinfo = new System.Windows.Forms.Label();
             this.lblname = new System.Windows.Forms.Label();
             this.nameValue = new System.Windows.Forms.Label();
             this.lblgender = new System.Windows.Forms.Label();
@@ -55,10 +55,7 @@
             this.NationalityValue = new System.Windows.Forms.Label();
             this.lbladdress = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.lblbookingstatus = new System.Windows.Forms.Label();
-            this.BookingStatusValue = new System.Windows.Forms.Label();
             this.detailsPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbEditinfo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -103,6 +100,28 @@
             this.detailsPanel.Size = new System.Drawing.Size(702, 344);
             this.detailsPanel.TabIndex = 32;
             // 
+            // BookingStatusValue
+            // 
+            this.BookingStatusValue.AutoSize = true;
+            this.BookingStatusValue.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BookingStatusValue.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BookingStatusValue.Location = new System.Drawing.Point(530, 216);
+            this.BookingStatusValue.Name = "BookingStatusValue";
+            this.BookingStatusValue.Size = new System.Drawing.Size(161, 17);
+            this.BookingStatusValue.TabIndex = 35;
+            this.BookingStatusValue.Text = "Booked / Not Booked";
+            // 
+            // lblbookingstatus
+            // 
+            this.lblbookingstatus.AutoSize = true;
+            this.lblbookingstatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblbookingstatus.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblbookingstatus.Location = new System.Drawing.Point(382, 216);
+            this.lblbookingstatus.Name = "lblbookingstatus";
+            this.lblbookingstatus.Size = new System.Drawing.Size(142, 20);
+            this.lblbookingstatus.TabIndex = 34;
+            this.lblbookingstatus.Text = "Booking Status:";
+            // 
             // lblid
             // 
             this.lblid.AutoSize = true;
@@ -124,17 +143,6 @@
             this.GenderValue.Size = new System.Drawing.Size(42, 17);
             this.GenderValue.TabIndex = 32;
             this.GenderValue.Text = "Male";
-            // 
-            // pbEditinfo
-            // 
-            this.pbEditinfo.Image = ((System.Drawing.Image)(resources.GetObject("pbEditinfo.Image")));
-            this.pbEditinfo.Location = new System.Drawing.Point(645, 164);
-            this.pbEditinfo.Margin = new System.Windows.Forms.Padding(4);
-            this.pbEditinfo.Name = "pbEditinfo";
-            this.pbEditinfo.Size = new System.Drawing.Size(64, 64);
-            this.pbEditinfo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pbEditinfo.TabIndex = 31;
-            this.pbEditinfo.TabStop = false;
             // 
             // BloodGroupValue
             // 
@@ -177,18 +185,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(10, 187);
             this.panel1.TabIndex = 21;
-            // 
-            // Lbleditinfo
-            // 
-            this.Lbleditinfo.AutoSize = true;
-            this.Lbleditinfo.BackColor = System.Drawing.Color.Blue;
-            this.Lbleditinfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbleditinfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Lbleditinfo.Location = new System.Drawing.Point(716, 199);
-            this.Lbleditinfo.Name = "Lbleditinfo";
-            this.Lbleditinfo.Size = new System.Drawing.Size(114, 29);
-            this.Lbleditinfo.TabIndex = 25;
-            this.Lbleditinfo.Text = "Edit Info";
             // 
             // lblname
             // 
@@ -366,28 +362,6 @@
             this.pictureBox2.TabIndex = 33;
             this.pictureBox2.TabStop = false;
             // 
-            // lblbookingstatus
-            // 
-            this.lblbookingstatus.AutoSize = true;
-            this.lblbookingstatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblbookingstatus.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblbookingstatus.Location = new System.Drawing.Point(382, 216);
-            this.lblbookingstatus.Name = "lblbookingstatus";
-            this.lblbookingstatus.Size = new System.Drawing.Size(142, 20);
-            this.lblbookingstatus.TabIndex = 34;
-            this.lblbookingstatus.Text = "Booking Status:";
-            // 
-            // BookingStatusValue
-            // 
-            this.BookingStatusValue.AutoSize = true;
-            this.BookingStatusValue.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BookingStatusValue.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.BookingStatusValue.Location = new System.Drawing.Point(530, 216);
-            this.BookingStatusValue.Name = "BookingStatusValue";
-            this.BookingStatusValue.Size = new System.Drawing.Size(161, 17);
-            this.BookingStatusValue.TabIndex = 35;
-            this.BookingStatusValue.Text = "Booked / Not Booked";
-            // 
             // formProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -395,15 +369,12 @@
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.detailsPanel);
-            this.Controls.Add(this.pbEditinfo);
             this.Controls.Add(this.lbProfile);
-            this.Controls.Add(this.Lbleditinfo);
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "formProfile";
             this.Size = new System.Drawing.Size(1005, 643);
             this.detailsPanel.ResumeLayout(false);
             this.detailsPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbEditinfo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -417,12 +388,10 @@
         private System.Windows.Forms.Panel detailsPanel;
         private System.Windows.Forms.Label lblid;
         private System.Windows.Forms.Label GenderValue;
-        private System.Windows.Forms.PictureBox pbEditinfo;
         private System.Windows.Forms.Label BloodGroupValue;
         private System.Windows.Forms.Label lblpBloodGroup;
         private System.Windows.Forms.Label ruleValue;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label Lbleditinfo;
         private System.Windows.Forms.Label lblname;
         private System.Windows.Forms.Label nameValue;
         private System.Windows.Forms.Label lblgender;
