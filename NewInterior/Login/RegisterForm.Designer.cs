@@ -102,8 +102,10 @@
             this.btnLoginHerelbl.AutoSize = true;
             this.btnLoginHerelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLoginHerelbl.ForeColor = System.Drawing.Color.Sienna;
+
             this.btnLoginHerelbl.Location = new System.Drawing.Point(1076, 763);
             this.btnLoginHerelbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+
             this.btnLoginHerelbl.Name = "btnLoginHerelbl";
             this.btnLoginHerelbl.Size = new System.Drawing.Size(88, 20);
             this.btnLoginHerelbl.TabIndex = 65;
@@ -116,8 +118,10 @@
             this.btnSignUp.FlatAppearance.BorderSize = 0;
             this.btnSignUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSignUp.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
             this.btnSignUp.Location = new System.Drawing.Point(871, 678);
             this.btnSignUp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+
             this.btnSignUp.Name = "btnSignUp";
             this.btnSignUp.Size = new System.Drawing.Size(465, 37);
             this.btnSignUp.TabIndex = 64;
@@ -170,8 +174,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
             this.label3.Location = new System.Drawing.Point(1012, 743);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(228, 24);
             this.label3.TabIndex = 58;
@@ -262,10 +268,12 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+
             this.pictureBox1.Location = new System.Drawing.Point(9, 10);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(808, 770);
+
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 80;
             this.pictureBox1.TabStop = false;
