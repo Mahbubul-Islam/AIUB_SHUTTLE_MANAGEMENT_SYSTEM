@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data.SqlClient;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using NewInterior.Database;
 
@@ -13,6 +14,8 @@ namespace NewInterior.Login
         string confirmPassword;
         string email;
         string role;
+        string userIdPattern;
+
         public RegisterForm()
         {
             InitializeComponent();
@@ -37,14 +40,17 @@ namespace NewInterior.Login
             if (rbFaculty.Checked)
             {
                 role = "Faculty";
+                userIdPattern = "^\\d{4}-\\d{3}-\\d$"; // XXXX-XXX-X
             }
             else if (rbStudent.Checked)
             {
                 role = "Student";
+                userIdPattern = "^\\d{2}-\\d{5}-\\d$"; // XX-XXXXX-X
             }
             else if (rbStaff.Checked)
             {
                 role = "Staff";
+                userIdPattern = "^\\d{2}-\\d{2}-\\d$"; // XX-XX-X
             }
 
             // Input validation
@@ -53,6 +59,18 @@ namespace NewInterior.Login
                 string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(role))
             {
                 MessageBox.Show("All fields are required.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (!Regex.IsMatch(userId, userIdPattern))
+            {
+                MessageBox.Show("Invalid User ID format for " + role + ".", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (!email.Contains("@"))
+            {
+                MessageBox.Show("Invalid email format. Email must contain '@'.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -65,13 +83,17 @@ namespace NewInterior.Login
             // Insert user into the database
             try
             {
-                SqlConnection conn = DatabaseConnection.GetConnection();
-                
+                using (SqlConnection conn = DatabaseConnection.GetConnection())
+                {
                     conn.Open();
-                    string query = $"INSERT INTO Users (UserID, Name, Email, Password, Role) VALUES ('{userId}', '{name}', '{email}', '{password}', '{role}')";
-                        SqlCommand cmd = new SqlCommand(query, conn);
-                    
-                        
+                    string query = "INSERT INTO Users (UserID, Name, Email, Password, Role) VALUES (@UserId, @Name, @Email, @Password, @Role)";
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@UserId", userId);
+                        cmd.Parameters.AddWithValue("@Name", name);
+                        cmd.Parameters.AddWithValue("@Email", email);
+                        cmd.Parameters.AddWithValue("@Password", password);
+                        cmd.Parameters.AddWithValue("@Role", role);
 
                         int rowsAffected = cmd.ExecuteNonQuery();
                         if (rowsAffected > 0)
@@ -85,8 +107,8 @@ namespace NewInterior.Login
                         {
                             MessageBox.Show("Registration failed. Please try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
-                    
-                
+                    }
+                }
             }
             catch (Exception ex)
             {
@@ -99,99 +121,43 @@ namespace NewInterior.Login
             Application.Exit();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void closeBtn_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtConfirmPassword_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtPassword_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtUserId_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblHeading1_Click(object sender, EventArgs e)
-        {
-
+            Application.Exit();
         }
 
         private void chkbShowPassword_CheckedChanged(object sender, EventArgs e)
         {
-
-        }
-
-        private void rbStaff_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void rbFaculty_CheckedChanged(object sender, EventArgs e)
-        {
-
+            bool showPassword = chkbShowPassword.Checked;
+            txtPassword.UseSystemPasswordChar = !showPassword;
+            txtConfirmPassword.UseSystemPasswordChar = !showPassword;
         }
 
         private void rbStudent_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (rbStudent.Checked)
+            {
+                lblShowUserIDMsg.Text = "*Student User ID usually looks like XX-XXXXX-X";
+                txtUserId.MaxLength = 10;
+            }
         }
 
-        private void label6_Click(object sender, EventArgs e)
+        private void rbFaculty_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (rbFaculty.Checked)
+            {
+                lblShowUserIDMsg.Text = "*Faculty User ID usually looks like XXXX-XXX-X";
+                txtUserId.MaxLength = 10;
+            }
         }
 
-        private void txtEmail_TextChanged(object sender, EventArgs e)
+        private void rbStaff_CheckedChanged(object sender, EventArgs e)
         {
-
-        }
-
-        private void txtName_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void RegisterForm_Load(object sender, EventArgs e)
-        {
-
+            if (rbStaff.Checked)
+            {
+                lblShowUserIDMsg.Text = "*Staff User ID usually looks like XX-XX-X";
+                txtUserId.MaxLength = 7;
+            }
         }
     }
 }

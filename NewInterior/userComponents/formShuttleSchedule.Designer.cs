@@ -751,6 +751,7 @@
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "formShuttleSchedule";
             this.Size = new System.Drawing.Size(1005, 643);
+
             this.Shutpan1.ResumeLayout(false);
             this.Shutpan1.PerformLayout();
             this.Shutpan8.ResumeLayout(false);
@@ -775,6 +776,7 @@
             this.Shutpan3.PerformLayout();
             this.Shutpan2.ResumeLayout(false);
             this.Shutpan2.PerformLayout();
+
             this.ResumeLayout(false);
 
         }

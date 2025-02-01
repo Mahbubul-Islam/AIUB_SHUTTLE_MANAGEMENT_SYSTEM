@@ -49,6 +49,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="componentCards\notificationCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="componentCards\notificationCard.Designer.cs">
+      <DependentUpon>notificationCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="componentCards\userCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="componentCards\userCard.Designer.cs">
+      <DependentUpon>userCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Database\DatabaseConnection.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -130,6 +142,60 @@
     <Compile Include="userComponents\formShuttleSchedule.Designer.cs">
       <DependentUpon>formShuttleSchedule.cs</DependentUpon>
     </Compile>
+    <Compile Include="userComponents\formUserManageAccount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userComponents\formUserManageAccount.Designer.cs">
+      <DependentUpon>formUserManageAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Edit_Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Edit_Profile.Designer.cs">
+      <DependentUpon>Edit_Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\formAddFaculty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\formAddFaculty.Designer.cs">
+      <DependentUpon>formAddFaculty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\formAddStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\formAddStudent.Designer.cs">
+      <DependentUpon>formAddStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\formAddStuff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\formAddStuff.Designer.cs">
+      <DependentUpon>formAddStuff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\formEditFaculty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\formEditFaculty.Designer.cs">
+      <DependentUpon>formEditFaculty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\formEditStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\formEditStudent.Designer.cs">
+      <DependentUpon>formEditStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\formEditStuff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\formEditStuff.Designer.cs">
+      <DependentUpon>formEditStuff.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="componentCards\notificationCard.resx">
+      <DependentUpon>notificationCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentCards\userCard.resx">
+      <DependentUpon>userCard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -178,6 +244,32 @@
     </EmbeddedResource>
     <EmbeddedResource Include="userComponents\formShuttleSchedule.resx">
       <DependentUpon>formShuttleSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+
+    <EmbeddedResource Include="Views\formAddFaculty.resx">
+      <DependentUpon>formAddFaculty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\formAddStudent.resx">
+      <DependentUpon>formAddStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\formAddStuff.resx">
+      <DependentUpon>formAddStuff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\formEditFaculty.resx">
+      <DependentUpon>formEditFaculty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\formEditStudent.resx">
+      <DependentUpon>formEditStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\formEditStuff.resx">
+      <DependentUpon>formEditStuff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userComponents\formUserManageAccount.resx">
+      <DependentUpon>formUserManageAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Edit_Profile.resx">
+      <DependentUpon>Edit_Profile.cs</DependentUpon>
+
     </EmbeddedResource>
     <None Include="app.manifest" />
     <None Include="Properties\Settings.settings">
@@ -242,7 +334,7 @@
     <None Include="Resources\minimize.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Component Card\" />
+    <None Include="Resources\adminDashboardIcon.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

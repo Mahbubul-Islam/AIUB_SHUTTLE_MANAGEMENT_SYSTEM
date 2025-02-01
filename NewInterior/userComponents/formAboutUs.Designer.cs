@@ -49,7 +49,7 @@
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "formAboutUs";
-            this.Size = new System.Drawing.Size(1050, 643);
+            this.Size = new System.Drawing.Size(1005, 643);
             this.ResumeLayout(false);
             this.PerformLayout();
 

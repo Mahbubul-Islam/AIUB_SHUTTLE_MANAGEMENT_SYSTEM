@@ -1501,6 +1501,7 @@
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "formBookSeat";
             this.Size = new System.Drawing.Size(1005, 643);
+
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
@@ -1541,6 +1542,7 @@
             this.panel7.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
+
             this.ResumeLayout(false);
             this.PerformLayout();
 
