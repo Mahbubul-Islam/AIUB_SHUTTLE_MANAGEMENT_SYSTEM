@@ -14,6 +14,8 @@ namespace NewInterior.Database
 
         private static readonly string connectionString = "data source=DESKTOP-RPJPVDU\\SQLEXPRESS; database=AIUB_SHUTTLE_MANAGEMENT_SYSTEM; integrated security=SSPI";
 
+
+
         public static SqlConnection GetConnection()
         {
             return new SqlConnection(connectionString);
