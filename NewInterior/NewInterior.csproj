@@ -55,6 +55,12 @@
     <Compile Include="componentCards\notificationCard.Designer.cs">
       <DependentUpon>notificationCard.cs</DependentUpon>
     </Compile>
+    <Compile Include="componentCards\shuttleCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="componentCards\shuttleCard.Designer.cs">
+      <DependentUpon>shuttleCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="componentCards\userCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -160,6 +166,12 @@
     <Compile Include="Views\formAddFaculty.Designer.cs">
       <DependentUpon>formAddFaculty.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\formAddShuttle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\formAddShuttle.Designer.cs">
+      <DependentUpon>formAddShuttle.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\formAddStudent.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -190,8 +202,17 @@
     <Compile Include="Views\formEditStuff.Designer.cs">
       <DependentUpon>formEditStuff.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\formShuttleList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\formShuttleList.Designer.cs">
+      <DependentUpon>formShuttleList.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="componentCards\notificationCard.resx">
       <DependentUpon>notificationCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentCards\shuttleCard.resx">
+      <DependentUpon>shuttleCard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="componentCards\userCard.resx">
       <DependentUpon>userCard.cs</DependentUpon>
@@ -245,9 +266,11 @@
     <EmbeddedResource Include="userComponents\formShuttleSchedule.resx">
       <DependentUpon>formShuttleSchedule.cs</DependentUpon>
     </EmbeddedResource>
-
     <EmbeddedResource Include="Views\formAddFaculty.resx">
       <DependentUpon>formAddFaculty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\formAddShuttle.resx">
+      <DependentUpon>formAddShuttle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\formAddStudent.resx">
       <DependentUpon>formAddStudent.cs</DependentUpon>
@@ -269,7 +292,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Edit_Profile.resx">
       <DependentUpon>Edit_Profile.cs</DependentUpon>
-
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\formShuttleList.resx">
+      <DependentUpon>formShuttleList.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.manifest" />
     <None Include="Properties\Settings.settings">

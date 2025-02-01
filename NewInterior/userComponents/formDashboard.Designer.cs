@@ -44,6 +44,8 @@
             this.valueTotalBookedSeat = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnAddShuttle = new System.Windows.Forms.Button();
+            this.btnShuttleList = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -212,11 +214,39 @@
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
+            // btnAddShuttle
+            // 
+            this.btnAddShuttle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnAddShuttle.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAddShuttle.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddShuttle.Location = new System.Drawing.Point(215, 578);
+            this.btnAddShuttle.Margin = new System.Windows.Forms.Padding(0);
+            this.btnAddShuttle.Name = "btnAddShuttle";
+            this.btnAddShuttle.Size = new System.Drawing.Size(148, 39);
+            this.btnAddShuttle.TabIndex = 258;
+            this.btnAddShuttle.Text = "Add Shuttle";
+            this.btnAddShuttle.UseVisualStyleBackColor = false;
+            // 
+            // btnShuttleList
+            // 
+            this.btnShuttleList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnShuttleList.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnShuttleList.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShuttleList.Location = new System.Drawing.Point(613, 578);
+            this.btnShuttleList.Margin = new System.Windows.Forms.Padding(0);
+            this.btnShuttleList.Name = "btnShuttleList";
+            this.btnShuttleList.Size = new System.Drawing.Size(148, 39);
+            this.btnShuttleList.TabIndex = 259;
+            this.btnShuttleList.Text = "Shuttle List";
+            this.btnShuttleList.UseVisualStyleBackColor = false;
+            // 
             // formDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.Controls.Add(this.btnShuttleList);
+            this.Controls.Add(this.btnAddShuttle);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
@@ -259,5 +289,7 @@
         private System.Windows.Forms.Label valueTotalBus;
         private System.Windows.Forms.Label valueTotalBookedSeat;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnAddShuttle;
+        private System.Windows.Forms.Button btnShuttleList;
     }
 }
