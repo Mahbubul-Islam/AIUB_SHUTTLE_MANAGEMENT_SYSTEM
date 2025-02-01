@@ -35,6 +35,7 @@
             this.pnlDisplay = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
+
             this.panel2 = new System.Windows.Forms.Panel();
             this.settingsContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.pnlLogOut = new System.Windows.Forms.Panel();
@@ -48,6 +49,9 @@
             this.usertoolsLabel = new System.Windows.Forms.Label();
             this.profilePannel = new System.Windows.Forms.Panel();
             this.lblProfile = new System.Windows.Forms.Label();
+
+            this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
+
             this.homePannel = new System.Windows.Forms.Panel();
             this.lblHome = new System.Windows.Forms.Label();
             this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
@@ -74,10 +78,18 @@
             this.picboxManageAccount = new System.Windows.Forms.PictureBox();
             this.picboxLogOut = new System.Windows.Forms.PictureBox();
             this.picboxAboutUs = new System.Windows.Forms.PictureBox();
+
             this.closeBtn = new System.Windows.Forms.PictureBox();
             this.btnMinimize = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.btnHam = new System.Windows.Forms.PictureBox();
+
+            this.lblAboutUS = new System.Windows.Forms.Label();
+            this.pnlDisplay = new System.Windows.Forms.Panel();
+            this.usertoolsTransition = new System.Windows.Forms.Timer(this.components);
+            this.sidebarTransition = new System.Windows.Forms.Timer(this.components);
+            this.settingsTransition = new System.Windows.Forms.Timer(this.components);
+
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.settingsContainer.SuspendLayout();
@@ -224,6 +236,7 @@
             // 
             // lblManageAccount
             // 
+
             this.lblManageAccount.AutoSize = true;
             this.lblManageAccount.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblManageAccount.Location = new System.Drawing.Point(67, 11);
@@ -247,6 +260,19 @@
             this.usertoolsContainer.TabIndex = 2;
             // 
             // shuttleschedulePanel
+
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblTitle.Location = new System.Drawing.Point(144, 7);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(0);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(272, 20);
+            this.lblTitle.TabIndex = 2;
+            this.lblTitle.Text = "AIUB Shuttle Management System";
+            // 
+            // sidebar
+
             // 
             this.shuttleschedulePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.shuttleschedulePanel.Controls.Add(this.shuttlescheduleIcon);
@@ -286,6 +312,7 @@
             // 
             // usertoolsLabel
             // 
+
             this.usertoolsLabel.AutoSize = true;
             this.usertoolsLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
             this.usertoolsLabel.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -295,6 +322,16 @@
             this.usertoolsLabel.TabIndex = 0;
             this.usertoolsLabel.Text = "User tools";
             this.usertoolsLabel.Click += new System.EventHandler(this.usertoolsLabel_Click);
+
+            this.lblHome.AutoSize = true;
+            this.lblHome.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHome.Location = new System.Drawing.Point(70, 15);
+            this.lblHome.Name = "lblHome";
+            this.lblHome.Size = new System.Drawing.Size(52, 20);
+            this.lblHome.TabIndex = 0;
+            this.lblHome.Text = "Home";
+            this.lblHome.Click += new System.EventHandler(this.lblHome_Click);
+
             // 
             // profilePannel
             // 
@@ -315,7 +352,7 @@
             this.lblProfile.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblProfile.Location = new System.Drawing.Point(67, 15);
             this.lblProfile.Name = "lblProfile";
-            this.lblProfile.Size = new System.Drawing.Size(71, 23);
+            this.lblProfile.Size = new System.Drawing.Size(58, 20);
             this.lblProfile.TabIndex = 0;
             this.lblProfile.Text = "Profile";
             this.lblProfile.Click += new System.EventHandler(this.lblProfile_Click);
@@ -372,6 +409,7 @@
             // 
             // pnlAboutUs
             // 
+
             this.pnlAboutUs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
             this.pnlAboutUs.Controls.Add(this.picboxAboutUs);
             this.pnlAboutUs.Controls.Add(this.lblAboutUS);
@@ -382,6 +420,17 @@
             this.pnlAboutUs.Size = new System.Drawing.Size(250, 55);
             this.pnlAboutUs.TabIndex = 0;
             this.pnlAboutUs.Click += new System.EventHandler(this.pnlAboutUs_Click);
+
+            this.usertoolsLabel.AutoSize = true;
+            this.usertoolsLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.usertoolsLabel.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usertoolsLabel.Location = new System.Drawing.Point(67, 15);
+            this.usertoolsLabel.Name = "usertoolsLabel";
+            this.usertoolsLabel.Size = new System.Drawing.Size(82, 20);
+            this.usertoolsLabel.TabIndex = 0;
+            this.usertoolsLabel.Text = "User tools";
+            this.usertoolsLabel.Click += new System.EventHandler(this.usertoolsLabel_Click);
+
             // 
             // settingsPanel
             // 
@@ -410,6 +459,7 @@
             // 
             // lblNotification
             // 
+
             this.lblNotification.AutoSize = true;
             this.lblNotification.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNotification.Location = new System.Drawing.Point(67, 18);
@@ -455,6 +505,16 @@
             this.pnlMyBooking.Size = new System.Drawing.Size(250, 55);
             this.pnlMyBooking.TabIndex = 0;
             this.pnlMyBooking.Click += new System.EventHandler(this.pnlMyBooking_Click);
+
+            this.shuttlescheduleLabel.AutoSize = true;
+            this.shuttlescheduleLabel.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.shuttlescheduleLabel.Location = new System.Drawing.Point(67, 17);
+            this.shuttlescheduleLabel.Name = "shuttlescheduleLabel";
+            this.shuttlescheduleLabel.Size = new System.Drawing.Size(132, 20);
+            this.shuttlescheduleLabel.TabIndex = 0;
+            this.shuttlescheduleLabel.Text = "Shuttle schedule";
+            this.shuttlescheduleLabel.Click += new System.EventHandler(this.shuttlescheduleLabel_Click);
+
             // 
             // bookaseatPanel
             // 
@@ -475,7 +535,7 @@
             this.bookaseatLabel.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bookaseatLabel.Location = new System.Drawing.Point(67, 17);
             this.bookaseatLabel.Name = "bookaseatLabel";
-            this.bookaseatLabel.Size = new System.Drawing.Size(117, 23);
+            this.bookaseatLabel.Size = new System.Drawing.Size(93, 20);
             this.bookaseatLabel.TabIndex = 0;
             this.bookaseatLabel.Text = "Book a seat";
             this.bookaseatLabel.Click += new System.EventHandler(this.bookaseatLabel_Click);
@@ -504,6 +564,7 @@
             // 
             // usertoolsDropdown
             // 
+
             this.usertoolsDropdown.Image = global::NewInterior.Properties.Resources.drop_down_24px;
             this.usertoolsDropdown.Location = new System.Drawing.Point(195, 11);
             this.usertoolsDropdown.Name = "usertoolsDropdown";
@@ -512,6 +573,16 @@
             this.usertoolsDropdown.TabIndex = 2;
             this.usertoolsDropdown.TabStop = false;
             this.usertoolsDropdown.Click += new System.EventHandler(this.usertoolsDropdown_Click);
+
+            this.lblMyBooking.AutoSize = true;
+            this.lblMyBooking.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMyBooking.Location = new System.Drawing.Point(67, 17);
+            this.lblMyBooking.Name = "lblMyBooking";
+            this.lblMyBooking.Size = new System.Drawing.Size(95, 20);
+            this.lblMyBooking.TabIndex = 0;
+            this.lblMyBooking.Text = "My booking";
+            this.lblMyBooking.Click += new System.EventHandler(this.lblMyBooking_Click);
+
             // 
             // usertoolsIcon
             // 
@@ -571,6 +642,45 @@
             this.picboxNotification.TabStop = false;
             this.picboxNotification.Click += new System.EventHandler(this.picboxNotification_Click);
             // 
+
+            // lblNotification
+            // 
+            this.lblNotification.AutoSize = true;
+            this.lblNotification.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNotification.Location = new System.Drawing.Point(67, 18);
+            this.lblNotification.Name = "lblNotification";
+            this.lblNotification.Size = new System.Drawing.Size(103, 20);
+            this.lblNotification.TabIndex = 0;
+            this.lblNotification.Text = "Notifications";
+            this.lblNotification.Click += new System.EventHandler(this.lblNotification_Click);
+            // 
+            // settingsContainer
+            // 
+            this.settingsContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            this.settingsContainer.Controls.Add(this.settingsPanel);
+            this.settingsContainer.Controls.Add(this.pnlManageAccont);
+            this.settingsContainer.Controls.Add(this.pnlLogOut);
+            this.settingsContainer.Location = new System.Drawing.Point(0, 384);
+            this.settingsContainer.Margin = new System.Windows.Forms.Padding(0);
+            this.settingsContainer.Name = "settingsContainer";
+            this.settingsContainer.Size = new System.Drawing.Size(250, 55);
+            this.settingsContainer.TabIndex = 4;
+            // 
+            // settingsPanel
+            // 
+            this.settingsPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.settingsPanel.Controls.Add(this.settingsDropdown);
+            this.settingsPanel.Controls.Add(this.settingsIcon);
+            this.settingsPanel.Controls.Add(this.settingsLabel);
+            this.settingsPanel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.settingsPanel.Location = new System.Drawing.Point(0, 0);
+            this.settingsPanel.Margin = new System.Windows.Forms.Padding(0);
+            this.settingsPanel.Name = "settingsPanel";
+            this.settingsPanel.Size = new System.Drawing.Size(250, 55);
+            this.settingsPanel.TabIndex = 0;
+            this.settingsPanel.Click += new System.EventHandler(this.settingsPanel_Click);
+            // 
+
             // settingsDropdown
             // 
             this.settingsDropdown.Image = global::NewInterior.Properties.Resources.drop_down_24px;
@@ -593,6 +703,32 @@
             this.settingsIcon.TabStop = false;
             this.settingsIcon.Click += new System.EventHandler(this.settingsIcon_Click);
             // 
+
+            // settingsLabel
+            // 
+            this.settingsLabel.AutoSize = true;
+            this.settingsLabel.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.settingsLabel.Location = new System.Drawing.Point(67, 15);
+            this.settingsLabel.Name = "settingsLabel";
+            this.settingsLabel.Size = new System.Drawing.Size(70, 20);
+            this.settingsLabel.TabIndex = 0;
+            this.settingsLabel.Text = "Settings";
+            this.settingsLabel.Click += new System.EventHandler(this.settingsLabel_Click);
+            // 
+            // pnlManageAccont
+            // 
+            this.pnlManageAccont.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.pnlManageAccont.Controls.Add(this.picboxManageAccount);
+            this.pnlManageAccont.Controls.Add(this.lblManageAccount);
+            this.pnlManageAccont.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.pnlManageAccont.Location = new System.Drawing.Point(0, 55);
+            this.pnlManageAccont.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlManageAccont.Name = "pnlManageAccont";
+            this.pnlManageAccont.Size = new System.Drawing.Size(250, 55);
+            this.pnlManageAccont.TabIndex = 0;
+            this.pnlManageAccont.Click += new System.EventHandler(this.pnlManageAccont_Click);
+            // 
+
             // picboxManageAccount
             // 
             this.picboxManageAccount.Image = global::NewInterior.Properties.Resources.manage_account_24px;
@@ -604,6 +740,31 @@
             this.picboxManageAccount.TabStop = false;
             this.picboxManageAccount.Click += new System.EventHandler(this.picboxManageAccount_Click);
             // 
+
+            // lblManageAccount
+            // 
+            this.lblManageAccount.AutoSize = true;
+            this.lblManageAccount.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblManageAccount.Location = new System.Drawing.Point(67, 11);
+            this.lblManageAccount.Name = "lblManageAccount";
+            this.lblManageAccount.Size = new System.Drawing.Size(124, 21);
+            this.lblManageAccount.TabIndex = 0;
+            this.lblManageAccount.Text = "Manage account";
+            this.lblManageAccount.Click += new System.EventHandler(this.lblManageAccount_Click);
+            // 
+            // pnlLogOut
+            // 
+            this.pnlLogOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.pnlLogOut.Controls.Add(this.picboxLogOut);
+            this.pnlLogOut.Controls.Add(this.lblLogOut);
+            this.pnlLogOut.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.pnlLogOut.Location = new System.Drawing.Point(0, 110);
+            this.pnlLogOut.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlLogOut.Name = "pnlLogOut";
+            this.pnlLogOut.Size = new System.Drawing.Size(250, 55);
+            this.pnlLogOut.TabIndex = 0;
+            // 
+
             // picboxLogOut
             // 
             this.picboxLogOut.Image = global::NewInterior.Properties.Resources.log_out_24px;
@@ -614,6 +775,31 @@
             this.picboxLogOut.TabIndex = 1;
             this.picboxLogOut.TabStop = false;
             // 
+
+            // lblLogOut
+            // 
+            this.lblLogOut.AutoSize = true;
+            this.lblLogOut.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLogOut.Location = new System.Drawing.Point(67, 11);
+            this.lblLogOut.Name = "lblLogOut";
+            this.lblLogOut.Size = new System.Drawing.Size(59, 21);
+            this.lblLogOut.TabIndex = 0;
+            this.lblLogOut.Text = "Logout";
+            // 
+            // pnlAboutUs
+            // 
+            this.pnlAboutUs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.pnlAboutUs.Controls.Add(this.picboxAboutUs);
+            this.pnlAboutUs.Controls.Add(this.lblAboutUS);
+            this.pnlAboutUs.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.pnlAboutUs.Location = new System.Drawing.Point(0, 439);
+            this.pnlAboutUs.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlAboutUs.Name = "pnlAboutUs";
+            this.pnlAboutUs.Size = new System.Drawing.Size(250, 55);
+            this.pnlAboutUs.TabIndex = 0;
+            this.pnlAboutUs.Click += new System.EventHandler(this.pnlAboutUs_Click);
+            // 
+
             // picboxAboutUs
             // 
             this.picboxAboutUs.Image = global::NewInterior.Properties.Resources.about_24px1;
@@ -628,6 +814,7 @@
             // 
             // closeBtn
             // 
+
             this.closeBtn.Image = global::NewInterior.Properties.Resources.close_24;
             this.closeBtn.Location = new System.Drawing.Point(1005, 0);
             this.closeBtn.Margin = new System.Windows.Forms.Padding(0);
@@ -639,6 +826,27 @@
             this.closeBtn.Click += new System.EventHandler(this.closeBtn_Click);
             // 
             // btnMinimize
+
+            this.lblAboutUS.AutoSize = true;
+            this.lblAboutUS.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAboutUS.Location = new System.Drawing.Point(67, 15);
+            this.lblAboutUS.Name = "lblAboutUS";
+            this.lblAboutUS.Size = new System.Drawing.Size(75, 20);
+            this.lblAboutUS.TabIndex = 0;
+            this.lblAboutUS.Text = "About us";
+            this.lblAboutUS.Click += new System.EventHandler(this.lblAboutUS_Click);
+            // 
+            // pnlDisplay
+            // 
+            this.pnlDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(85)))), ((int)(((byte)(58)))));
+            this.pnlDisplay.Location = new System.Drawing.Point(44, 37);
+            this.pnlDisplay.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlDisplay.Name = "pnlDisplay";
+            this.pnlDisplay.Size = new System.Drawing.Size(1005, 643);
+            this.pnlDisplay.TabIndex = 6;
+            // 
+            // usertoolsTransition
+
             // 
             this.btnMinimize.Image = global::NewInterior.Properties.Resources.minimize;
             this.btnMinimize.Location = new System.Drawing.Point(916, 0);
