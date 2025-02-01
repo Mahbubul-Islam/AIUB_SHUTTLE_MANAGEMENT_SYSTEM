@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NewInterior.Views;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,16 +13,18 @@ namespace NewInterior.userComponents
 {
     public partial class formProfile : UserControl
     {
-        string _userId;
+        //string _userId;
 
         public formProfile(string userId)
         {
             InitializeComponent();
-            _userId = userId;
-            lblId.Text = _userId;
+            //_userId = userId;
+            //lblId.Text = _userId;
         }
 
-        private void formProfile_Load(object sender, EventArgs e)
+        
+
+        private void lblNationality_Click(object sender, EventArgs e)
         {
 
         }
