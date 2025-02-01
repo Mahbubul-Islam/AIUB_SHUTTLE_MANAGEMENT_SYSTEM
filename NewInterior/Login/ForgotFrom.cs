@@ -34,9 +34,9 @@ namespace NewInterior.Login
 
         }
 
-        private void closeBtn_Click(object sender, EventArgs e)
+        private void ForgotFrom_Load(object sender, EventArgs e)
         {
-            Application.Exit();
+
         }
     }
 }

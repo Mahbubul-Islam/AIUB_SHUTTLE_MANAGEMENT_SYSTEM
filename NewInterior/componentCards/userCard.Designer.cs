@@ -35,8 +35,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.valueBookingStatus = new System.Windows.Forms.Label();
-            this.btnEdit = new System.Windows.Forms.Button();
+            this.valueTotalBookedSeat = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -83,7 +83,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(441, 21);
+            this.label5.Location = new System.Drawing.Point(458, 21);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(52, 18);
             this.label5.TabIndex = 4;
@@ -93,7 +93,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(499, 21);
+            this.label6.Location = new System.Drawing.Point(516, 21);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(139, 18);
             this.label6.TabIndex = 5;
@@ -103,42 +103,41 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(678, 21);
+            this.label9.Location = new System.Drawing.Point(705, 21);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(118, 18);
+            this.label9.Size = new System.Drawing.Size(104, 18);
             this.label9.TabIndex = 8;
-            this.label9.Text = "Booking Status:";
+            this.label9.Text = "Booked seat:";
             // 
-            // valueBookingStatus
+            // valueTotalBookedSeat
             // 
-            this.valueBookingStatus.AutoSize = true;
-            this.valueBookingStatus.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.valueBookingStatus.Location = new System.Drawing.Point(801, 21);
-            this.valueBookingStatus.Name = "valueBookingStatus";
-            this.valueBookingStatus.Size = new System.Drawing.Size(66, 18);
-            this.valueBookingStatus.TabIndex = 9;
-            this.valueBookingStatus.Text = "Booked";
+            this.valueTotalBookedSeat.AutoSize = true;
+            this.valueTotalBookedSeat.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.valueTotalBookedSeat.Location = new System.Drawing.Point(815, 21);
+            this.valueTotalBookedSeat.Name = "valueTotalBookedSeat";
+            this.valueTotalBookedSeat.Size = new System.Drawing.Size(16, 18);
+            this.valueTotalBookedSeat.TabIndex = 9;
+            this.valueTotalBookedSeat.Text = "x";
             // 
-            // btnEdit
+            // button1
             // 
-            this.btnEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnEdit.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEdit.Location = new System.Drawing.Point(878, 16);
-            this.btnEdit.Margin = new System.Windows.Forms.Padding(0);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(98, 29);
-            this.btnEdit.TabIndex = 10;
-            this.btnEdit.Text = "Edit";
-            this.btnEdit.UseVisualStyleBackColor = false;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(878, 16);
+            this.button1.Margin = new System.Windows.Forms.Padding(0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(98, 29);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Edit";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // userCard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(149)))), ((int)(((byte)(164)))));
-            this.Controls.Add(this.btnEdit);
-            this.Controls.Add(this.valueBookingStatus);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.valueTotalBookedSeat);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -163,7 +162,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label valueBookingStatus;
-        private System.Windows.Forms.Button btnEdit;
+        private System.Windows.Forms.Label valueTotalBookedSeat;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -73,16 +73,6 @@ namespace NewInterior.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap adminDashboardIcon {
-            get {
-                object obj = ResourceManager.GetObject("adminDashboardIcon", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap book_a_seat_24px {
             get {
                 object obj = ResourceManager.GetObject("book_a_seat_24px", resourceCulture);
