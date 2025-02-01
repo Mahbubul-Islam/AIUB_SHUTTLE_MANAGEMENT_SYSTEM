@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace NewInterior.Views
 {
-    public partial class formAddStudent : Form
+    public partial class formEditFaculty : Form
     {
-        public formAddStudent()
+        public formEditFaculty()
         {
             InitializeComponent();
-        }
-
-        private void closeBtn_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

@@ -81,6 +81,21 @@ namespace NewInterior.Login
             connection.Dispose();
         }
 
-       
+        private void closeBtn_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void chkbShowPassword_CheckedChanged(object sender, EventArgs e)
+        {
+            if(chkbShowPassword.Checked)
+            {
+                txtPassword.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                txtPassword.UseSystemPasswordChar = true;
+            }
+        }
     }
 }

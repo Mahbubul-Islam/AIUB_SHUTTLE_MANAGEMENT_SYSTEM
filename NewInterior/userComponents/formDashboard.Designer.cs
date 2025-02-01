@@ -43,11 +43,13 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.valueTotalBookedSeat = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -55,7 +57,7 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(149)))), ((int)(((byte)(164)))));
             this.panel1.Controls.Add(this.valueTotalStudent);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(45, 102);
+            this.panel1.Location = new System.Drawing.Point(45, 168);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(259, 130);
             this.panel1.TabIndex = 0;
@@ -85,7 +87,7 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(149)))), ((int)(((byte)(164)))));
             this.panel2.Controls.Add(this.valueTotalFaculty);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(363, 102);
+            this.panel2.Location = new System.Drawing.Point(363, 168);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(259, 130);
             this.panel2.TabIndex = 1;
@@ -115,7 +117,7 @@
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(149)))), ((int)(((byte)(164)))));
             this.panel3.Controls.Add(this.valueTotalStaff);
             this.panel3.Controls.Add(this.label3);
-            this.panel3.Location = new System.Drawing.Point(700, 102);
+            this.panel3.Location = new System.Drawing.Point(700, 168);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(259, 130);
             this.panel3.TabIndex = 2;
@@ -145,7 +147,7 @@
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(149)))), ((int)(((byte)(164)))));
             this.panel4.Controls.Add(this.valueTotalBus);
             this.panel4.Controls.Add(this.label4);
-            this.panel4.Location = new System.Drawing.Point(186, 335);
+            this.panel4.Location = new System.Drawing.Point(186, 401);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(259, 130);
             this.panel4.TabIndex = 2;
@@ -175,7 +177,7 @@
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(149)))), ((int)(((byte)(164)))));
             this.panel5.Controls.Add(this.valueTotalBookedSeat);
             this.panel5.Controls.Add(this.label5);
-            this.panel5.Location = new System.Drawing.Point(568, 335);
+            this.panel5.Location = new System.Drawing.Point(568, 401);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(290, 130);
             this.panel5.TabIndex = 2;
@@ -200,11 +202,22 @@
             this.label5.TabIndex = 4;
             this.label5.Text = "Total Booked Seat:";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::NewInterior.Properties.Resources.adminDashboardIcon;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(131, 107);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
             // formDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
@@ -223,6 +236,7 @@
             this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -244,5 +258,6 @@
         private System.Windows.Forms.Label valueTotalStaff;
         private System.Windows.Forms.Label valueTotalBus;
         private System.Windows.Forms.Label valueTotalBookedSeat;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
