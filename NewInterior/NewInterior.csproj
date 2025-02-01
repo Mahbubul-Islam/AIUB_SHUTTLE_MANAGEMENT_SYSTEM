@@ -190,6 +190,12 @@
     <Compile Include="Views\formEditStuff.Designer.cs">
       <DependentUpon>formEditStuff.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Reset_Password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Reset_Password.Designer.cs">
+      <DependentUpon>Reset_Password.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="componentCards\notificationCard.resx">
       <DependentUpon>notificationCard.cs</DependentUpon>
     </EmbeddedResource>
@@ -245,7 +251,6 @@
     <EmbeddedResource Include="userComponents\formShuttleSchedule.resx">
       <DependentUpon>formShuttleSchedule.cs</DependentUpon>
     </EmbeddedResource>
-
     <EmbeddedResource Include="Views\formAddFaculty.resx">
       <DependentUpon>formAddFaculty.cs</DependentUpon>
     </EmbeddedResource>
@@ -269,7 +274,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Edit_Profile.resx">
       <DependentUpon>Edit_Profile.cs</DependentUpon>
-
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Reset_Password.resx">
+      <DependentUpon>Reset_Password.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.manifest" />
     <None Include="Properties\Settings.settings">

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NewInterior.Views;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,24 @@ namespace NewInterior.userComponents
         public formUserManageAccount()
         {
             InitializeComponent();
+        }
+
+
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            Edit_Profile edit_profile = new Edit_Profile();
+            edit_profile.Show();
+        }
+
+        private void exit_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
         }
     }
 }
