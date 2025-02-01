@@ -29,27 +29,27 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formShuttleSchedule));
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.Shutpan1 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.Shutpan8 = new System.Windows.Forms.Panel();
             this.label29 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
+            this.Shutpan7 = new System.Windows.Forms.Panel();
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
+            this.Shutpan6 = new System.Windows.Forms.Panel();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
+            this.Shutpan5 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -62,26 +62,34 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.Shutpan4 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.Shutpan3 = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.Shutpan2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panel8.SuspendLayout();
+            this.Shutlab1 = new System.Windows.Forms.Label();
+            this.Shutlab2 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.Shutpan1.SuspendLayout();
+            this.Shutpan8.SuspendLayout();
+            this.Shutpan7.SuspendLayout();
+            this.Shutpan6.SuspendLayout();
+            this.Shutpan5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -90,22 +98,23 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            this.panel4.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.Shutpan4.SuspendLayout();
+            this.Shutpan3.SuspendLayout();
+            this.Shutpan2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // Shutpan1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Sienna;
-            this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(19, 123);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(220, 138);
-            this.panel1.TabIndex = 0;
+            this.Shutpan1.BackColor = System.Drawing.Color.Sienna;
+            this.Shutpan1.Controls.Add(this.Shutlab1);
+            this.Shutpan1.Controls.Add(this.label11);
+            this.Shutpan1.Controls.Add(this.label10);
+            this.Shutpan1.Controls.Add(this.label9);
+            this.Shutpan1.Controls.Add(this.label1);
+            this.Shutpan1.Location = new System.Drawing.Point(19, 123);
+            this.Shutpan1.Name = "Shutpan1";
+            this.Shutpan1.Size = new System.Drawing.Size(220, 138);
+            this.Shutpan1.TabIndex = 0;
             // 
             // label11
             // 
@@ -151,17 +160,18 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Shuttle Name:";
             // 
-            // panel5
+            // Shutpan8
             // 
-            this.panel5.BackColor = System.Drawing.Color.Sienna;
-            this.panel5.Controls.Add(this.label29);
-            this.panel5.Controls.Add(this.label32);
-            this.panel5.Controls.Add(this.label30);
-            this.panel5.Controls.Add(this.label31);
-            this.panel5.Location = new System.Drawing.Point(767, 365);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(220, 138);
-            this.panel5.TabIndex = 7;
+            this.Shutpan8.BackColor = System.Drawing.Color.Sienna;
+            this.Shutpan8.Controls.Add(this.label38);
+            this.Shutpan8.Controls.Add(this.label29);
+            this.Shutpan8.Controls.Add(this.label32);
+            this.Shutpan8.Controls.Add(this.label30);
+            this.Shutpan8.Controls.Add(this.label31);
+            this.Shutpan8.Location = new System.Drawing.Point(767, 365);
+            this.Shutpan8.Name = "Shutpan8";
+            this.Shutpan8.Size = new System.Drawing.Size(220, 138);
+            this.Shutpan8.TabIndex = 7;
             // 
             // label29
             // 
@@ -207,17 +217,18 @@
             this.label31.TabIndex = 17;
             this.label31.Text = "Route:";
             // 
-            // panel6
+            // Shutpan7
             // 
-            this.panel6.BackColor = System.Drawing.Color.Sienna;
-            this.panel6.Controls.Add(this.label25);
-            this.panel6.Controls.Add(this.label26);
-            this.panel6.Controls.Add(this.label27);
-            this.panel6.Controls.Add(this.label28);
-            this.panel6.Location = new System.Drawing.Point(515, 365);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(220, 138);
-            this.panel6.TabIndex = 6;
+            this.Shutpan7.BackColor = System.Drawing.Color.Sienna;
+            this.Shutpan7.Controls.Add(this.label37);
+            this.Shutpan7.Controls.Add(this.label25);
+            this.Shutpan7.Controls.Add(this.label26);
+            this.Shutpan7.Controls.Add(this.label27);
+            this.Shutpan7.Controls.Add(this.label28);
+            this.Shutpan7.Location = new System.Drawing.Point(515, 365);
+            this.Shutpan7.Name = "Shutpan7";
+            this.Shutpan7.Size = new System.Drawing.Size(220, 138);
+            this.Shutpan7.TabIndex = 6;
             // 
             // label25
             // 
@@ -263,17 +274,18 @@
             this.label28.TabIndex = 4;
             this.label28.Text = "Shuttle Name:";
             // 
-            // panel7
+            // Shutpan6
             // 
-            this.panel7.BackColor = System.Drawing.Color.Sienna;
-            this.panel7.Controls.Add(this.label21);
-            this.panel7.Controls.Add(this.label22);
-            this.panel7.Controls.Add(this.label23);
-            this.panel7.Controls.Add(this.label24);
-            this.panel7.Location = new System.Drawing.Point(264, 365);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(220, 138);
-            this.panel7.TabIndex = 5;
+            this.Shutpan6.BackColor = System.Drawing.Color.Sienna;
+            this.Shutpan6.Controls.Add(this.label36);
+            this.Shutpan6.Controls.Add(this.label21);
+            this.Shutpan6.Controls.Add(this.label22);
+            this.Shutpan6.Controls.Add(this.label23);
+            this.Shutpan6.Controls.Add(this.label24);
+            this.Shutpan6.Location = new System.Drawing.Point(264, 365);
+            this.Shutpan6.Name = "Shutpan6";
+            this.Shutpan6.Size = new System.Drawing.Size(220, 138);
+            this.Shutpan6.TabIndex = 5;
             // 
             // label21
             // 
@@ -319,17 +331,18 @@
             this.label24.TabIndex = 4;
             this.label24.Text = "Shuttle Name:";
             // 
-            // panel8
+            // Shutpan5
             // 
-            this.panel8.BackColor = System.Drawing.Color.Sienna;
-            this.panel8.Controls.Add(this.label2);
-            this.panel8.Controls.Add(this.label6);
-            this.panel8.Controls.Add(this.label7);
-            this.panel8.Controls.Add(this.label8);
-            this.panel8.Location = new System.Drawing.Point(20, 365);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(220, 138);
-            this.panel8.TabIndex = 4;
+            this.Shutpan5.BackColor = System.Drawing.Color.Sienna;
+            this.Shutpan5.Controls.Add(this.label35);
+            this.Shutpan5.Controls.Add(this.label2);
+            this.Shutpan5.Controls.Add(this.label6);
+            this.Shutpan5.Controls.Add(this.label7);
+            this.Shutpan5.Controls.Add(this.label8);
+            this.Shutpan5.Location = new System.Drawing.Point(20, 365);
+            this.Shutpan5.Name = "Shutpan5";
+            this.Shutpan5.Size = new System.Drawing.Size(220, 138);
+            this.Shutpan5.TabIndex = 4;
             // 
             // label2
             // 
@@ -455,17 +468,18 @@
             this.pictureBox8.TabIndex = 12;
             this.pictureBox8.TabStop = false;
             // 
-            // panel4
+            // Shutpan4
             // 
-            this.panel4.BackColor = System.Drawing.Color.Sienna;
-            this.panel4.Controls.Add(this.label4);
-            this.panel4.Controls.Add(this.label5);
-            this.panel4.Controls.Add(this.label19);
-            this.panel4.Controls.Add(this.label20);
-            this.panel4.Location = new System.Drawing.Point(766, 123);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(220, 138);
-            this.panel4.TabIndex = 3;
+            this.Shutpan4.BackColor = System.Drawing.Color.Sienna;
+            this.Shutpan4.Controls.Add(this.label34);
+            this.Shutpan4.Controls.Add(this.label4);
+            this.Shutpan4.Controls.Add(this.label5);
+            this.Shutpan4.Controls.Add(this.label19);
+            this.Shutpan4.Controls.Add(this.label20);
+            this.Shutpan4.Location = new System.Drawing.Point(766, 123);
+            this.Shutpan4.Name = "Shutpan4";
+            this.Shutpan4.Size = new System.Drawing.Size(220, 138);
+            this.Shutpan4.TabIndex = 3;
             // 
             // label4
             // 
@@ -511,17 +525,18 @@
             this.label20.TabIndex = 4;
             this.label20.Text = "Shuttle Name:";
             // 
-            // panel3
+            // Shutpan3
             // 
-            this.panel3.BackColor = System.Drawing.Color.Sienna;
-            this.panel3.Controls.Add(this.label15);
-            this.panel3.Controls.Add(this.label16);
-            this.panel3.Controls.Add(this.label18);
-            this.panel3.Controls.Add(this.label17);
-            this.panel3.Location = new System.Drawing.Point(514, 123);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(220, 138);
-            this.panel3.TabIndex = 2;
+            this.Shutpan3.BackColor = System.Drawing.Color.Sienna;
+            this.Shutpan3.Controls.Add(this.label33);
+            this.Shutpan3.Controls.Add(this.label15);
+            this.Shutpan3.Controls.Add(this.label16);
+            this.Shutpan3.Controls.Add(this.label18);
+            this.Shutpan3.Controls.Add(this.label17);
+            this.Shutpan3.Location = new System.Drawing.Point(514, 123);
+            this.Shutpan3.Name = "Shutpan3";
+            this.Shutpan3.Size = new System.Drawing.Size(220, 138);
+            this.Shutpan3.TabIndex = 2;
             // 
             // label15
             // 
@@ -567,17 +582,18 @@
             this.label17.TabIndex = 9;
             this.label17.Text = "Route:";
             // 
-            // panel2
+            // Shutpan2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Sienna;
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.label12);
-            this.panel2.Controls.Add(this.label13);
-            this.panel2.Controls.Add(this.label14);
-            this.panel2.Location = new System.Drawing.Point(264, 123);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(220, 138);
-            this.panel2.TabIndex = 1;
+            this.Shutpan2.BackColor = System.Drawing.Color.Sienna;
+            this.Shutpan2.Controls.Add(this.Shutlab2);
+            this.Shutpan2.Controls.Add(this.label3);
+            this.Shutpan2.Controls.Add(this.label12);
+            this.Shutpan2.Controls.Add(this.label13);
+            this.Shutpan2.Controls.Add(this.label14);
+            this.Shutpan2.Location = new System.Drawing.Point(264, 123);
+            this.Shutpan2.Name = "Shutpan2";
+            this.Shutpan2.Size = new System.Drawing.Size(220, 138);
+            this.Shutpan2.TabIndex = 1;
             // 
             // label3
             // 
@@ -623,6 +639,94 @@
             this.label14.TabIndex = 4;
             this.label14.Text = "Shuttle Name:";
             // 
+            // Shutlab1
+            // 
+            this.Shutlab1.AutoSize = true;
+            this.Shutlab1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Shutlab1.ForeColor = System.Drawing.SystemColors.Control;
+            this.Shutlab1.Location = new System.Drawing.Point(101, 42);
+            this.Shutlab1.Name = "Shutlab1";
+            this.Shutlab1.Size = new System.Drawing.Size(91, 16);
+            this.Shutlab1.TabIndex = 4;
+            this.Shutlab1.Text = "AIUB Transir1";
+            // 
+            // Shutlab2
+            // 
+            this.Shutlab2.AutoSize = true;
+            this.Shutlab2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Shutlab2.ForeColor = System.Drawing.SystemColors.Control;
+            this.Shutlab2.Location = new System.Drawing.Point(107, 42);
+            this.Shutlab2.Name = "Shutlab2";
+            this.Shutlab2.Size = new System.Drawing.Size(91, 16);
+            this.Shutlab2.TabIndex = 5;
+            this.Shutlab2.Text = "AIUB Transir2";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.ForeColor = System.Drawing.SystemColors.Control;
+            this.label33.Location = new System.Drawing.Point(107, 42);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(91, 16);
+            this.label33.TabIndex = 8;
+            this.label33.Text = "AIUB Transir2";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.ForeColor = System.Drawing.SystemColors.Control;
+            this.label34.Location = new System.Drawing.Point(106, 42);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(91, 16);
+            this.label34.TabIndex = 12;
+            this.label34.Text = "AIUB Transir2";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.ForeColor = System.Drawing.SystemColors.Control;
+            this.label35.Location = new System.Drawing.Point(100, 44);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(91, 16);
+            this.label35.TabIndex = 13;
+            this.label35.Text = "AIUB Transir2";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.ForeColor = System.Drawing.SystemColors.Control;
+            this.label36.Location = new System.Drawing.Point(106, 44);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(91, 16);
+            this.label36.TabIndex = 14;
+            this.label36.Text = "AIUB Transir2";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.ForeColor = System.Drawing.SystemColors.Control;
+            this.label37.Location = new System.Drawing.Point(106, 44);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(91, 16);
+            this.label37.TabIndex = 15;
+            this.label37.Text = "AIUB Transir2";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.ForeColor = System.Drawing.SystemColors.Control;
+            this.label38.Location = new System.Drawing.Point(105, 44);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(91, 16);
+            this.label38.TabIndex = 16;
+            this.label38.Text = "AIUB Transir2";
+            // 
             // formShuttleSchedule
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -636,27 +740,27 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.panel5);
-            this.Controls.Add(this.panel6);
-            this.Controls.Add(this.panel7);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel8);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.Shutpan8);
+            this.Controls.Add(this.Shutpan7);
+            this.Controls.Add(this.Shutpan6);
+            this.Controls.Add(this.Shutpan4);
+            this.Controls.Add(this.Shutpan5);
+            this.Controls.Add(this.Shutpan3);
+            this.Controls.Add(this.Shutpan2);
+            this.Controls.Add(this.Shutpan1);
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "formShuttleSchedule";
             this.Size = new System.Drawing.Size(1005, 643);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
+            this.Shutpan1.ResumeLayout(false);
+            this.Shutpan1.PerformLayout();
+            this.Shutpan8.ResumeLayout(false);
+            this.Shutpan8.PerformLayout();
+            this.Shutpan7.ResumeLayout(false);
+            this.Shutpan7.PerformLayout();
+            this.Shutpan6.ResumeLayout(false);
+            this.Shutpan6.PerformLayout();
+            this.Shutpan5.ResumeLayout(false);
+            this.Shutpan5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -665,24 +769,24 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.Shutpan4.ResumeLayout(false);
+            this.Shutpan4.PerformLayout();
+            this.Shutpan3.ResumeLayout(false);
+            this.Shutpan3.PerformLayout();
+            this.Shutpan2.ResumeLayout(false);
+            this.Shutpan2.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel Shutpan1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel Shutpan8;
+        private System.Windows.Forms.Panel Shutpan7;
+        private System.Windows.Forms.Panel Shutpan6;
+        private System.Windows.Forms.Panel Shutpan5;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
@@ -694,9 +798,9 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel Shutpan4;
+        private System.Windows.Forms.Panel Shutpan3;
+        private System.Windows.Forms.Panel Shutpan2;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label27;
@@ -725,5 +829,13 @@
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label Shutlab1;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label Shutlab2;
     }
 }
