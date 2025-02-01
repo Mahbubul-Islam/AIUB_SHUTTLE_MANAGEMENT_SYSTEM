@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.usertoolsTransition = new System.Windows.Forms.Timer(this.components);
-            this.sidebarTransition = new System.Windows.Forms.Timer(this.components);
-            this.settingsTransition = new System.Windows.Forms.Timer(this.components);
+            //this.usertoolsTransition = new System.Windows.Forms.Timer(this.components);
+            //this.sidebarTransition = new System.Windows.Forms.Timer(this.components);
+            //this.settingsTransition = new System.Windows.Forms.Timer(this.components);
             this.pnlDisplay = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
@@ -54,7 +54,7 @@
 
             this.homePannel = new System.Windows.Forms.Panel();
             this.lblHome = new System.Windows.Forms.Label();
-            this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
+            //this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
             this.lblAboutUS = new System.Windows.Forms.Label();
             this.pnlAboutUs = new System.Windows.Forms.Panel();
             this.settingsPanel = new System.Windows.Forms.Panel();
@@ -84,8 +84,8 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.btnHam = new System.Windows.Forms.PictureBox();
 
-            this.lblAboutUS = new System.Windows.Forms.Label();
-            this.pnlDisplay = new System.Windows.Forms.Panel();
+            //this.lblAboutUS = new System.Windows.Forms.Label();
+            //this.pnlDisplay = new System.Windows.Forms.Panel();
             this.usertoolsTransition = new System.Windows.Forms.Timer(this.components);
             this.sidebarTransition = new System.Windows.Forms.Timer(this.components);
             this.settingsTransition = new System.Windows.Forms.Timer(this.components);
