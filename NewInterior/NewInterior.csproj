@@ -263,7 +263,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\formEditStuff.resx">
       <DependentUpon>formEditStuff.cs</DependentUpon>
-
+    </EmbeddedResource>
     <EmbeddedResource Include="userComponents\formUserManageAccount.resx">
       <DependentUpon>formUserManageAccount.cs</DependentUpon>
     </EmbeddedResource>
