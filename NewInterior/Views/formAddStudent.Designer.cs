@@ -75,6 +75,7 @@
             // btnAddStudent
             // 
             this.btnAddStudent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnAddStudent.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAddStudent.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddStudent.Location = new System.Drawing.Point(359, 488);
             this.btnAddStudent.Margin = new System.Windows.Forms.Padding(0);
@@ -465,6 +466,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(818, 547);
             this.Controls.Add(this.btnAddStudent);
             this.Controls.Add(this.label6);

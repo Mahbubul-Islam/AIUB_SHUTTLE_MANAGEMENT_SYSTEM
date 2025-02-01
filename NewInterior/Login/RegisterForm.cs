@@ -25,6 +25,7 @@ namespace NewInterior.Login
             this.Hide();
         }
 
+
         private void btnSignUp_Click(object sender, EventArgs e)
         {
             name = txtName.Text.Trim();
@@ -99,99 +100,51 @@ namespace NewInterior.Login
             Application.Exit();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        
+
+        
+
+        private void closeBtn_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtConfirmPassword_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtPassword_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtUserId_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblHeading1_Click(object sender, EventArgs e)
-        {
-
+            Application.Exit();
         }
 
         private void chkbShowPassword_CheckedChanged(object sender, EventArgs e)
         {
-
-        }
-
-        private void rbStaff_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void rbFaculty_CheckedChanged(object sender, EventArgs e)
-        {
-
+            if (chkbShowPassword.Checked)
+            {
+                txtPassword.UseSystemPasswordChar = false;
+                txtConfirmPassword.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                txtPassword.UseSystemPasswordChar = true;
+                txtConfirmPassword.UseSystemPasswordChar = true;
+            }
         }
 
         private void rbStudent_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (rbStudent.Checked)
+            {
+                lblShowUserIDMsg.Text = "*Student User ID usually looks like XX-XXXXX-X";
+            }
         }
 
-        private void label6_Click(object sender, EventArgs e)
+        private void rbFaculty_CheckedChanged(object sender, EventArgs e)
         {
-
+            if(rbFaculty.Checked)
+            {
+                lblShowUserIDMsg.Text = "*Faculty User ID usually looks like XXXX-XXX-X";
+            }
         }
 
-        private void txtEmail_TextChanged(object sender, EventArgs e)
+        private void rbStaff_CheckedChanged(object sender, EventArgs e)
         {
-
-        }
-
-        private void txtName_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void RegisterForm_Load(object sender, EventArgs e)
-        {
-
+            if(rbStaff.Checked)
+            {
+                lblShowUserIDMsg.Text = "*Staff User ID usually looks like XX-XX-X";
+            }
         }
     }
 }

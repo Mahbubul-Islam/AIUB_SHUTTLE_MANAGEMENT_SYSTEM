@@ -61,6 +61,7 @@
             // btnDelete
             // 
             this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnDelete.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.Location = new System.Drawing.Point(580, 490);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(0);
@@ -74,6 +75,7 @@
             // 
             this.btnEdit.AutoEllipsis = true;
             this.btnEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnEdit.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEdit.Location = new System.Drawing.Point(228, 490);
             this.btnEdit.Margin = new System.Windows.Forms.Padding(0);
@@ -86,6 +88,7 @@
             // btnCancleBooking
             // 
             this.btnCancleBooking.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnCancleBooking.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCancleBooking.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancleBooking.Location = new System.Drawing.Point(75, 115);
             this.btnCancleBooking.Margin = new System.Windows.Forms.Padding(0);
@@ -121,6 +124,7 @@
             // btnCancle
             // 
             this.btnCancle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnCancle.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCancle.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancle.Location = new System.Drawing.Point(408, 490);
             this.btnCancle.Margin = new System.Windows.Forms.Padding(0);
@@ -360,6 +364,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(818, 547);
             this.Controls.Add(this.closeBtn);
             this.Controls.Add(this.btnDelete);

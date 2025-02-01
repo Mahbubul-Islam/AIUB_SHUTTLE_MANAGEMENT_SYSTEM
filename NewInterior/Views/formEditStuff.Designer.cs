@@ -30,6 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formEditStuff));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnCancleBooking = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.bookSeatNumberValue = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.stuffIdValue = new System.Windows.Forms.Label();
@@ -46,9 +49,6 @@
             this.nameTB = new System.Windows.Forms.TextBox();
             this.formWorkNameLabel = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.btnCancleBooking = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnCancle = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
@@ -74,6 +74,42 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(295, 160);
             this.panel2.TabIndex = 144;
+            // 
+            // btnCancleBooking
+            // 
+            this.btnCancleBooking.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnCancleBooking.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCancleBooking.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancleBooking.Location = new System.Drawing.Point(75, 115);
+            this.btnCancleBooking.Margin = new System.Windows.Forms.Padding(0);
+            this.btnCancleBooking.Name = "btnCancleBooking";
+            this.btnCancleBooking.Size = new System.Drawing.Size(146, 31);
+            this.btnCancleBooking.TabIndex = 193;
+            this.btnCancleBooking.Text = "Cancle Booking";
+            this.btnCancleBooking.UseVisualStyleBackColor = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Gold;
+            this.label2.Location = new System.Drawing.Point(159, 40);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(39, 19);
+            this.label2.TabIndex = 136;
+            this.label2.Text = "xxx";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(43, 40);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(98, 19);
+            this.label1.TabIndex = 135;
+            this.label1.Text = "BookingID:";
             // 
             // bookSeatNumberValue
             // 
@@ -273,45 +309,11 @@
             this.pictureBox1.TabIndex = 149;
             this.pictureBox1.TabStop = false;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(43, 40);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 19);
-            this.label1.TabIndex = 135;
-            this.label1.Text = "BookingID:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Gold;
-            this.label2.Location = new System.Drawing.Point(159, 40);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(39, 19);
-            this.label2.TabIndex = 136;
-            this.label2.Text = "xxx";
-            // 
-            // btnCancleBooking
-            // 
-            this.btnCancleBooking.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnCancleBooking.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancleBooking.Location = new System.Drawing.Point(75, 115);
-            this.btnCancleBooking.Margin = new System.Windows.Forms.Padding(0);
-            this.btnCancleBooking.Name = "btnCancleBooking";
-            this.btnCancleBooking.Size = new System.Drawing.Size(146, 31);
-            this.btnCancleBooking.TabIndex = 193;
-            this.btnCancleBooking.Text = "Cancle Booking";
-            this.btnCancleBooking.UseVisualStyleBackColor = false;
-            // 
             // btnEdit
             // 
             this.btnEdit.AutoEllipsis = true;
             this.btnEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnEdit.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEdit.Location = new System.Drawing.Point(190, 483);
             this.btnEdit.Margin = new System.Windows.Forms.Padding(0);
@@ -324,6 +326,7 @@
             // btnCancle
             // 
             this.btnCancle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnCancle.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCancle.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancle.Location = new System.Drawing.Point(370, 483);
             this.btnCancle.Margin = new System.Windows.Forms.Padding(0);
@@ -336,6 +339,7 @@
             // btnDelete
             // 
             this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnDelete.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.Location = new System.Drawing.Point(542, 483);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(0);
@@ -360,6 +364,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(818, 547);
             this.Controls.Add(this.closeBtn);
             this.Controls.Add(this.btnDelete);
