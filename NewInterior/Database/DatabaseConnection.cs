@@ -12,7 +12,7 @@ namespace NewInterior.Database
         
         //"data source=YourServerName; database=DB_Name; integrated security=SSPI"
 
-        private static readonly string connectionString = "data source=DESKTOP-RPJPVDU\\SQLEXPRESS; database=AIUB_SHUTTLE_MANAGEMENT_SYSTEM; integrated security=SSPI";
+        private static readonly string connectionString = "data source=DESKTOP-0871C35\\SQLEXPRESS; database=AIUB_SHUTTLE_MANAGEMENT_SYSTEM; integrated security=SSPI";
 
         public static SqlConnection GetConnection()
         {

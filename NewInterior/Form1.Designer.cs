@@ -36,7 +36,6 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.btnHam = new System.Windows.Forms.PictureBox();
             this.lblTitle = new System.Windows.Forms.Label();
-            this.pnlDisplay = new System.Windows.Forms.Panel();
             this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
             this.homePannel = new System.Windows.Forms.Panel();
             this.picboxHome = new System.Windows.Forms.PictureBox();
@@ -75,6 +74,7 @@
             this.pnlAboutUs = new System.Windows.Forms.Panel();
             this.picboxAboutUs = new System.Windows.Forms.PictureBox();
             this.lblAboutUS = new System.Windows.Forms.Label();
+            this.pnlDisplay = new System.Windows.Forms.Panel();
             this.usertoolsTransition = new System.Windows.Forms.Timer(this.components);
             this.sidebarTransition = new System.Windows.Forms.Timer(this.components);
             this.settingsTransition = new System.Windows.Forms.Timer(this.components);
@@ -194,18 +194,9 @@
             this.lblTitle.Location = new System.Drawing.Point(144, 7);
             this.lblTitle.Margin = new System.Windows.Forms.Padding(0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(340, 23);
+            this.lblTitle.Size = new System.Drawing.Size(272, 20);
             this.lblTitle.TabIndex = 2;
             this.lblTitle.Text = "AIUB Shuttle Management System";
-            // 
-            // pnlDisplay
-            // 
-            this.pnlDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(85)))), ((int)(((byte)(58)))));
-            this.pnlDisplay.Location = new System.Drawing.Point(0, 37);
-            this.pnlDisplay.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlDisplay.Name = "pnlDisplay";
-            this.pnlDisplay.Size = new System.Drawing.Size(1050, 643);
-            this.pnlDisplay.TabIndex = 6;
             // 
             // sidebar
             // 
@@ -252,7 +243,7 @@
             this.lblHome.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHome.Location = new System.Drawing.Point(70, 15);
             this.lblHome.Name = "lblHome";
-            this.lblHome.Size = new System.Drawing.Size(65, 23);
+            this.lblHome.Size = new System.Drawing.Size(52, 20);
             this.lblHome.TabIndex = 0;
             this.lblHome.Text = "Home";
             this.lblHome.Click += new System.EventHandler(this.lblHome_Click);
@@ -287,7 +278,7 @@
             this.lblProfile.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblProfile.Location = new System.Drawing.Point(67, 15);
             this.lblProfile.Name = "lblProfile";
-            this.lblProfile.Size = new System.Drawing.Size(71, 23);
+            this.lblProfile.Size = new System.Drawing.Size(58, 20);
             this.lblProfile.TabIndex = 0;
             this.lblProfile.Text = "Profile";
             this.lblProfile.Click += new System.EventHandler(this.lblProfile_Click);
@@ -348,7 +339,7 @@
             this.usertoolsLabel.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usertoolsLabel.Location = new System.Drawing.Point(67, 15);
             this.usertoolsLabel.Name = "usertoolsLabel";
-            this.usertoolsLabel.Size = new System.Drawing.Size(103, 23);
+            this.usertoolsLabel.Size = new System.Drawing.Size(82, 20);
             this.usertoolsLabel.TabIndex = 0;
             this.usertoolsLabel.Text = "User tools";
             this.usertoolsLabel.Click += new System.EventHandler(this.usertoolsLabel_Click);
@@ -384,7 +375,7 @@
             this.shuttlescheduleLabel.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.shuttlescheduleLabel.Location = new System.Drawing.Point(67, 17);
             this.shuttlescheduleLabel.Name = "shuttlescheduleLabel";
-            this.shuttlescheduleLabel.Size = new System.Drawing.Size(164, 23);
+            this.shuttlescheduleLabel.Size = new System.Drawing.Size(132, 20);
             this.shuttlescheduleLabel.TabIndex = 0;
             this.shuttlescheduleLabel.Text = "Shuttle schedule";
             this.shuttlescheduleLabel.Click += new System.EventHandler(this.shuttlescheduleLabel_Click);
@@ -420,7 +411,7 @@
             this.bookaseatLabel.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bookaseatLabel.Location = new System.Drawing.Point(67, 17);
             this.bookaseatLabel.Name = "bookaseatLabel";
-            this.bookaseatLabel.Size = new System.Drawing.Size(117, 23);
+            this.bookaseatLabel.Size = new System.Drawing.Size(93, 20);
             this.bookaseatLabel.TabIndex = 0;
             this.bookaseatLabel.Text = "Book a seat";
             this.bookaseatLabel.Click += new System.EventHandler(this.bookaseatLabel_Click);
@@ -455,7 +446,7 @@
             this.lblMyBooking.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMyBooking.Location = new System.Drawing.Point(67, 17);
             this.lblMyBooking.Name = "lblMyBooking";
-            this.lblMyBooking.Size = new System.Drawing.Size(118, 23);
+            this.lblMyBooking.Size = new System.Drawing.Size(95, 20);
             this.lblMyBooking.TabIndex = 0;
             this.lblMyBooking.Text = "My booking";
             this.lblMyBooking.Click += new System.EventHandler(this.lblMyBooking_Click);
@@ -491,7 +482,7 @@
             this.lblNotification.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNotification.Location = new System.Drawing.Point(67, 18);
             this.lblNotification.Name = "lblNotification";
-            this.lblNotification.Size = new System.Drawing.Size(128, 23);
+            this.lblNotification.Size = new System.Drawing.Size(103, 20);
             this.lblNotification.TabIndex = 0;
             this.lblNotification.Text = "Notifications";
             this.lblNotification.Click += new System.EventHandler(this.lblNotification_Click);
@@ -550,7 +541,7 @@
             this.settingsLabel.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.settingsLabel.Location = new System.Drawing.Point(67, 15);
             this.settingsLabel.Name = "settingsLabel";
-            this.settingsLabel.Size = new System.Drawing.Size(87, 23);
+            this.settingsLabel.Size = new System.Drawing.Size(70, 20);
             this.settingsLabel.TabIndex = 0;
             this.settingsLabel.Text = "Settings";
             this.settingsLabel.Click += new System.EventHandler(this.settingsLabel_Click);
@@ -585,7 +576,7 @@
             this.lblManageAccount.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblManageAccount.Location = new System.Drawing.Point(67, 11);
             this.lblManageAccount.Name = "lblManageAccount";
-            this.lblManageAccount.Size = new System.Drawing.Size(157, 28);
+            this.lblManageAccount.Size = new System.Drawing.Size(124, 21);
             this.lblManageAccount.TabIndex = 0;
             this.lblManageAccount.Text = "Manage account";
             this.lblManageAccount.Click += new System.EventHandler(this.lblManageAccount_Click);
@@ -618,7 +609,7 @@
             this.lblLogOut.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLogOut.Location = new System.Drawing.Point(67, 11);
             this.lblLogOut.Name = "lblLogOut";
-            this.lblLogOut.Size = new System.Drawing.Size(75, 28);
+            this.lblLogOut.Size = new System.Drawing.Size(59, 21);
             this.lblLogOut.TabIndex = 0;
             this.lblLogOut.Text = "Logout";
             // 
@@ -653,10 +644,19 @@
             this.lblAboutUS.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAboutUS.Location = new System.Drawing.Point(67, 15);
             this.lblAboutUS.Name = "lblAboutUS";
-            this.lblAboutUS.Size = new System.Drawing.Size(92, 23);
+            this.lblAboutUS.Size = new System.Drawing.Size(75, 20);
             this.lblAboutUS.TabIndex = 0;
             this.lblAboutUS.Text = "About us";
             this.lblAboutUS.Click += new System.EventHandler(this.lblAboutUS_Click);
+            // 
+            // pnlDisplay
+            // 
+            this.pnlDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(85)))), ((int)(((byte)(58)))));
+            this.pnlDisplay.Location = new System.Drawing.Point(44, 37);
+            this.pnlDisplay.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlDisplay.Name = "pnlDisplay";
+            this.pnlDisplay.Size = new System.Drawing.Size(1005, 643);
+            this.pnlDisplay.TabIndex = 6;
             // 
             // usertoolsTransition
             // 

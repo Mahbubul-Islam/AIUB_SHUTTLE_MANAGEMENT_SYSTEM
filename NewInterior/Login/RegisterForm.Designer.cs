@@ -99,7 +99,7 @@
             this.btnLoginHerelbl.AutoSize = true;
             this.btnLoginHerelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLoginHerelbl.ForeColor = System.Drawing.Color.Sienna;
-            this.btnLoginHerelbl.Location = new System.Drawing.Point(807, 620);
+            this.btnLoginHerelbl.Location = new System.Drawing.Point(798, 616);
             this.btnLoginHerelbl.Name = "btnLoginHerelbl";
             this.btnLoginHerelbl.Size = new System.Drawing.Size(70, 16);
             this.btnLoginHerelbl.TabIndex = 65;
@@ -112,7 +112,7 @@
             this.btnSignUp.FlatAppearance.BorderSize = 0;
             this.btnSignUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSignUp.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSignUp.Location = new System.Drawing.Point(653, 551);
+            this.btnSignUp.Location = new System.Drawing.Point(653, 550);
             this.btnSignUp.Name = "btnSignUp";
             this.btnSignUp.Size = new System.Drawing.Size(349, 30);
             this.btnSignUp.TabIndex = 64;
@@ -165,7 +165,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(759, 604);
+            this.label3.Location = new System.Drawing.Point(750, 600);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(176, 18);
             this.label3.TabIndex = 58;
@@ -253,9 +253,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(7, 8);
+            this.pictureBox1.Location = new System.Drawing.Point(4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(606, 626);
+            this.pictureBox1.Size = new System.Drawing.Size(606, 632);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 80;
             this.pictureBox1.TabStop = false;
