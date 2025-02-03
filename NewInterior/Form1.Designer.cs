@@ -33,80 +33,80 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
             this.homePannel = new System.Windows.Forms.Panel();
+            this.picboxHome = new System.Windows.Forms.PictureBox();
             this.lblHome = new System.Windows.Forms.Label();
             this.profilePannel = new System.Windows.Forms.Panel();
+            this.picboxProfile = new System.Windows.Forms.PictureBox();
             this.lblProfile = new System.Windows.Forms.Label();
             this.usertoolsContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.usertoolsPanel = new System.Windows.Forms.Panel();
+            this.usertoolsDropdown = new System.Windows.Forms.PictureBox();
+            this.usertoolsIcon = new System.Windows.Forms.PictureBox();
             this.usertoolsLabel = new System.Windows.Forms.Label();
             this.shuttleschedulePanel = new System.Windows.Forms.Panel();
+            this.shuttlescheduleIcon = new System.Windows.Forms.PictureBox();
             this.shuttlescheduleLabel = new System.Windows.Forms.Label();
             this.bookaseatPanel = new System.Windows.Forms.Panel();
+            this.bookaseatIcon = new System.Windows.Forms.PictureBox();
             this.bookaseatLabel = new System.Windows.Forms.Label();
             this.pnlMyBooking = new System.Windows.Forms.Panel();
+            this.picboxMyBooking = new System.Windows.Forms.PictureBox();
             this.lblMyBooking = new System.Windows.Forms.Label();
             this.pnlNotification = new System.Windows.Forms.Panel();
+            this.picboxNotification = new System.Windows.Forms.PictureBox();
             this.lblNotification = new System.Windows.Forms.Label();
             this.settingsContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.settingsPanel = new System.Windows.Forms.Panel();
-            this.settingsLabel = new System.Windows.Forms.Label();
-            this.pnlManageAccont = new System.Windows.Forms.Panel();
-            this.lblManageAccount = new System.Windows.Forms.Label();
-            this.pnlLogOut = new System.Windows.Forms.Panel();
-            this.lblLogOut = new System.Windows.Forms.Label();
-            this.pnlAboutUs = new System.Windows.Forms.Panel();
-            this.lblAboutUS = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.usertoolsTransition = new System.Windows.Forms.Timer(this.components);
-            this.sidebarTransition = new System.Windows.Forms.Timer(this.components);
-            this.settingsTransition = new System.Windows.Forms.Timer(this.components);
-            this.picboxHome = new System.Windows.Forms.PictureBox();
-            this.picboxProfile = new System.Windows.Forms.PictureBox();
-            this.usertoolsDropdown = new System.Windows.Forms.PictureBox();
-            this.usertoolsIcon = new System.Windows.Forms.PictureBox();
-            this.shuttlescheduleIcon = new System.Windows.Forms.PictureBox();
-            this.bookaseatIcon = new System.Windows.Forms.PictureBox();
-            this.picboxMyBooking = new System.Windows.Forms.PictureBox();
-            this.picboxNotification = new System.Windows.Forms.PictureBox();
             this.settingsDropdown = new System.Windows.Forms.PictureBox();
             this.settingsIcon = new System.Windows.Forms.PictureBox();
+            this.settingsLabel = new System.Windows.Forms.Label();
+            this.pnlManageAccont = new System.Windows.Forms.Panel();
             this.picboxManageAccount = new System.Windows.Forms.PictureBox();
+            this.lblManageAccount = new System.Windows.Forms.Label();
+            this.pnlLogOut = new System.Windows.Forms.Panel();
             this.picboxLogOut = new System.Windows.Forms.PictureBox();
+            this.lblLogOut = new System.Windows.Forms.Label();
+            this.pnlAboutUs = new System.Windows.Forms.Panel();
             this.picboxAboutUs = new System.Windows.Forms.PictureBox();
+            this.lblAboutUS = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.closeBtn = new System.Windows.Forms.PictureBox();
             this.btnMinimize = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.btnHam = new System.Windows.Forms.PictureBox();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.usertoolsTransition = new System.Windows.Forms.Timer(this.components);
+            this.sidebarTransition = new System.Windows.Forms.Timer(this.components);
+            this.settingsTransition = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.sidebar.SuspendLayout();
             this.homePannel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picboxHome)).BeginInit();
             this.profilePannel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picboxProfile)).BeginInit();
             this.usertoolsContainer.SuspendLayout();
             this.usertoolsPanel.SuspendLayout();
-            this.shuttleschedulePanel.SuspendLayout();
-            this.bookaseatPanel.SuspendLayout();
-            this.pnlMyBooking.SuspendLayout();
-            this.pnlNotification.SuspendLayout();
-            this.settingsContainer.SuspendLayout();
-            this.settingsPanel.SuspendLayout();
-            this.pnlManageAccont.SuspendLayout();
-            this.pnlLogOut.SuspendLayout();
-            this.pnlAboutUs.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picboxHome)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picboxProfile)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usertoolsDropdown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usertoolsIcon)).BeginInit();
+            this.shuttleschedulePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.shuttlescheduleIcon)).BeginInit();
+            this.bookaseatPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bookaseatIcon)).BeginInit();
+            this.pnlMyBooking.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picboxMyBooking)).BeginInit();
+            this.pnlNotification.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picboxNotification)).BeginInit();
+            this.settingsContainer.SuspendLayout();
+            this.settingsPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.settingsDropdown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.settingsIcon)).BeginInit();
+            this.pnlManageAccont.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picboxManageAccount)).BeginInit();
+            this.pnlLogOut.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picboxLogOut)).BeginInit();
+            this.pnlAboutUs.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picboxAboutUs)).BeginInit();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.closeBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -115,7 +115,7 @@
             // 
             // pnlDisplay
             // 
-            this.pnlDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(85)))), ((int)(((byte)(58)))));
+            this.pnlDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.pnlDisplay.Location = new System.Drawing.Point(44, 37);
             this.pnlDisplay.Margin = new System.Windows.Forms.Padding(0);
             this.pnlDisplay.Name = "pnlDisplay";
@@ -162,6 +162,17 @@
             this.homePannel.TabIndex = 0;
             this.homePannel.Click += new System.EventHandler(this.homePannel_Click);
             // 
+            // picboxHome
+            // 
+            this.picboxHome.Image = global::NewInterior.Properties.Resources.new_home;
+            this.picboxHome.Location = new System.Drawing.Point(0, 7);
+            this.picboxHome.Name = "picboxHome";
+            this.picboxHome.Size = new System.Drawing.Size(36, 41);
+            this.picboxHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picboxHome.TabIndex = 1;
+            this.picboxHome.TabStop = false;
+            this.picboxHome.Click += new System.EventHandler(this.picboxHome_Click);
+            // 
             // lblHome
             // 
             this.lblHome.AutoSize = true;
@@ -185,6 +196,17 @@
             this.profilePannel.Size = new System.Drawing.Size(250, 55);
             this.profilePannel.TabIndex = 0;
             this.profilePannel.Click += new System.EventHandler(this.profilePannel_Click);
+            // 
+            // picboxProfile
+            // 
+            this.picboxProfile.Image = global::NewInterior.Properties.Resources.new_profile;
+            this.picboxProfile.Location = new System.Drawing.Point(1, 6);
+            this.picboxProfile.Name = "picboxProfile";
+            this.picboxProfile.Size = new System.Drawing.Size(36, 41);
+            this.picboxProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picboxProfile.TabIndex = 1;
+            this.picboxProfile.TabStop = false;
+            this.picboxProfile.Click += new System.EventHandler(this.picboxProfile_Click);
             // 
             // lblProfile
             // 
@@ -224,6 +246,28 @@
             this.usertoolsPanel.TabIndex = 0;
             this.usertoolsPanel.Click += new System.EventHandler(this.usertoolsPanel_Click);
             // 
+            // usertoolsDropdown
+            // 
+            this.usertoolsDropdown.Image = global::NewInterior.Properties.Resources.new_dropdown;
+            this.usertoolsDropdown.Location = new System.Drawing.Point(195, 11);
+            this.usertoolsDropdown.Name = "usertoolsDropdown";
+            this.usertoolsDropdown.Size = new System.Drawing.Size(27, 33);
+            this.usertoolsDropdown.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.usertoolsDropdown.TabIndex = 2;
+            this.usertoolsDropdown.TabStop = false;
+            this.usertoolsDropdown.Click += new System.EventHandler(this.usertoolsDropdown_Click);
+            // 
+            // usertoolsIcon
+            // 
+            this.usertoolsIcon.Image = global::NewInterior.Properties.Resources.new_usertools;
+            this.usertoolsIcon.Location = new System.Drawing.Point(0, 7);
+            this.usertoolsIcon.Name = "usertoolsIcon";
+            this.usertoolsIcon.Size = new System.Drawing.Size(36, 41);
+            this.usertoolsIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.usertoolsIcon.TabIndex = 1;
+            this.usertoolsIcon.TabStop = false;
+            this.usertoolsIcon.Click += new System.EventHandler(this.usertoolsIcon_Click);
+            // 
             // usertoolsLabel
             // 
             this.usertoolsLabel.AutoSize = true;
@@ -249,6 +293,18 @@
             this.shuttleschedulePanel.TabIndex = 0;
             this.shuttleschedulePanel.Click += new System.EventHandler(this.shuttleschedulePanel_Click);
             // 
+            // shuttlescheduleIcon
+            // 
+            this.shuttlescheduleIcon.Image = global::NewInterior.Properties.Resources.new_shuttleschedules;
+            this.shuttlescheduleIcon.Location = new System.Drawing.Point(0, 5);
+            this.shuttlescheduleIcon.Margin = new System.Windows.Forms.Padding(0);
+            this.shuttlescheduleIcon.Name = "shuttlescheduleIcon";
+            this.shuttlescheduleIcon.Size = new System.Drawing.Size(36, 41);
+            this.shuttlescheduleIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.shuttlescheduleIcon.TabIndex = 1;
+            this.shuttlescheduleIcon.TabStop = false;
+            this.shuttlescheduleIcon.Click += new System.EventHandler(this.shuttlescheduleIcon_Click);
+            // 
             // shuttlescheduleLabel
             // 
             this.shuttlescheduleLabel.AutoSize = true;
@@ -272,6 +328,18 @@
             this.bookaseatPanel.Size = new System.Drawing.Size(250, 55);
             this.bookaseatPanel.TabIndex = 0;
             this.bookaseatPanel.Click += new System.EventHandler(this.bookaseatPanel_Click);
+            // 
+            // bookaseatIcon
+            // 
+            this.bookaseatIcon.Image = global::NewInterior.Properties.Resources.new_bookseat;
+            this.bookaseatIcon.Location = new System.Drawing.Point(0, 8);
+            this.bookaseatIcon.Margin = new System.Windows.Forms.Padding(0);
+            this.bookaseatIcon.Name = "bookaseatIcon";
+            this.bookaseatIcon.Size = new System.Drawing.Size(36, 41);
+            this.bookaseatIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bookaseatIcon.TabIndex = 1;
+            this.bookaseatIcon.TabStop = false;
+            this.bookaseatIcon.Click += new System.EventHandler(this.bookaseatIcon_Click);
             // 
             // bookaseatLabel
             // 
@@ -297,6 +365,17 @@
             this.pnlMyBooking.TabIndex = 0;
             this.pnlMyBooking.Click += new System.EventHandler(this.pnlMyBooking_Click);
             // 
+            // picboxMyBooking
+            // 
+            this.picboxMyBooking.Image = global::NewInterior.Properties.Resources.new_mybooking;
+            this.picboxMyBooking.Location = new System.Drawing.Point(0, 8);
+            this.picboxMyBooking.Name = "picboxMyBooking";
+            this.picboxMyBooking.Size = new System.Drawing.Size(36, 41);
+            this.picboxMyBooking.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picboxMyBooking.TabIndex = 1;
+            this.picboxMyBooking.TabStop = false;
+            this.picboxMyBooking.Click += new System.EventHandler(this.picboxMyBooking_Click);
+            // 
             // lblMyBooking
             // 
             this.lblMyBooking.AutoSize = true;
@@ -320,6 +399,18 @@
             this.pnlNotification.Size = new System.Drawing.Size(250, 55);
             this.pnlNotification.TabIndex = 0;
             this.pnlNotification.Click += new System.EventHandler(this.pnlNotification_Click);
+            // 
+            // picboxNotification
+            // 
+            this.picboxNotification.Image = global::NewInterior.Properties.Resources.new_notification;
+            this.picboxNotification.Location = new System.Drawing.Point(0, 8);
+            this.picboxNotification.Margin = new System.Windows.Forms.Padding(0);
+            this.picboxNotification.Name = "picboxNotification";
+            this.picboxNotification.Size = new System.Drawing.Size(36, 41);
+            this.picboxNotification.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picboxNotification.TabIndex = 1;
+            this.picboxNotification.TabStop = false;
+            this.picboxNotification.Click += new System.EventHandler(this.picboxNotification_Click);
             // 
             // lblNotification
             // 
@@ -358,6 +449,28 @@
             this.settingsPanel.TabIndex = 0;
             this.settingsPanel.Click += new System.EventHandler(this.settingsPanel_Click);
             // 
+            // settingsDropdown
+            // 
+            this.settingsDropdown.Image = global::NewInterior.Properties.Resources.new_dropdown1;
+            this.settingsDropdown.Location = new System.Drawing.Point(197, 11);
+            this.settingsDropdown.Name = "settingsDropdown";
+            this.settingsDropdown.Size = new System.Drawing.Size(27, 33);
+            this.settingsDropdown.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.settingsDropdown.TabIndex = 1;
+            this.settingsDropdown.TabStop = false;
+            this.settingsDropdown.Click += new System.EventHandler(this.settingsDropdown_Click);
+            // 
+            // settingsIcon
+            // 
+            this.settingsIcon.Image = global::NewInterior.Properties.Resources.new_settings;
+            this.settingsIcon.Location = new System.Drawing.Point(0, 5);
+            this.settingsIcon.Name = "settingsIcon";
+            this.settingsIcon.Size = new System.Drawing.Size(36, 41);
+            this.settingsIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.settingsIcon.TabIndex = 1;
+            this.settingsIcon.TabStop = false;
+            this.settingsIcon.Click += new System.EventHandler(this.settingsIcon_Click);
+            // 
             // settingsLabel
             // 
             this.settingsLabel.AutoSize = true;
@@ -381,6 +494,17 @@
             this.pnlManageAccont.Size = new System.Drawing.Size(250, 55);
             this.pnlManageAccont.TabIndex = 0;
             this.pnlManageAccont.Click += new System.EventHandler(this.pnlManageAccont_Click);
+            // 
+            // picboxManageAccount
+            // 
+            this.picboxManageAccount.Image = global::NewInterior.Properties.Resources.new_manageaccount;
+            this.picboxManageAccount.Location = new System.Drawing.Point(0, 11);
+            this.picboxManageAccount.Name = "picboxManageAccount";
+            this.picboxManageAccount.Size = new System.Drawing.Size(36, 41);
+            this.picboxManageAccount.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picboxManageAccount.TabIndex = 1;
+            this.picboxManageAccount.TabStop = false;
+            this.picboxManageAccount.Click += new System.EventHandler(this.picboxManageAccount_Click);
             // 
             // lblManageAccount
             // 
@@ -406,6 +530,17 @@
             this.pnlLogOut.TabIndex = 0;
             this.pnlLogOut.Click += new System.EventHandler(this.pnlLogOut_Click);
             // 
+            // picboxLogOut
+            // 
+            this.picboxLogOut.Image = global::NewInterior.Properties.Resources.new_logout;
+            this.picboxLogOut.Location = new System.Drawing.Point(0, 11);
+            this.picboxLogOut.Name = "picboxLogOut";
+            this.picboxLogOut.Size = new System.Drawing.Size(36, 41);
+            this.picboxLogOut.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picboxLogOut.TabIndex = 1;
+            this.picboxLogOut.TabStop = false;
+            this.picboxLogOut.Click += new System.EventHandler(this.picboxLogOut_Click);
+            // 
             // lblLogOut
             // 
             this.lblLogOut.AutoSize = true;
@@ -429,6 +564,18 @@
             this.pnlAboutUs.Size = new System.Drawing.Size(250, 55);
             this.pnlAboutUs.TabIndex = 0;
             this.pnlAboutUs.Click += new System.EventHandler(this.pnlAboutUs_Click);
+            // 
+            // picboxAboutUs
+            // 
+            this.picboxAboutUs.Image = global::NewInterior.Properties.Resources.new_aboutus;
+            this.picboxAboutUs.Location = new System.Drawing.Point(1, 7);
+            this.picboxAboutUs.Margin = new System.Windows.Forms.Padding(0);
+            this.picboxAboutUs.Name = "picboxAboutUs";
+            this.picboxAboutUs.Size = new System.Drawing.Size(36, 41);
+            this.picboxAboutUs.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picboxAboutUs.TabIndex = 1;
+            this.picboxAboutUs.TabStop = false;
+            this.picboxAboutUs.Click += new System.EventHandler(this.picboxAboutUs_Click);
             // 
             // lblAboutUS
             // 
@@ -454,180 +601,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1050, 37);
             this.panel2.TabIndex = 7;
-            // 
-            // lblTitle
-            // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblTitle.Location = new System.Drawing.Point(116, 7);
-            this.lblTitle.Margin = new System.Windows.Forms.Padding(0);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(340, 23);
-            this.lblTitle.TabIndex = 2;
-            this.lblTitle.Text = "AIUB Shuttle Management System";
-            // 
-            // usertoolsTransition
-            // 
-            this.usertoolsTransition.Interval = 10;
-            this.usertoolsTransition.Tick += new System.EventHandler(this.usertoolsTransition_Tick);
-            // 
-            // sidebarTransition
-            // 
-            this.sidebarTransition.Interval = 10;
-            this.sidebarTransition.Tick += new System.EventHandler(this.sidebarTransition_Tick);
-            // 
-            // settingsTransition
-            // 
-            this.settingsTransition.Interval = 10;
-            this.settingsTransition.Tick += new System.EventHandler(this.settingsTransition_Tick);
-            // 
-            // picboxHome
-            // 
-            this.picboxHome.Image = global::NewInterior.Properties.Resources.new_home;
-            this.picboxHome.Location = new System.Drawing.Point(0, 7);
-            this.picboxHome.Name = "picboxHome";
-            this.picboxHome.Size = new System.Drawing.Size(36, 41);
-            this.picboxHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picboxHome.TabIndex = 1;
-            this.picboxHome.TabStop = false;
-            this.picboxHome.Click += new System.EventHandler(this.picboxHome_Click);
-            // 
-            // picboxProfile
-            // 
-            this.picboxProfile.Image = global::NewInterior.Properties.Resources.new_profile;
-            this.picboxProfile.Location = new System.Drawing.Point(1, 6);
-            this.picboxProfile.Name = "picboxProfile";
-            this.picboxProfile.Size = new System.Drawing.Size(36, 41);
-            this.picboxProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picboxProfile.TabIndex = 1;
-            this.picboxProfile.TabStop = false;
-            this.picboxProfile.Click += new System.EventHandler(this.picboxProfile_Click);
-            // 
-            // usertoolsDropdown
-            // 
-            this.usertoolsDropdown.Image = global::NewInterior.Properties.Resources.new_dropdown;
-            this.usertoolsDropdown.Location = new System.Drawing.Point(195, 11);
-            this.usertoolsDropdown.Name = "usertoolsDropdown";
-            this.usertoolsDropdown.Size = new System.Drawing.Size(27, 33);
-            this.usertoolsDropdown.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.usertoolsDropdown.TabIndex = 2;
-            this.usertoolsDropdown.TabStop = false;
-            this.usertoolsDropdown.Click += new System.EventHandler(this.usertoolsDropdown_Click);
-            // 
-            // usertoolsIcon
-            // 
-            this.usertoolsIcon.Image = global::NewInterior.Properties.Resources.new_usertools;
-            this.usertoolsIcon.Location = new System.Drawing.Point(0, 7);
-            this.usertoolsIcon.Name = "usertoolsIcon";
-            this.usertoolsIcon.Size = new System.Drawing.Size(36, 41);
-            this.usertoolsIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.usertoolsIcon.TabIndex = 1;
-            this.usertoolsIcon.TabStop = false;
-            this.usertoolsIcon.Click += new System.EventHandler(this.usertoolsIcon_Click);
-            // 
-            // shuttlescheduleIcon
-            // 
-            this.shuttlescheduleIcon.Image = global::NewInterior.Properties.Resources.new_shuttleschedules;
-            this.shuttlescheduleIcon.Location = new System.Drawing.Point(0, 5);
-            this.shuttlescheduleIcon.Margin = new System.Windows.Forms.Padding(0);
-            this.shuttlescheduleIcon.Name = "shuttlescheduleIcon";
-            this.shuttlescheduleIcon.Size = new System.Drawing.Size(36, 41);
-            this.shuttlescheduleIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.shuttlescheduleIcon.TabIndex = 1;
-            this.shuttlescheduleIcon.TabStop = false;
-            this.shuttlescheduleIcon.Click += new System.EventHandler(this.shuttlescheduleIcon_Click);
-            // 
-            // bookaseatIcon
-            // 
-            this.bookaseatIcon.Image = global::NewInterior.Properties.Resources.new_bookseat;
-            this.bookaseatIcon.Location = new System.Drawing.Point(0, 8);
-            this.bookaseatIcon.Margin = new System.Windows.Forms.Padding(0);
-            this.bookaseatIcon.Name = "bookaseatIcon";
-            this.bookaseatIcon.Size = new System.Drawing.Size(36, 41);
-            this.bookaseatIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bookaseatIcon.TabIndex = 1;
-            this.bookaseatIcon.TabStop = false;
-            this.bookaseatIcon.Click += new System.EventHandler(this.bookaseatIcon_Click);
-            // 
-            // picboxMyBooking
-            // 
-            this.picboxMyBooking.Image = global::NewInterior.Properties.Resources.new_mybooking;
-            this.picboxMyBooking.Location = new System.Drawing.Point(0, 8);
-            this.picboxMyBooking.Name = "picboxMyBooking";
-            this.picboxMyBooking.Size = new System.Drawing.Size(36, 41);
-            this.picboxMyBooking.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picboxMyBooking.TabIndex = 1;
-            this.picboxMyBooking.TabStop = false;
-            this.picboxMyBooking.Click += new System.EventHandler(this.picboxMyBooking_Click);
-            // 
-            // picboxNotification
-            // 
-            this.picboxNotification.Image = global::NewInterior.Properties.Resources.new_notification;
-            this.picboxNotification.Location = new System.Drawing.Point(0, 8);
-            this.picboxNotification.Margin = new System.Windows.Forms.Padding(0);
-            this.picboxNotification.Name = "picboxNotification";
-            this.picboxNotification.Size = new System.Drawing.Size(36, 41);
-            this.picboxNotification.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picboxNotification.TabIndex = 1;
-            this.picboxNotification.TabStop = false;
-            this.picboxNotification.Click += new System.EventHandler(this.picboxNotification_Click);
-            // 
-            // settingsDropdown
-            // 
-            this.settingsDropdown.Image = global::NewInterior.Properties.Resources.new_dropdown1;
-            this.settingsDropdown.Location = new System.Drawing.Point(197, 11);
-            this.settingsDropdown.Name = "settingsDropdown";
-            this.settingsDropdown.Size = new System.Drawing.Size(27, 33);
-            this.settingsDropdown.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.settingsDropdown.TabIndex = 1;
-            this.settingsDropdown.TabStop = false;
-            this.settingsDropdown.Click += new System.EventHandler(this.settingsDropdown_Click);
-            // 
-            // settingsIcon
-            // 
-            this.settingsIcon.Image = global::NewInterior.Properties.Resources.new_settings;
-            this.settingsIcon.Location = new System.Drawing.Point(0, 5);
-            this.settingsIcon.Name = "settingsIcon";
-            this.settingsIcon.Size = new System.Drawing.Size(36, 41);
-            this.settingsIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.settingsIcon.TabIndex = 1;
-            this.settingsIcon.TabStop = false;
-            this.settingsIcon.Click += new System.EventHandler(this.settingsIcon_Click);
-            // 
-            // picboxManageAccount
-            // 
-            this.picboxManageAccount.Image = global::NewInterior.Properties.Resources.new_manageaccount;
-            this.picboxManageAccount.Location = new System.Drawing.Point(0, 11);
-            this.picboxManageAccount.Name = "picboxManageAccount";
-            this.picboxManageAccount.Size = new System.Drawing.Size(36, 41);
-            this.picboxManageAccount.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picboxManageAccount.TabIndex = 1;
-            this.picboxManageAccount.TabStop = false;
-            this.picboxManageAccount.Click += new System.EventHandler(this.picboxManageAccount_Click);
-            // 
-            // picboxLogOut
-            // 
-            this.picboxLogOut.Image = global::NewInterior.Properties.Resources.new_logout;
-            this.picboxLogOut.Location = new System.Drawing.Point(0, 11);
-            this.picboxLogOut.Name = "picboxLogOut";
-            this.picboxLogOut.Size = new System.Drawing.Size(36, 41);
-            this.picboxLogOut.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picboxLogOut.TabIndex = 1;
-            this.picboxLogOut.TabStop = false;
-            this.picboxLogOut.Click += new System.EventHandler(this.picboxLogOut_Click);
-            // 
-            // picboxAboutUs
-            // 
-            this.picboxAboutUs.Image = global::NewInterior.Properties.Resources.new_aboutus;
-            this.picboxAboutUs.Location = new System.Drawing.Point(1, 7);
-            this.picboxAboutUs.Margin = new System.Windows.Forms.Padding(0);
-            this.picboxAboutUs.Name = "picboxAboutUs";
-            this.picboxAboutUs.Size = new System.Drawing.Size(36, 41);
-            this.picboxAboutUs.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picboxAboutUs.TabIndex = 1;
-            this.picboxAboutUs.TabStop = false;
-            this.picboxAboutUs.Click += new System.EventHandler(this.picboxAboutUs_Click);
             // 
             // closeBtn
             // 
@@ -676,6 +649,33 @@
             this.btnHam.TabStop = false;
             this.btnHam.Click += new System.EventHandler(this.btnHam_Click);
             // 
+            // lblTitle
+            // 
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblTitle.Location = new System.Drawing.Point(116, 7);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(0);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(340, 23);
+            this.lblTitle.TabIndex = 2;
+            this.lblTitle.Text = "AIUB Shuttle Management System";
+            // 
+            // usertoolsTransition
+            // 
+            this.usertoolsTransition.Interval = 10;
+            this.usertoolsTransition.Tick += new System.EventHandler(this.usertoolsTransition_Tick);
+            // 
+            // sidebarTransition
+            // 
+            this.sidebarTransition.Interval = 10;
+            this.sidebarTransition.Tick += new System.EventHandler(this.sidebarTransition_Tick);
+            // 
+            // settingsTransition
+            // 
+            this.settingsTransition.Interval = 10;
+            this.settingsTransition.Tick += new System.EventHandler(this.settingsTransition_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -690,43 +690,43 @@
             this.sidebar.ResumeLayout(false);
             this.homePannel.ResumeLayout(false);
             this.homePannel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picboxHome)).EndInit();
             this.profilePannel.ResumeLayout(false);
             this.profilePannel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picboxProfile)).EndInit();
             this.usertoolsContainer.ResumeLayout(false);
             this.usertoolsPanel.ResumeLayout(false);
             this.usertoolsPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.usertoolsDropdown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usertoolsIcon)).EndInit();
             this.shuttleschedulePanel.ResumeLayout(false);
             this.shuttleschedulePanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.shuttlescheduleIcon)).EndInit();
             this.bookaseatPanel.ResumeLayout(false);
             this.bookaseatPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bookaseatIcon)).EndInit();
             this.pnlMyBooking.ResumeLayout(false);
             this.pnlMyBooking.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picboxMyBooking)).EndInit();
             this.pnlNotification.ResumeLayout(false);
             this.pnlNotification.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picboxNotification)).EndInit();
             this.settingsContainer.ResumeLayout(false);
             this.settingsPanel.ResumeLayout(false);
             this.settingsPanel.PerformLayout();
-            this.pnlManageAccont.ResumeLayout(false);
-            this.pnlManageAccont.PerformLayout();
-            this.pnlLogOut.ResumeLayout(false);
-            this.pnlLogOut.PerformLayout();
-            this.pnlAboutUs.ResumeLayout(false);
-            this.pnlAboutUs.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picboxHome)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picboxProfile)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.usertoolsDropdown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.usertoolsIcon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.shuttlescheduleIcon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bookaseatIcon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picboxMyBooking)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picboxNotification)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.settingsDropdown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.settingsIcon)).EndInit();
+            this.pnlManageAccont.ResumeLayout(false);
+            this.pnlManageAccont.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picboxManageAccount)).EndInit();
+            this.pnlLogOut.ResumeLayout(false);
+            this.pnlLogOut.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picboxLogOut)).EndInit();
+            this.pnlAboutUs.ResumeLayout(false);
+            this.pnlAboutUs.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picboxAboutUs)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.closeBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();

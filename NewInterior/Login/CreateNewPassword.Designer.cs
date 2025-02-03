@@ -36,14 +36,16 @@
             this.btnSubmit = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.closeBtn = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.closeBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // chkbShowPassword
             // 
             this.chkbShowPassword.AutoSize = true;
             this.chkbShowPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkbShowPassword.Location = new System.Drawing.Point(150, 448);
+            this.chkbShowPassword.Location = new System.Drawing.Point(147, 473);
             this.chkbShowPassword.Margin = new System.Windows.Forms.Padding(4);
             this.chkbShowPassword.Name = "chkbShowPassword";
             this.chkbShowPassword.Size = new System.Drawing.Size(139, 22);
@@ -55,7 +57,7 @@
             // txtConfirmPassword
             // 
             this.txtConfirmPassword.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConfirmPassword.Location = new System.Drawing.Point(150, 408);
+            this.txtConfirmPassword.Location = new System.Drawing.Point(147, 433);
             this.txtConfirmPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtConfirmPassword.Name = "txtConfirmPassword";
             this.txtConfirmPassword.Size = new System.Drawing.Size(464, 32);
@@ -66,7 +68,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(145, 379);
+            this.label5.Location = new System.Drawing.Point(142, 404);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(171, 22);
@@ -76,10 +78,10 @@
             // txtNewPassword
             // 
             this.txtNewPassword.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNewPassword.Location = new System.Drawing.Point(152, 328);
+            this.txtNewPassword.Location = new System.Drawing.Point(149, 353);
             this.txtNewPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtNewPassword.Name = "txtNewPassword";
-            this.txtNewPassword.Size = new System.Drawing.Size(464, 32);
+            this.txtNewPassword.Size = new System.Drawing.Size(462, 32);
             this.txtNewPassword.TabIndex = 84;
             this.txtNewPassword.UseSystemPasswordChar = true;
             // 
@@ -87,7 +89,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(146, 299);
+            this.label6.Location = new System.Drawing.Point(143, 324);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(142, 22);
@@ -100,10 +102,10 @@
             this.btnSubmit.FlatAppearance.BorderSize = 0;
             this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSubmit.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubmit.Location = new System.Drawing.Point(150, 504);
+            this.btnSubmit.Location = new System.Drawing.Point(147, 529);
             this.btnSubmit.Margin = new System.Windows.Forms.Padding(4);
             this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(465, 37);
+            this.btnSubmit.Size = new System.Drawing.Size(464, 37);
             this.btnSubmit.TabIndex = 82;
             this.btnSubmit.Text = "SUBMIT";
             this.btnSubmit.UseVisualStyleBackColor = false;
@@ -113,7 +115,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 25.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(144, 218);
+            this.label1.Location = new System.Drawing.Point(141, 243);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(472, 51);
             this.label1.TabIndex = 81;
@@ -131,11 +133,20 @@
             this.closeBtn.TabStop = false;
             this.closeBtn.Click += new System.EventHandler(this.closeBtn_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(275, 41);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(211, 188);
+            this.pictureBox1.TabIndex = 89;
+            this.pictureBox1.TabStop = false;
+            // 
             // CreateNewPassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 596);
+            this.ClientSize = new System.Drawing.Size(751, 643);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.closeBtn);
             this.Controls.Add(this.chkbShowPassword);
             this.Controls.Add(this.txtConfirmPassword);
@@ -148,6 +159,7 @@
             this.Name = "CreateNewPassword";
             this.Text = "CreateNewPassword";
             ((System.ComponentModel.ISupportInitialize)(this.closeBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -163,5 +175,6 @@
         private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox closeBtn;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

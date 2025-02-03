@@ -80,7 +80,8 @@ namespace NewInterior.userComponents
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-
+            Edit_Profile edit_profile = new Edit_Profile(this.userid);
+            edit_profile.Show();
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
@@ -104,9 +105,10 @@ namespace NewInterior.userComponents
         // Inside the namespace NewInterior.userComponents
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            var confirmResult = MessageBox.Show("Are you sure to delete Your Account?",
+            var confirmResult = MessageBox.Show("Are you sure you want to delete your account? This action cannot be undone.",
                                                 "Confirm Delete",
-                                                MessageBoxButtons.YesNo);
+                                                MessageBoxButtons.YesNo,
+                                                MessageBoxIcon.Warning);
             if (confirmResult == DialogResult.Yes)
             {
                 SqlConnection conn = null;
@@ -121,7 +123,7 @@ namespace NewInterior.userComponents
                         int rowsAffected = cmd.ExecuteNonQuery();
                         if (rowsAffected > 0)
                         {
-                            MessageBox.Show("User deleted successfully.");
+                            MessageBox.Show(" Your account has been successfully deleted.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             this.Visible = false;
                             LoginFrom login = new LoginFrom();
                             login.Show();
@@ -129,19 +131,20 @@ namespace NewInterior.userComponents
                         }
                         else
                         {
-                            MessageBox.Show("User not found.");
+                            MessageBox.Show("User not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                     }
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Error deleting user: " + ex.Message);
+                    MessageBox.Show("Error deleting user: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 finally
                 {
                     if (conn != null)
                     {
                         conn.Close();
+                        conn.Dispose();
                     }
                 }
             }
