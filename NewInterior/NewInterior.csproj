@@ -49,11 +49,60 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="componentCards\notificationCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="componentCards\notificationCard.Designer.cs">
+      <DependentUpon>notificationCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="componentCards\selectShuttleCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="componentCards\selectShuttleCard.Designer.cs">
+      <DependentUpon>selectShuttleCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="componentCards\shuttleCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="componentCards\shuttleCard.Designer.cs">
+      <DependentUpon>shuttleCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="componentCards\userCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="componentCards\userCard.Designer.cs">
+      <DependentUpon>userCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database\DatabaseConnection.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\CreateNewPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\CreateNewPassword.Designer.cs">
+      <DependentUpon>CreateNewPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\ForgotFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\ForgotFrom.Designer.cs">
+      <DependentUpon>ForgotFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\LoginFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\LoginFrom.Designer.cs">
+      <DependentUpon>LoginFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\RegisterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\RegisterForm.Designer.cs">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -68,6 +117,12 @@
     </Compile>
     <Compile Include="userComponents\formBookSeat.Designer.cs">
       <DependentUpon>formBookSeat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userComponents\formDashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userComponents\formDashboard.Designer.cs">
+      <DependentUpon>formDashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="userComponents\formHome.cs">
       <SubType>UserControl</SubType>
@@ -105,8 +160,98 @@
     <Compile Include="userComponents\formShuttleSchedule.Designer.cs">
       <DependentUpon>formShuttleSchedule.cs</DependentUpon>
     </Compile>
+    <Compile Include="userComponents\formUserManageAccount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userComponents\formUserManageAccount.Designer.cs">
+      <DependentUpon>formUserManageAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Edit_Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Edit_Profile.Designer.cs">
+      <DependentUpon>Edit_Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\formAddFaculty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\formAddFaculty.Designer.cs">
+      <DependentUpon>formAddFaculty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\formAddShuttle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\formAddShuttle.Designer.cs">
+      <DependentUpon>formAddShuttle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\formAddStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\formAddStudent.Designer.cs">
+      <DependentUpon>formAddStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\formAddStuff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\formAddStuff.Designer.cs">
+      <DependentUpon>formAddStuff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\formEditFaculty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\formEditFaculty.Designer.cs">
+      <DependentUpon>formEditFaculty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\formEditStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\formEditStudent.Designer.cs">
+      <DependentUpon>formEditStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\formEditStuff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\formEditStuff.Designer.cs">
+      <DependentUpon>formEditStuff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\formShuttleList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\formShuttleList.Designer.cs">
+      <DependentUpon>formShuttleList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Reset_Password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Reset_Password.Designer.cs">
+      <DependentUpon>Reset_Password.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="componentCards\notificationCard.resx">
+      <DependentUpon>notificationCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentCards\selectShuttleCard.resx">
+      <DependentUpon>selectShuttleCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentCards\shuttleCard.resx">
+      <DependentUpon>shuttleCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="componentCards\userCard.resx">
+      <DependentUpon>userCard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\CreateNewPassword.resx">
+      <DependentUpon>CreateNewPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\ForgotFrom.resx">
+      <DependentUpon>ForgotFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\LoginFrom.resx">
+      <DependentUpon>LoginFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\RegisterForm.resx">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -123,6 +268,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="userComponents\formBookSeat.resx">
       <DependentUpon>formBookSeat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userComponents\formDashboard.resx">
+      <DependentUpon>formDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="userComponents\formHome.resx">
       <DependentUpon>formHome.cs</DependentUpon>
@@ -141,6 +289,39 @@
     </EmbeddedResource>
     <EmbeddedResource Include="userComponents\formShuttleSchedule.resx">
       <DependentUpon>formShuttleSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\formAddFaculty.resx">
+      <DependentUpon>formAddFaculty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\formAddShuttle.resx">
+      <DependentUpon>formAddShuttle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\formAddStudent.resx">
+      <DependentUpon>formAddStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\formAddStuff.resx">
+      <DependentUpon>formAddStuff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\formEditFaculty.resx">
+      <DependentUpon>formEditFaculty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\formEditStudent.resx">
+      <DependentUpon>formEditStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\formEditStuff.resx">
+      <DependentUpon>formEditStuff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userComponents\formUserManageAccount.resx">
+      <DependentUpon>formUserManageAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Edit_Profile.resx">
+      <DependentUpon>Edit_Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\formShuttleList.resx">
+      <DependentUpon>formShuttleList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Reset_Password.resx">
+      <DependentUpon>Reset_Password.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.manifest" />
     <None Include="Properties\Settings.settings">
@@ -205,7 +386,58 @@
     <None Include="Resources\minimize.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Database\" />
+    <None Include="Resources\adminDashboardIcon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new_home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new_menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new_profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new_usertools.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new_shuttleschedules.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new_bookseat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new_mybooking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new_notification.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new_settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new_aboutus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new_logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new_manageaccount.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new_close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_newminimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new_dropdown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new_mainlogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new_admingif.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

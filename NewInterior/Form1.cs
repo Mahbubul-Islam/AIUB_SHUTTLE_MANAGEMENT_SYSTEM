@@ -8,19 +8,27 @@ using System.Text;
 using System.Threading.Tasks;
 using NewInterior.userComponents;
 using System.Windows.Forms;
+using NewInterior.Database;
+using System.Data.SqlClient;
+using NewInterior.Login;
+using NewInterior.Views;
 
 namespace NewInterior
 {
     public partial class Form1 : Form
     {
+        string _userId;
+        string _userRole;
         formHome home = new formHome();
-        formProfile profile = new formProfile();
+        
         formAboutUs aboutUs = new formAboutUs();
         formNotification notification = new formNotification();
         formManageAccount manageAccount = new formManageAccount();
-        formMyBooking myBooking = new formMyBooking();
+        
         formShuttleSchedule shuttleSchedule = new formShuttleSchedule();
-        formBookSeat bookSeat = new formBookSeat();
+        
+        formDashboard formDashboard = new formDashboard();  
+       
 
         private void addUserControl(UserControl userControl)
         {
@@ -30,7 +38,7 @@ namespace NewInterior
             userControl.BringToFront();
 
         }
-        public Form1()
+        public Form1(string userId)
         {
             InitializeComponent();
             sidebar.Width = 43; // Set to collapsed width
@@ -38,7 +46,19 @@ namespace NewInterior
             usertoolsContainer.Height = 55;
             sidebarExpand = false;
             settingsExpand = false;
-            addUserControl(home);
+            _userId = userId;
+            GetUserRole();
+            if (_userRole == "Admin")
+            {
+                addUserControl(formDashboard);
+                formDashboard.upOverAllData();
+            }
+            else
+            {
+                addUserControl(home);
+            }
+            
+            
         }
         private void closeBtn_Click(object sender, EventArgs e)
         {
@@ -178,31 +198,61 @@ namespace NewInterior
 
         private void picboxHome_Click(object sender, EventArgs e)
         {
-            addUserControl(home);
+            if (_userRole == "Admin")
+            {
+                addUserControl(formDashboard);
+                formDashboard.upOverAllData();
+            }
+            else
+            {
+                addUserControl(home);
+            }
+            //addUserControl(home);
         }
 
         private void lblHome_Click(object sender, EventArgs e)
         {
-            addUserControl(home);
+            if(_userRole == "Admin")
+            {
+                addUserControl(formDashboard);
+                formDashboard.upOverAllData();
+            }
+            else
+            {
+                addUserControl(home);
+            }
+            //addUserControl(home);
         }
 
         private void homePannel_Click(object sender, EventArgs e)
         {
-            addUserControl(home);
+            if (_userRole == "Admin")
+            {
+                addUserControl(formDashboard);
+                formDashboard.upOverAllData();
+            }
+            else
+            {
+                addUserControl(home);
+            }
+            //addUserControl(home);
         }
 
         private void picboxProfile_Click(object sender, EventArgs e)
         {
+            formProfile profile = new formProfile(_userId);
             addUserControl(profile);
         }
 
         private void lblProfile_Click(object sender, EventArgs e)
         {
+            formProfile profile = new formProfile(_userId);
             addUserControl(profile);
         }
 
         private void profilePannel_Click(object sender, EventArgs e)
         {
+            formProfile profile = new formProfile(_userId);
             addUserControl(profile);
         }
 
@@ -223,32 +273,38 @@ namespace NewInterior
 
         private void bookaseatIcon_Click(object sender, EventArgs e)
         {
-            addUserControl(bookSeat);
+            formBookSeat seat = new formBookSeat(_userId);
+            addUserControl(seat);
         }
 
         private void bookaseatLabel_Click(object sender, EventArgs e)
         {
-            addUserControl(bookSeat);
+            formBookSeat seat = new formBookSeat(_userId);
+            addUserControl(seat);
         }
 
         private void bookaseatPanel_Click(object sender, EventArgs e)
         {
-            addUserControl(bookSeat);
+            formBookSeat seat = new formBookSeat(_userId);
+            addUserControl(seat);
         }
 
         private void picboxMyBooking_Click(object sender, EventArgs e)
         {
-            addUserControl(myBooking);
+            formMyBooking bookSeat = new formMyBooking(_userId);
+            addUserControl(bookSeat);
         }
 
         private void lblMyBooking_Click(object sender, EventArgs e)
         {
-            addUserControl(myBooking);
+            formMyBooking bookSeat = new formMyBooking(_userId);
+            addUserControl(bookSeat);
         }
 
         private void pnlMyBooking_Click(object sender, EventArgs e)
         {
-            addUserControl(myBooking);
+            formMyBooking bookSeat = new formMyBooking(_userId);
+            addUserControl(bookSeat);
         }
 
         private void picboxNotification_Click(object sender, EventArgs e)
@@ -268,17 +324,41 @@ namespace NewInterior
 
         private void picboxManageAccount_Click(object sender, EventArgs e)
         {
-            addUserControl(manageAccount);
+            if (_userRole == "Admin")
+            {
+                addUserControl(manageAccount);
+            }
+            else
+            {
+                formUserManageAccount userManageAccount = new formUserManageAccount(_userId);
+                addUserControl(userManageAccount);
+            }
         }
 
         private void lblManageAccount_Click(object sender, EventArgs e)
         {
-            addUserControl(manageAccount);
+            if (_userRole == "Admin")
+            {
+                addUserControl(manageAccount);
+            }
+            else
+            {
+                formUserManageAccount userManageAccount = new formUserManageAccount(_userId);
+                addUserControl(userManageAccount);
+            }
         }
 
         private void pnlManageAccont_Click(object sender, EventArgs e)
         {
-            addUserControl(manageAccount);
+            if (_userRole == "Admin")
+            {
+                addUserControl(manageAccount);
+            }
+            else
+            {
+                formUserManageAccount userManageAccount = new formUserManageAccount(_userId);
+                addUserControl(userManageAccount);
+            }
         }
 
         private void picboxAboutUs_Click(object sender, EventArgs e)
@@ -299,6 +379,60 @@ namespace NewInterior
         private void btnMinimize_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void GetUserRole()
+        {
+            using (SqlConnection conn = DatabaseConnection.GetConnection())
+            {
+                conn.Open();
+                string query = @"SELECT Role FROM Users WHERE UserID = @UserID";
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@UserID", _userId); // Add parameter to the query
+                    object result = cmd.ExecuteScalar(); // ExecuteScalar returns the first column of the first row in the result set returned by the query
+                    _userRole = result?.ToString(); // Null conditional operator
+                }
+            }
+        }
+
+        private void picboxLogOut_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Are you sure you want to log out?", "Logout Confirmation",
+                                      MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                LoginFrom login = new LoginFrom();
+                login.Show();
+                this.Hide();
+            }
+        }
+
+        private void pnlLogOut_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Are you sure you want to log out?", "Logout Confirmation",
+                                      MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                LoginFrom login = new LoginFrom();
+                login.Show();
+                this.Hide();
+            }
+        }
+
+        private void lblLogOut_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Are you sure you want to log out?", "Logout Confirmation",
+                                      MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                LoginFrom login = new LoginFrom();
+                login.Show();
+                this.Hide();
+            }
         }
     }
 }
