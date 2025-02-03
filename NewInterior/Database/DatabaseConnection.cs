@@ -15,7 +15,7 @@ namespace NewInterior.Database
         //DESKTOP-RPJPVDU\\SQLEXPRESS
         //DESKTOP-0871C35\SQLEXPRESS
 
-        private static readonly string connectionString = "data source=MH-SHUVO\\SQLEXPRESS; database=AIUB_SHUTTLE_MANAGEMENT_SYSTEM; integrated security=SSPI";
+        private static readonly string connectionString = "Server=DESKTOP-RPJPVDU\\SQLEXPRESS; database=AIUB_SHUTTLE_MANAGEMENT_SYSTEM; integrated security=SSPI";
 
 
 

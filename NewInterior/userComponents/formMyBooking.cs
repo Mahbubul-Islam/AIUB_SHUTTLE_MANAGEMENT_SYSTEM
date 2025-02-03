@@ -23,7 +23,7 @@ namespace NewInterior.userComponents
         {
             using (SqlConnection conn = Database.DatabaseConnection.GetConnection())
             {
-                string query = "SELECT BookingID, ShuttleName, BookingSeatNumber, BookingStatus FROM Booking WHERE UserID = @UserID";
+                string query = "SELECT TOP 1 BookingID, ShuttleName, BookingSeatNumber, BookingStatus FROM Booking WHERE UserID = @UserID ORDER BY BookedTime DESC";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@UserID", _userId);
 
@@ -35,6 +35,10 @@ namespace NewInterior.userComponents
                     _shuttleName = reader["ShuttleName"].ToString();
                     _seatNumber = reader["BookingSeatNumber"].ToString();
                     _bookingStatus = reader["BookingStatus"].ToString();
+                }
+                else
+                {
+                    _bookingId = _shuttleName = _seatNumber = _bookingStatus = string.Empty;
                 }
                 conn.Close();
             }
@@ -75,8 +79,7 @@ namespace NewInterior.userComponents
                     if (rowsAffected > 0)
                     {
                         MessageBox.Show("Booking cancelled successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        _bookingId = _shuttleName = _seatNumber = _bookingStatus = string.Empty;
-                        showInfo();
+                        LoadBookingInfo(); // Load the next available booking if any
                     }
                     else
                     {

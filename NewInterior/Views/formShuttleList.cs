@@ -33,7 +33,7 @@ namespace NewInterior.Views
             {
                 using (SqlConnection connection = DatabaseConnection.GetConnection())
                 {
-                    string query = "SELECT ShuttleName, Route, Capacity, FORMAT(Time, 'hh:mm tt') AS Time FROM Shuttles";
+                    string query = "SELECT ShuttleName, Route, Capacity, CONVERT(VARCHAR(8), Time, 108) AS Time FROM Shuttles";
                     SqlCommand command = new SqlCommand(query, connection);
 
                     connection.Open();
@@ -45,15 +45,13 @@ namespace NewInterior.Views
                         string shuttleName = reader["ShuttleName"].ToString();
                         string route = reader["Route"].ToString();
                         string capacity = reader["Capacity"].ToString();
-                        string time = reader["Time"].ToString();
+                        string time = DateTime.Parse(reader["Time"].ToString()).ToString("hh:mm tt");
 
                         // Create a new shuttleCard with the retrieved data
                         shuttleCard card = new shuttleCard(shuttleName, route, capacity, time)
                         {
                             BackColor = Color.White // Default background color
                         };
-
-                        
 
                         // Add click event for selecting the card
                         card.Click += (s, e) => SelectCard(card);
@@ -121,7 +119,6 @@ namespace NewInterior.Views
                 MessageBox.Show($"An error occurred while deleting the shuttle: {ex.Message}");
             }
         }
-
 
         private void closeBtn_Click(object sender, EventArgs e)
         {

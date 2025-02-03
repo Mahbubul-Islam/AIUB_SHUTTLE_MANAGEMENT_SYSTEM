@@ -60,19 +60,19 @@ namespace NewInterior.userComponents
 
         private void btnAddStudent_Click(object sender, EventArgs e)
         {
-            formAddStudent addStudent = new formAddStudent();
+            formAddStudent addStudent = new formAddStudent(this);
             addStudent.Show();
         }
 
         private void btnAddFaculty_Click(object sender, EventArgs e)
         {
-            formAddFaculty addFaculty = new formAddFaculty();
+            formAddFaculty addFaculty = new formAddFaculty(this);
             addFaculty.Show();
         }
 
         private void btnAddStaff_Click(object sender, EventArgs e)
         {
-            formAddStuff addStuff = new formAddStuff();
+            formAddStuff addStuff = new formAddStuff(this);
             addStuff.Show();
         }
 
