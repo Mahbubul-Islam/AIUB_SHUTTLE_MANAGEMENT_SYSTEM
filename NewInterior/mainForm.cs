@@ -15,7 +15,7 @@ using NewInterior.Views;
 
 namespace NewInterior
 {
-    public partial class Form1 : Form
+    public partial class mainForm : Form
     {
         string _userId;
         string _userRole;
@@ -38,7 +38,7 @@ namespace NewInterior
             userControl.BringToFront();
 
         }
-        public Form1(string userId)
+        public mainForm(string userId)
         {
             InitializeComponent();
             sidebar.Width = 43; // Set to collapsed width

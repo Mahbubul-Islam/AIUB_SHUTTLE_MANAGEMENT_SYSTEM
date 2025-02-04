@@ -70,7 +70,7 @@ namespace NewInterior.Login
             if (userCount > 0)
             {
                 this.Hide();
-                Form1 form1 = new Form1(_userId);
+                mainForm form1 = new mainForm(_userId);
                 form1.Show();
 
             }
