@@ -4,6 +4,7 @@ using System.Data.SqlClient;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using NewInterior.Database;
+using NewInterior.Models;
 
 namespace NewInterior.Views
 {
@@ -95,6 +96,7 @@ namespace NewInterior.Views
                 }
             }
             MessageBox.Show("Faculty details updated successfully.");
+            MakeNotification.AddNotification(_userId, $"{_userId} Your account is updated!");
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -132,6 +134,7 @@ namespace NewInterior.Views
             }
             MessageBox.Show("Booking canceled successfully.");
             showData();
+            MakeNotification.AddNotification(_userId, $"{_userId} Your booking is cancel!");
         }
 
         private void closeBtn_Click(object sender, EventArgs e)

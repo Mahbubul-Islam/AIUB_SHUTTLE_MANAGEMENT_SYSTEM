@@ -52,29 +52,29 @@
             this.label6 = new System.Windows.Forms.Label();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.btnAddStaff = new System.Windows.Forms.Button();
+            this.lblShowUserIDMsg = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.cityLogo = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.phoneNumberLogo = new System.Windows.Forms.PictureBox();
+            this.emailLogo = new System.Windows.Forms.PictureBox();
+            this.nameLogo = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.closeBtn = new System.Windows.Forms.PictureBox();
-            this.lblShowUserIDMsg = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.nameLogo = new System.Windows.Forms.PictureBox();
-            this.emailLogo = new System.Windows.Forms.PictureBox();
-            this.phoneNumberLogo = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.cityLogo = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cityLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.phoneNumberLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emailLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nameLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.closeBtn)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nameLogo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emailLogo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.phoneNumberLogo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cityLogo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // phoneNumberLabel
@@ -218,6 +218,7 @@
             // rbMale
             // 
             this.rbMale.AutoSize = true;
+            this.rbMale.Cursor = System.Windows.Forms.Cursors.Hand;
             this.rbMale.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbMale.Location = new System.Drawing.Point(490, 274);
             this.rbMale.Name = "rbMale";
@@ -230,6 +231,7 @@
             // rbFemale
             // 
             this.rbFemale.AutoSize = true;
+            this.rbFemale.Cursor = System.Windows.Forms.Cursors.Hand;
             this.rbFemale.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbFemale.Location = new System.Drawing.Point(599, 274);
             this.rbFemale.Name = "rbFemale";
@@ -344,10 +346,12 @@
             this.txtPassword.Size = new System.Drawing.Size(276, 32);
             this.txtPassword.TabIndex = 190;
             this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtPassword.UseSystemPasswordChar = true;
             // 
             // btnAddStaff
             // 
             this.btnAddStaff.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnAddStaff.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAddStaff.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAddStaff.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddStaff.Location = new System.Drawing.Point(347, 479);
@@ -358,6 +362,125 @@
             this.btnAddStaff.Text = "Add";
             this.btnAddStaff.UseVisualStyleBackColor = false;
             this.btnAddStaff.Click += new System.EventHandler(this.btnAddStaff_Click);
+            // 
+            // lblShowUserIDMsg
+            // 
+            this.lblShowUserIDMsg.AutoSize = true;
+            this.lblShowUserIDMsg.Font = new System.Drawing.Font("Century Gothic", 7.2F);
+            this.lblShowUserIDMsg.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.lblShowUserIDMsg.Location = new System.Drawing.Point(131, 157);
+            this.lblShowUserIDMsg.Name = "lblShowUserIDMsg";
+            this.lblShowUserIDMsg.Size = new System.Drawing.Size(45, 17);
+            this.lblShowUserIDMsg.TabIndex = 225;
+            this.lblShowUserIDMsg.Text = "label7";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(442, 342);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(43, 32);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 264;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(442, 267);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(43, 32);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 263;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(442, 186);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(43, 32);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 262;
+            this.pictureBox3.TabStop = false;
+            // 
+            // cityLogo
+            // 
+            this.cityLogo.BackColor = System.Drawing.Color.Transparent;
+            this.cityLogo.Image = ((System.Drawing.Image)(resources.GetObject("cityLogo.Image")));
+            this.cityLogo.Location = new System.Drawing.Point(442, 102);
+            this.cityLogo.Margin = new System.Windows.Forms.Padding(2);
+            this.cityLogo.Name = "cityLogo";
+            this.cityLogo.Size = new System.Drawing.Size(43, 32);
+            this.cityLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.cityLogo.TabIndex = 261;
+            this.cityLogo.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(30, 414);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(43, 32);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 260;
+            this.pictureBox4.TabStop = false;
+            // 
+            // phoneNumberLogo
+            // 
+            this.phoneNumberLogo.BackColor = System.Drawing.Color.Transparent;
+            this.phoneNumberLogo.Image = ((System.Drawing.Image)(resources.GetObject("phoneNumberLogo.Image")));
+            this.phoneNumberLogo.Location = new System.Drawing.Point(30, 337);
+            this.phoneNumberLogo.Margin = new System.Windows.Forms.Padding(2);
+            this.phoneNumberLogo.Name = "phoneNumberLogo";
+            this.phoneNumberLogo.Size = new System.Drawing.Size(43, 32);
+            this.phoneNumberLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.phoneNumberLogo.TabIndex = 259;
+            this.phoneNumberLogo.TabStop = false;
+            // 
+            // emailLogo
+            // 
+            this.emailLogo.BackColor = System.Drawing.Color.Transparent;
+            this.emailLogo.Image = ((System.Drawing.Image)(resources.GetObject("emailLogo.Image")));
+            this.emailLogo.Location = new System.Drawing.Point(30, 255);
+            this.emailLogo.Margin = new System.Windows.Forms.Padding(2);
+            this.emailLogo.Name = "emailLogo";
+            this.emailLogo.Size = new System.Drawing.Size(43, 32);
+            this.emailLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.emailLogo.TabIndex = 258;
+            this.emailLogo.TabStop = false;
+            // 
+            // nameLogo
+            // 
+            this.nameLogo.BackColor = System.Drawing.Color.Transparent;
+            this.nameLogo.Image = ((System.Drawing.Image)(resources.GetObject("nameLogo.Image")));
+            this.nameLogo.Location = new System.Drawing.Point(30, 106);
+            this.nameLogo.Margin = new System.Windows.Forms.Padding(2);
+            this.nameLogo.Name = "nameLogo";
+            this.nameLogo.Size = new System.Drawing.Size(43, 32);
+            this.nameLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.nameLogo.TabIndex = 257;
+            this.nameLogo.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(30, 182);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(43, 32);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 226;
+            this.pictureBox5.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -374,6 +497,7 @@
             // 
             // closeBtn
             // 
+            this.closeBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.closeBtn.Image = global::NewInterior.Properties.Resources.close_24;
             this.closeBtn.Location = new System.Drawing.Point(764, 9);
             this.closeBtn.Margin = new System.Windows.Forms.Padding(0);
@@ -383,125 +507,6 @@
             this.closeBtn.TabIndex = 4;
             this.closeBtn.TabStop = false;
             this.closeBtn.Click += new System.EventHandler(this.closeBtn_Click);
-            // 
-            // lblShowUserIDMsg
-            // 
-            this.lblShowUserIDMsg.AutoSize = true;
-            this.lblShowUserIDMsg.Font = new System.Drawing.Font("Century Gothic", 7.2F);
-            this.lblShowUserIDMsg.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.lblShowUserIDMsg.Location = new System.Drawing.Point(131, 157);
-            this.lblShowUserIDMsg.Name = "lblShowUserIDMsg";
-            this.lblShowUserIDMsg.Size = new System.Drawing.Size(45, 17);
-            this.lblShowUserIDMsg.TabIndex = 225;
-            this.lblShowUserIDMsg.Text = "label7";
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(30, 182);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(43, 32);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 226;
-            this.pictureBox5.TabStop = false;
-            // 
-            // nameLogo
-            // 
-            this.nameLogo.BackColor = System.Drawing.Color.Transparent;
-            this.nameLogo.Image = ((System.Drawing.Image)(resources.GetObject("nameLogo.Image")));
-            this.nameLogo.Location = new System.Drawing.Point(30, 106);
-            this.nameLogo.Margin = new System.Windows.Forms.Padding(2);
-            this.nameLogo.Name = "nameLogo";
-            this.nameLogo.Size = new System.Drawing.Size(43, 32);
-            this.nameLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.nameLogo.TabIndex = 257;
-            this.nameLogo.TabStop = false;
-            // 
-            // emailLogo
-            // 
-            this.emailLogo.BackColor = System.Drawing.Color.Transparent;
-            this.emailLogo.Image = ((System.Drawing.Image)(resources.GetObject("emailLogo.Image")));
-            this.emailLogo.Location = new System.Drawing.Point(30, 255);
-            this.emailLogo.Margin = new System.Windows.Forms.Padding(2);
-            this.emailLogo.Name = "emailLogo";
-            this.emailLogo.Size = new System.Drawing.Size(43, 32);
-            this.emailLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.emailLogo.TabIndex = 258;
-            this.emailLogo.TabStop = false;
-            // 
-            // phoneNumberLogo
-            // 
-            this.phoneNumberLogo.BackColor = System.Drawing.Color.Transparent;
-            this.phoneNumberLogo.Image = ((System.Drawing.Image)(resources.GetObject("phoneNumberLogo.Image")));
-            this.phoneNumberLogo.Location = new System.Drawing.Point(30, 337);
-            this.phoneNumberLogo.Margin = new System.Windows.Forms.Padding(2);
-            this.phoneNumberLogo.Name = "phoneNumberLogo";
-            this.phoneNumberLogo.Size = new System.Drawing.Size(43, 32);
-            this.phoneNumberLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.phoneNumberLogo.TabIndex = 259;
-            this.phoneNumberLogo.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(30, 414);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(43, 32);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 260;
-            this.pictureBox4.TabStop = false;
-            // 
-            // cityLogo
-            // 
-            this.cityLogo.BackColor = System.Drawing.Color.Transparent;
-            this.cityLogo.Image = ((System.Drawing.Image)(resources.GetObject("cityLogo.Image")));
-            this.cityLogo.Location = new System.Drawing.Point(442, 102);
-            this.cityLogo.Margin = new System.Windows.Forms.Padding(2);
-            this.cityLogo.Name = "cityLogo";
-            this.cityLogo.Size = new System.Drawing.Size(43, 32);
-            this.cityLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.cityLogo.TabIndex = 261;
-            this.cityLogo.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(442, 186);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(43, 32);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 262;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(442, 267);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(43, 32);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 263;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(442, 342);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(43, 32);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 264;
-            this.pictureBox2.TabStop = false;
             // 
             // formAddStuff
             // 
@@ -544,21 +549,22 @@
             this.Controls.Add(this.nameLabel);
             this.Controls.Add(this.txtStaffName);
             this.Controls.Add(this.closeBtn);
+            this.Cursor = System.Windows.Forms.Cursors.Default;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "formAddStuff";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "formAddStuff";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cityLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.phoneNumberLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emailLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nameLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.closeBtn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nameLogo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emailLogo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.phoneNumberLogo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cityLogo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -33,15 +33,15 @@
             this.btnContinue = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.closeBtn = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtWhatName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtWhatEmail = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtId = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.closeBtn = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.closeBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -63,6 +63,7 @@
             // btnContinue
             // 
             this.btnContinue.BackColor = System.Drawing.Color.Sienna;
+            this.btnContinue.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnContinue.FlatAppearance.BorderSize = 0;
             this.btnContinue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnContinue.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -96,6 +97,69 @@
             this.label6.Size = new System.Drawing.Size(134, 22);
             this.label6.TabIndex = 75;
             this.label6.Text = "Back to Login";
+            // 
+            // txtWhatName
+            // 
+            this.txtWhatName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtWhatName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtWhatName.Location = new System.Drawing.Point(874, 454);
+            this.txtWhatName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtWhatName.Name = "txtWhatName";
+            this.txtWhatName.Size = new System.Drawing.Size(465, 32);
+            this.txtWhatName.TabIndex = 84;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(870, 425);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(236, 22);
+            this.label1.TabIndex = 83;
+            this.label1.Text = "What Is Your User Name?";
+            // 
+            // txtWhatEmail
+            // 
+            this.txtWhatEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtWhatEmail.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtWhatEmail.Location = new System.Drawing.Point(874, 536);
+            this.txtWhatEmail.Margin = new System.Windows.Forms.Padding(4);
+            this.txtWhatEmail.Name = "txtWhatEmail";
+            this.txtWhatEmail.Size = new System.Drawing.Size(465, 32);
+            this.txtWhatEmail.TabIndex = 82;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(870, 510);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(265, 22);
+            this.label3.TabIndex = 81;
+            this.label3.Text = "What is your Email Address ?";
+            // 
+            // txtId
+            // 
+            this.txtId.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtId.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtId.Location = new System.Drawing.Point(874, 369);
+            this.txtId.Margin = new System.Windows.Forms.Padding(4);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(465, 32);
+            this.txtId.TabIndex = 80;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(870, 343);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(71, 22);
+            this.label2.TabIndex = 79;
+            this.label2.Text = "User ID";
             // 
             // closeBtn
             // 
@@ -132,66 +196,6 @@
             this.pictureBox1.TabIndex = 76;
             this.pictureBox1.TabStop = false;
             // 
-            // txtWhatName
-            // 
-            this.txtWhatName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtWhatName.Location = new System.Drawing.Point(874, 454);
-            this.txtWhatName.Margin = new System.Windows.Forms.Padding(4);
-            this.txtWhatName.Name = "txtWhatName";
-            this.txtWhatName.Size = new System.Drawing.Size(465, 32);
-            this.txtWhatName.TabIndex = 84;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(870, 425);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(236, 22);
-            this.label1.TabIndex = 83;
-            this.label1.Text = "What Is Your User Name?";
-            // 
-            // txtWhatEmail
-            // 
-            this.txtWhatEmail.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtWhatEmail.Location = new System.Drawing.Point(874, 536);
-            this.txtWhatEmail.Margin = new System.Windows.Forms.Padding(4);
-            this.txtWhatEmail.Name = "txtWhatEmail";
-            this.txtWhatEmail.Size = new System.Drawing.Size(465, 32);
-            this.txtWhatEmail.TabIndex = 82;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(870, 510);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(265, 22);
-            this.label3.TabIndex = 81;
-            this.label3.Text = "What is your Email Address ?";
-            // 
-            // txtId
-            // 
-            this.txtId.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtId.Location = new System.Drawing.Point(874, 369);
-            this.txtId.Margin = new System.Windows.Forms.Padding(4);
-            this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(465, 32);
-            this.txtId.TabIndex = 80;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(870, 343);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 22);
-            this.label2.TabIndex = 79;
-            this.label2.Text = "User ID";
-            // 
             // ForgotFrom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -210,6 +214,7 @@
             this.Controls.Add(this.btnLoginHerelb);
             this.Controls.Add(this.btnContinue);
             this.Controls.Add(this.label4);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ForgotFrom";

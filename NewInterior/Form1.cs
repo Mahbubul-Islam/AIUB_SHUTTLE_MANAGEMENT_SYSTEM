@@ -19,10 +19,10 @@ namespace NewInterior
     {
         string _userId;
         string _userRole;
-        formHome home = new formHome();
+        
         
         formAboutUs aboutUs = new formAboutUs();
-        formNotification notification = new formNotification();
+        
         formManageAccount manageAccount = new formManageAccount();
         
         formShuttleSchedule shuttleSchedule = new formShuttleSchedule();
@@ -55,6 +55,7 @@ namespace NewInterior
             }
             else
             {
+                formHome home = new formHome(_userId);
                 addUserControl(home);
             }
             
@@ -205,6 +206,7 @@ namespace NewInterior
             }
             else
             {
+                formHome home = new formHome(_userId);
                 addUserControl(home);
             }
             //addUserControl(home);
@@ -219,6 +221,7 @@ namespace NewInterior
             }
             else
             {
+                formHome home = new formHome(_userId);
                 addUserControl(home);
             }
             //addUserControl(home);
@@ -233,6 +236,7 @@ namespace NewInterior
             }
             else
             {
+                formHome home = new formHome(_userId);
                 addUserControl(home);
             }
             //addUserControl(home);
@@ -309,16 +313,19 @@ namespace NewInterior
 
         private void picboxNotification_Click(object sender, EventArgs e)
         {
+            formNotification notification = new formNotification(_userId);
             addUserControl(notification);
         }
 
         private void lblNotification_Click(object sender, EventArgs e)
         {
+            formNotification notification = new formNotification(_userId);
             addUserControl(notification);
         }
 
         private void pnlNotification_Click(object sender, EventArgs e)
         {
+            formNotification notification = new formNotification(_userId);
             addUserControl(notification);
         }
 

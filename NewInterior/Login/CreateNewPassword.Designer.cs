@@ -44,6 +44,7 @@
             // chkbShowPassword
             // 
             this.chkbShowPassword.AutoSize = true;
+            this.chkbShowPassword.Cursor = System.Windows.Forms.Cursors.Hand;
             this.chkbShowPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkbShowPassword.Location = new System.Drawing.Point(147, 473);
             this.chkbShowPassword.Margin = new System.Windows.Forms.Padding(4);
@@ -56,6 +57,7 @@
             // 
             // txtConfirmPassword
             // 
+            this.txtConfirmPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtConfirmPassword.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtConfirmPassword.Location = new System.Drawing.Point(147, 433);
             this.txtConfirmPassword.Margin = new System.Windows.Forms.Padding(4);
@@ -77,6 +79,7 @@
             // 
             // txtNewPassword
             // 
+            this.txtNewPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNewPassword.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNewPassword.Location = new System.Drawing.Point(149, 353);
             this.txtNewPassword.Margin = new System.Windows.Forms.Padding(4);
@@ -99,6 +102,7 @@
             // btnSubmit
             // 
             this.btnSubmit.BackColor = System.Drawing.Color.Sienna;
+            this.btnSubmit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSubmit.FlatAppearance.BorderSize = 0;
             this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSubmit.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -155,6 +159,7 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.label1);
+            this.Cursor = System.Windows.Forms.Cursors.Default;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CreateNewPassword";
             this.Text = "CreateNewPassword";

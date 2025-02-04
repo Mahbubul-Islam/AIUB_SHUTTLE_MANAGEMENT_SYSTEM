@@ -185,7 +185,7 @@
             this.valueBusName1.AutoSize = true;
             this.valueBusName1.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.valueBusName1.ForeColor = System.Drawing.SystemColors.Control;
-            this.valueBusName1.Location = new System.Drawing.Point(98, 46);
+            this.valueBusName1.Location = new System.Drawing.Point(102, 45);
             this.valueBusName1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.valueBusName1.Name = "valueBusName1";
             this.valueBusName1.Size = new System.Drawing.Size(84, 16);
@@ -298,7 +298,7 @@
             this.valueBusName8.AutoSize = true;
             this.valueBusName8.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.valueBusName8.ForeColor = System.Drawing.SystemColors.Control;
-            this.valueBusName8.Location = new System.Drawing.Point(99, 52);
+            this.valueBusName8.Location = new System.Drawing.Point(100, 52);
             this.valueBusName8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.valueBusName8.Name = "valueBusName8";
             this.valueBusName8.Size = new System.Drawing.Size(84, 16);
@@ -367,7 +367,7 @@
             this.Shutpan7.Location = new System.Drawing.Point(536, 402);
             this.Shutpan7.Margin = new System.Windows.Forms.Padding(4);
             this.Shutpan7.Name = "Shutpan7";
-            this.Shutpan7.Size = new System.Drawing.Size(189, 166);
+            this.Shutpan7.Size = new System.Drawing.Size(199, 166);
             this.Shutpan7.TabIndex = 6;
             // 
             // valueCapacity7
@@ -411,7 +411,7 @@
             this.valueBusName7.AutoSize = true;
             this.valueBusName7.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.valueBusName7.ForeColor = System.Drawing.SystemColors.Control;
-            this.valueBusName7.Location = new System.Drawing.Point(99, 52);
+            this.valueBusName7.Location = new System.Drawing.Point(101, 52);
             this.valueBusName7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.valueBusName7.Name = "valueBusName7";
             this.valueBusName7.Size = new System.Drawing.Size(84, 16);
@@ -524,7 +524,7 @@
             this.valueBusName6.AutoSize = true;
             this.valueBusName6.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.valueBusName6.ForeColor = System.Drawing.SystemColors.Control;
-            this.valueBusName6.Location = new System.Drawing.Point(97, 52);
+            this.valueBusName6.Location = new System.Drawing.Point(102, 51);
             this.valueBusName6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.valueBusName6.Name = "valueBusName6";
             this.valueBusName6.Size = new System.Drawing.Size(84, 16);
@@ -714,7 +714,7 @@
             this.valueCapacity4.AutoSize = true;
             this.valueCapacity4.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.valueCapacity4.ForeColor = System.Drawing.SystemColors.Control;
-            this.valueCapacity4.Location = new System.Drawing.Point(80, 132);
+            this.valueCapacity4.Location = new System.Drawing.Point(79, 132);
             this.valueCapacity4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.valueCapacity4.Name = "valueCapacity4";
             this.valueCapacity4.Size = new System.Drawing.Size(21, 16);
@@ -819,7 +819,7 @@
             this.Shutpan3.Location = new System.Drawing.Point(536, 123);
             this.Shutpan3.Margin = new System.Windows.Forms.Padding(4);
             this.Shutpan3.Name = "Shutpan3";
-            this.Shutpan3.Size = new System.Drawing.Size(189, 166);
+            this.Shutpan3.Size = new System.Drawing.Size(199, 166);
             this.Shutpan3.TabIndex = 2;
             // 
             // valueCapacity3
@@ -827,7 +827,7 @@
             this.valueCapacity3.AutoSize = true;
             this.valueCapacity3.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.valueCapacity3.ForeColor = System.Drawing.SystemColors.Control;
-            this.valueCapacity3.Location = new System.Drawing.Point(85, 130);
+            this.valueCapacity3.Location = new System.Drawing.Point(82, 130);
             this.valueCapacity3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.valueCapacity3.Name = "valueCapacity3";
             this.valueCapacity3.Size = new System.Drawing.Size(21, 16);
@@ -863,7 +863,7 @@
             this.valueBusName3.AutoSize = true;
             this.valueBusName3.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.valueBusName3.ForeColor = System.Drawing.SystemColors.Control;
-            this.valueBusName3.Location = new System.Drawing.Point(98, 53);
+            this.valueBusName3.Location = new System.Drawing.Point(100, 53);
             this.valueBusName3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.valueBusName3.Name = "valueBusName3";
             this.valueBusName3.Size = new System.Drawing.Size(84, 16);
@@ -940,7 +940,7 @@
             this.valueCapacity2.AutoSize = true;
             this.valueCapacity2.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.valueCapacity2.ForeColor = System.Drawing.SystemColors.Control;
-            this.valueCapacity2.Location = new System.Drawing.Point(102, 130);
+            this.valueCapacity2.Location = new System.Drawing.Point(82, 130);
             this.valueCapacity2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.valueCapacity2.Name = "valueCapacity2";
             this.valueCapacity2.Size = new System.Drawing.Size(21, 16);
@@ -976,7 +976,7 @@
             this.valueBusName2.AutoSize = true;
             this.valueBusName2.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.valueBusName2.ForeColor = System.Drawing.SystemColors.Control;
-            this.valueBusName2.Location = new System.Drawing.Point(108, 48);
+            this.valueBusName2.Location = new System.Drawing.Point(101, 48);
             this.valueBusName2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.valueBusName2.Name = "valueBusName2";
             this.valueBusName2.Size = new System.Drawing.Size(84, 16);

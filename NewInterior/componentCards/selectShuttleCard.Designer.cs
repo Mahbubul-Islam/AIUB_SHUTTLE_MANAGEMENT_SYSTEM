@@ -107,6 +107,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.valueShuttleName);
             this.Controls.Add(this.label1);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Margin = new System.Windows.Forms.Padding(0, 0, 0, 10);
             this.Name = "selectShuttleCard";
             this.Size = new System.Drawing.Size(528, 63);

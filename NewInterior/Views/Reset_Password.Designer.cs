@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.closeBtn = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.btnResetpass = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -39,21 +38,10 @@
             this.lblnewpass = new System.Windows.Forms.Label();
             this.txtOldpass = new System.Windows.Forms.TextBox();
             this.lbloldpass = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.closeBtn)).BeginInit();
+            this.closeBtn = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.closeBtn)).BeginInit();
             this.SuspendLayout();
-            // 
-            // closeBtn
-            // 
-            this.closeBtn.Image = global::NewInterior.Properties.Resources.close_24;
-            this.closeBtn.Location = new System.Drawing.Point(774, -1);
-            this.closeBtn.Margin = new System.Windows.Forms.Padding(0);
-            this.closeBtn.Name = "closeBtn";
-            this.closeBtn.Size = new System.Drawing.Size(45, 37);
-            this.closeBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.closeBtn.TabIndex = 259;
-            this.closeBtn.TabStop = false;
-            this.closeBtn.Click += new System.EventHandler(this.closeBtn_Click);
             // 
             // label4
             // 
@@ -68,6 +56,7 @@
             // 
             // btnResetpass
             // 
+            this.btnResetpass.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnResetpass.Location = new System.Drawing.Point(333, 480);
             this.btnResetpass.Name = "btnResetpass";
             this.btnResetpass.Size = new System.Drawing.Size(123, 33);
@@ -159,6 +148,19 @@
             this.lbloldpass.TabIndex = 0;
             this.lbloldpass.Text = "Old Password:";
             // 
+            // closeBtn
+            // 
+            this.closeBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.closeBtn.Image = global::NewInterior.Properties.Resources.close_24;
+            this.closeBtn.Location = new System.Drawing.Point(774, -1);
+            this.closeBtn.Margin = new System.Windows.Forms.Padding(0);
+            this.closeBtn.Name = "closeBtn";
+            this.closeBtn.Size = new System.Drawing.Size(45, 37);
+            this.closeBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.closeBtn.TabIndex = 259;
+            this.closeBtn.TabStop = false;
+            this.closeBtn.Click += new System.EventHandler(this.closeBtn_Click);
+            // 
             // Reset_Password
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -173,9 +175,9 @@
             this.Name = "Reset_Password";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Reset_Password";
-            ((System.ComponentModel.ISupportInitialize)(this.closeBtn)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.closeBtn)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

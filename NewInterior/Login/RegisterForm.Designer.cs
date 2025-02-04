@@ -60,7 +60,7 @@
             // 
             this.txtName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName.Location = new System.Drawing.Point(871, 337);
-            this.txtName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtName.Margin = new System.Windows.Forms.Padding(4);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(464, 32);
             this.txtName.TabIndex = 69;
@@ -80,7 +80,7 @@
             // 
             this.txtConfirmPassword.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtConfirmPassword.Location = new System.Drawing.Point(871, 593);
-            this.txtConfirmPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtConfirmPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtConfirmPassword.Name = "txtConfirmPassword";
             this.txtConfirmPassword.Size = new System.Drawing.Size(464, 32);
             this.txtConfirmPassword.TabIndex = 67;
@@ -100,12 +100,11 @@
             // btnLoginHerelbl
             // 
             this.btnLoginHerelbl.AutoSize = true;
+            this.btnLoginHerelbl.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLoginHerelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLoginHerelbl.ForeColor = System.Drawing.Color.Sienna;
-
-            this.btnLoginHerelbl.Location = new System.Drawing.Point(1076, 763);
+            this.btnLoginHerelbl.Location = new System.Drawing.Point(1076, 757);
             this.btnLoginHerelbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-
             this.btnLoginHerelbl.Name = "btnLoginHerelbl";
             this.btnLoginHerelbl.Size = new System.Drawing.Size(88, 20);
             this.btnLoginHerelbl.TabIndex = 65;
@@ -115,13 +114,12 @@
             // btnSignUp
             // 
             this.btnSignUp.BackColor = System.Drawing.Color.Sienna;
+            this.btnSignUp.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSignUp.FlatAppearance.BorderSize = 0;
             this.btnSignUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSignUp.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-
-            this.btnSignUp.Location = new System.Drawing.Point(871, 678);
-            this.btnSignUp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-
+            this.btnSignUp.Location = new System.Drawing.Point(871, 672);
+            this.btnSignUp.Margin = new System.Windows.Forms.Padding(4);
             this.btnSignUp.Name = "btnSignUp";
             this.btnSignUp.Size = new System.Drawing.Size(465, 37);
             this.btnSignUp.TabIndex = 64;
@@ -133,7 +131,7 @@
             // 
             this.txtPassword.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.Location = new System.Drawing.Point(871, 528);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(464, 32);
             this.txtPassword.TabIndex = 62;
@@ -154,7 +152,7 @@
             // 
             this.txtUserId.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUserId.Location = new System.Drawing.Point(871, 400);
-            this.txtUserId.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtUserId.Margin = new System.Windows.Forms.Padding(4);
             this.txtUserId.Name = "txtUserId";
             this.txtUserId.Size = new System.Drawing.Size(464, 32);
             this.txtUserId.TabIndex = 60;
@@ -174,10 +172,8 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-
-            this.label3.Location = new System.Drawing.Point(1012, 743);
+            this.label3.Location = new System.Drawing.Point(1012, 737);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(228, 24);
             this.label3.TabIndex = 58;
@@ -197,8 +193,9 @@
             // chkbShowPassword
             // 
             this.chkbShowPassword.AutoSize = true;
+            this.chkbShowPassword.Cursor = System.Windows.Forms.Cursors.Hand;
             this.chkbShowPassword.Location = new System.Drawing.Point(872, 633);
-            this.chkbShowPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chkbShowPassword.Margin = new System.Windows.Forms.Padding(4);
             this.chkbShowPassword.Name = "chkbShowPassword";
             this.chkbShowPassword.Size = new System.Drawing.Size(125, 20);
             this.chkbShowPassword.TabIndex = 73;
@@ -209,8 +206,9 @@
             // rbStaff
             // 
             this.rbStaff.AutoSize = true;
+            this.rbStaff.Cursor = System.Windows.Forms.Cursors.Hand;
             this.rbStaff.Location = new System.Drawing.Point(1273, 288);
-            this.rbStaff.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbStaff.Margin = new System.Windows.Forms.Padding(4);
             this.rbStaff.Name = "rbStaff";
             this.rbStaff.Size = new System.Drawing.Size(54, 20);
             this.rbStaff.TabIndex = 75;
@@ -222,8 +220,9 @@
             // rbFaculty
             // 
             this.rbFaculty.AutoSize = true;
+            this.rbFaculty.Cursor = System.Windows.Forms.Cursors.Hand;
             this.rbFaculty.Location = new System.Drawing.Point(1060, 288);
-            this.rbFaculty.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbFaculty.Margin = new System.Windows.Forms.Padding(4);
             this.rbFaculty.Name = "rbFaculty";
             this.rbFaculty.Size = new System.Drawing.Size(71, 20);
             this.rbFaculty.TabIndex = 76;
@@ -235,8 +234,9 @@
             // rbStudent
             // 
             this.rbStudent.AutoSize = true;
+            this.rbStudent.Cursor = System.Windows.Forms.Cursors.Hand;
             this.rbStudent.Location = new System.Drawing.Point(871, 288);
-            this.rbStudent.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbStudent.Margin = new System.Windows.Forms.Padding(4);
             this.rbStudent.Name = "rbStudent";
             this.rbStudent.Size = new System.Drawing.Size(73, 20);
             this.rbStudent.TabIndex = 77;
@@ -260,7 +260,7 @@
             // 
             this.txtEmail.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.Location = new System.Drawing.Point(871, 463);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(464, 32);
             this.txtEmail.TabIndex = 79;
@@ -268,12 +268,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-
             this.pictureBox1.Location = new System.Drawing.Point(9, 10);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(808, 770);
-
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 80;
             this.pictureBox1.TabStop = false;
@@ -283,7 +281,7 @@
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(980, 31);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(252, 196);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -340,7 +338,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "RegisterForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RegisterForm";

@@ -3,6 +3,7 @@ using System.Data.SqlClient;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using NewInterior.Database;
+using NewInterior.Models;
 using NewInterior.userComponents;
 namespace NewInterior.Views
 {
@@ -21,6 +22,7 @@ namespace NewInterior.Views
         string _Nationality;
         string userIdPattern = "^\\d{4}-\\d{3}-[1-3]$"; // XXXX-XXX-X(1,2,3)
         private formManageAccount _parentForm;
+        string adminId = "admin";
 
         public formAddFaculty(formManageAccount parentForm)
         {
@@ -108,6 +110,7 @@ namespace NewInterior.Views
                             MessageBox.Show("Faculty added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             _parentForm.ShowUser("Faculty", "");
                             this.Close();
+                            MakeNotification.AddNotification(adminId, "A user is added!");
                         }
                         else
                         {

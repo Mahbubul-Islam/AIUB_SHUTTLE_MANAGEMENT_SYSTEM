@@ -12,14 +12,14 @@ namespace NewInterior.componentCards
 {
     public partial class notificationCard : UserControl
     {
-        
-        public notificationCard(string notificationString, string notificationDateTime)
+        private string _userId;
+
+        public notificationCard(string userId, string notificationString, string notificationDateTime)
         {
             InitializeComponent();
-            
+            _userId = userId;
             valueNotifiactionString.Text = notificationString;
-            valueNotificationDateTime.Text = notificationDateTime; 
+            valueNotificationDateTime.Text = notificationDateTime;
         }
-
     }
 }

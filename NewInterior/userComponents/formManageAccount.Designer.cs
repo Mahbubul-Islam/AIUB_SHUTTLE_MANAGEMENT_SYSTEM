@@ -32,19 +32,22 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.rbStudent = new System.Windows.Forms.RadioButton();
             this.lblAddStaff = new System.Windows.Forms.Label();
-            this.btnAddStaff = new System.Windows.Forms.PictureBox();
             this.addVolunteerBtn = new System.Windows.Forms.Label();
-            this.btnAddFaculty = new System.Windows.Forms.PictureBox();
             this.addEmployeesBtn = new System.Windows.Forms.Label();
-            this.btnAddStudent = new System.Windows.Forms.PictureBox();
             this.rbStaff = new System.Windows.Forms.RadioButton();
             this.rbFaculty = new System.Windows.Forms.RadioButton();
-            this.btnSearch = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.userShowflowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.btnAddStaff = new System.Windows.Forms.PictureBox();
+            this.btnAddFaculty = new System.Windows.Forms.PictureBox();
+            this.btnAddStudent = new System.Windows.Forms.PictureBox();
+            this.btnSearch = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnAddStaff)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnAddFaculty)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnAddStudent)).BeginInit();
@@ -54,6 +57,8 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.pictureBox7);
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.rbStudent);
             this.panel1.Controls.Add(this.lblAddStaff);
             this.panel1.Controls.Add(this.btnAddStaff);
@@ -76,9 +81,10 @@
             // rbStudent
             // 
             this.rbStudent.AutoSize = true;
+            this.rbStudent.Cursor = System.Windows.Forms.Cursors.Hand;
             this.rbStudent.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbStudent.Location = new System.Drawing.Point(84, 104);
-            this.rbStudent.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbStudent.Margin = new System.Windows.Forms.Padding(2);
             this.rbStudent.Name = "rbStudent";
             this.rbStudent.Size = new System.Drawing.Size(85, 24);
             this.rbStudent.TabIndex = 18;
@@ -98,18 +104,6 @@
             this.lblAddStaff.TabIndex = 26;
             this.lblAddStaff.Text = "Add Staff";
             // 
-            // btnAddStaff
-            // 
-            this.btnAddStaff.Image = ((System.Drawing.Image)(resources.GetObject("btnAddStaff.Image")));
-            this.btnAddStaff.Location = new System.Drawing.Point(807, 94);
-            this.btnAddStaff.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnAddStaff.Name = "btnAddStaff";
-            this.btnAddStaff.Size = new System.Drawing.Size(41, 31);
-            this.btnAddStaff.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.btnAddStaff.TabIndex = 25;
-            this.btnAddStaff.TabStop = false;
-            this.btnAddStaff.Click += new System.EventHandler(this.btnAddStaff_Click);
-            // 
             // addVolunteerBtn
             // 
             this.addVolunteerBtn.AutoSize = true;
@@ -121,18 +115,6 @@
             this.addVolunteerBtn.Size = new System.Drawing.Size(96, 20);
             this.addVolunteerBtn.TabIndex = 24;
             this.addVolunteerBtn.Text = "Add Faculty";
-            // 
-            // btnAddFaculty
-            // 
-            this.btnAddFaculty.Image = ((System.Drawing.Image)(resources.GetObject("btnAddFaculty.Image")));
-            this.btnAddFaculty.Location = new System.Drawing.Point(807, 52);
-            this.btnAddFaculty.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnAddFaculty.Name = "btnAddFaculty";
-            this.btnAddFaculty.Size = new System.Drawing.Size(41, 31);
-            this.btnAddFaculty.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.btnAddFaculty.TabIndex = 23;
-            this.btnAddFaculty.TabStop = false;
-            this.btnAddFaculty.Click += new System.EventHandler(this.btnAddFaculty_Click);
             // 
             // addEmployeesBtn
             // 
@@ -146,25 +128,14 @@
             this.addEmployeesBtn.TabIndex = 22;
             this.addEmployeesBtn.Text = "Add Student";
             // 
-            // btnAddStudent
-            // 
-            this.btnAddStudent.Image = ((System.Drawing.Image)(resources.GetObject("btnAddStudent.Image")));
-            this.btnAddStudent.Location = new System.Drawing.Point(807, 11);
-            this.btnAddStudent.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnAddStudent.Name = "btnAddStudent";
-            this.btnAddStudent.Size = new System.Drawing.Size(41, 31);
-            this.btnAddStudent.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.btnAddStudent.TabIndex = 21;
-            this.btnAddStudent.TabStop = false;
-            this.btnAddStudent.Click += new System.EventHandler(this.btnAddStudent_Click);
-            // 
             // rbStaff
             // 
             this.rbStaff.AutoSize = true;
+            this.rbStaff.Cursor = System.Windows.Forms.Cursors.Hand;
             this.rbStaff.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbStaff.ForeColor = System.Drawing.SystemColors.ControlText;
             this.rbStaff.Location = new System.Drawing.Point(297, 104);
-            this.rbStaff.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbStaff.Margin = new System.Windows.Forms.Padding(2);
             this.rbStaff.Name = "rbStaff";
             this.rbStaff.Size = new System.Drawing.Size(62, 24);
             this.rbStaff.TabIndex = 20;
@@ -175,10 +146,11 @@
             // rbFaculty
             // 
             this.rbFaculty.AutoSize = true;
+            this.rbFaculty.Cursor = System.Windows.Forms.Cursors.Hand;
             this.rbFaculty.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbFaculty.ForeColor = System.Drawing.SystemColors.ControlText;
             this.rbFaculty.Location = new System.Drawing.Point(193, 104);
-            this.rbFaculty.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbFaculty.Margin = new System.Windows.Forms.Padding(2);
             this.rbFaculty.Name = "rbFaculty";
             this.rbFaculty.Size = new System.Drawing.Size(82, 24);
             this.rbFaculty.TabIndex = 19;
@@ -186,39 +158,12 @@
             this.rbFaculty.Text = "Faculty";
             this.rbFaculty.UseVisualStyleBackColor = true;
             // 
-            // btnSearch
-            // 
-            this.btnSearch.BackColor = System.Drawing.Color.White;
-            this.btnSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
-            this.btnSearch.Location = new System.Drawing.Point(627, 46);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(42, 32);
-            this.btnSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnSearch.TabIndex = 11;
-            this.btnSearch.TabStop = false;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.White;
-            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(23, 95);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(37, 33);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox4.TabIndex = 17;
-            this.pictureBox4.TabStop = false;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label2.Location = new System.Drawing.Point(340, 19);
+            this.label2.Location = new System.Drawing.Point(439, 67);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(76, 19);
@@ -231,8 +176,8 @@
             this.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSearch.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearch.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtSearch.Location = new System.Drawing.Point(337, 46);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSearch.Location = new System.Drawing.Point(436, 94);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(2);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(286, 32);
             this.txtSearch.TabIndex = 9;
@@ -246,6 +191,95 @@
             this.userShowflowLayoutPanel.Size = new System.Drawing.Size(1005, 490);
             this.userShowflowLayoutPanel.TabIndex = 3;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(256, 15);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(412, 40);
+            this.label1.TabIndex = 261;
+            this.label1.Text = "Manage users accounts";
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(184, 15);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(49, 40);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 262;
+            this.pictureBox7.TabStop = false;
+            // 
+            // btnAddStaff
+            // 
+            this.btnAddStaff.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddStaff.Image = ((System.Drawing.Image)(resources.GetObject("btnAddStaff.Image")));
+            this.btnAddStaff.Location = new System.Drawing.Point(807, 94);
+            this.btnAddStaff.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAddStaff.Name = "btnAddStaff";
+            this.btnAddStaff.Size = new System.Drawing.Size(41, 31);
+            this.btnAddStaff.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.btnAddStaff.TabIndex = 25;
+            this.btnAddStaff.TabStop = false;
+            this.btnAddStaff.Click += new System.EventHandler(this.btnAddStaff_Click);
+            // 
+            // btnAddFaculty
+            // 
+            this.btnAddFaculty.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddFaculty.Image = ((System.Drawing.Image)(resources.GetObject("btnAddFaculty.Image")));
+            this.btnAddFaculty.Location = new System.Drawing.Point(807, 52);
+            this.btnAddFaculty.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAddFaculty.Name = "btnAddFaculty";
+            this.btnAddFaculty.Size = new System.Drawing.Size(41, 31);
+            this.btnAddFaculty.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.btnAddFaculty.TabIndex = 23;
+            this.btnAddFaculty.TabStop = false;
+            this.btnAddFaculty.Click += new System.EventHandler(this.btnAddFaculty_Click);
+            // 
+            // btnAddStudent
+            // 
+            this.btnAddStudent.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddStudent.Image = ((System.Drawing.Image)(resources.GetObject("btnAddStudent.Image")));
+            this.btnAddStudent.Location = new System.Drawing.Point(807, 11);
+            this.btnAddStudent.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAddStudent.Name = "btnAddStudent";
+            this.btnAddStudent.Size = new System.Drawing.Size(41, 31);
+            this.btnAddStudent.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.btnAddStudent.TabIndex = 21;
+            this.btnAddStudent.TabStop = false;
+            this.btnAddStudent.Click += new System.EventHandler(this.btnAddStudent_Click);
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.BackColor = System.Drawing.Color.White;
+            this.btnSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
+            this.btnSearch.Location = new System.Drawing.Point(726, 94);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(42, 32);
+            this.btnSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnSearch.TabIndex = 11;
+            this.btnSearch.TabStop = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.White;
+            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(28, 94);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(37, 33);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox4.TabIndex = 17;
+            this.pictureBox4.TabStop = false;
+            // 
             // formManageAccount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -258,6 +292,7 @@
             this.Size = new System.Drawing.Size(1005, 643);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnAddStaff)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnAddFaculty)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnAddStudent)).EndInit();
@@ -284,5 +319,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.FlowLayoutPanel userShowflowLayoutPanel;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox7;
     }
 }

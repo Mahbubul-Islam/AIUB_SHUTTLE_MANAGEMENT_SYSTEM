@@ -1,4 +1,5 @@
 ﻿using NewInterior.Database;
+using NewInterior.Models;
 using NewInterior.userComponents;
 using System;
 using System.Collections.Generic;
@@ -115,6 +116,7 @@ namespace NewInterior.Views
                             this.Hide();
                             formManageAccount manage = new formManageAccount();
                             manage.Show();
+                            MakeNotification.AddNotification(userId, $"{userId} You've updated profile!");
                         }
                         else
                         {

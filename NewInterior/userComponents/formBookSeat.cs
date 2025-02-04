@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using NewInterior.Database;
 using NewInterior.componentCards;
+using NewInterior.Models;
 
 namespace NewInterior.userComponents
 {
@@ -102,6 +103,7 @@ namespace NewInterior.userComponents
         {
             if (string.IsNullOrEmpty(_valueSelectedShuttle) || string.IsNullOrEmpty(_valueSelectedSeat))
             {
+
                 MessageBox.Show("Please select a bus and a seat before confirming your booking.", "Booking Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
@@ -168,6 +170,7 @@ namespace NewInterior.userComponents
                         if (rowsAffected > 0)
                         {
                             MessageBox.Show("Booking Confirmed!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MakeNotification.AddNotification(_valueUserId, $"{_valueUserId} Your booking is confirmed! Booking ID {_bookingId}");
                         }
                         else
                         {

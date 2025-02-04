@@ -50,11 +50,12 @@
             // btnLogin
             // 
             this.btnLogin.BackColor = System.Drawing.Color.Sienna;
+            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogin.FlatAppearance.BorderSize = 0;
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.Location = new System.Drawing.Point(873, 574);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(4);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(465, 37);
             this.btnLogin.TabIndex = 71;
@@ -66,7 +67,7 @@
             // 
             this.txtPassword.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.Location = new System.Drawing.Point(872, 458);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(464, 32);
             this.txtPassword.TabIndex = 70;
@@ -87,7 +88,7 @@
             // 
             this.txtName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName.Location = new System.Drawing.Point(872, 379);
-            this.txtName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtName.Margin = new System.Windows.Forms.Padding(4);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(464, 32);
             this.txtName.TabIndex = 68;
@@ -117,9 +118,10 @@
             // chkbShowPassword
             // 
             this.chkbShowPassword.AutoSize = true;
+            this.chkbShowPassword.Cursor = System.Windows.Forms.Cursors.Hand;
             this.chkbShowPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkbShowPassword.Location = new System.Drawing.Point(875, 500);
-            this.chkbShowPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chkbShowPassword.Margin = new System.Windows.Forms.Padding(4);
             this.chkbShowPassword.Name = "chkbShowPassword";
             this.chkbShowPassword.Size = new System.Drawing.Size(139, 22);
             this.chkbShowPassword.TabIndex = 72;
@@ -141,6 +143,7 @@
             // btnSinguplbl
             // 
             this.btnSinguplbl.AutoSize = true;
+            this.btnSinguplbl.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSinguplbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSinguplbl.ForeColor = System.Drawing.Color.Sienna;
             this.btnSinguplbl.Location = new System.Drawing.Point(1171, 666);
@@ -154,6 +157,7 @@
             // btnForgotPasswordlbl
             // 
             this.btnForgotPasswordlbl.AutoSize = true;
+            this.btnForgotPasswordlbl.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnForgotPasswordlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnForgotPasswordlbl.ForeColor = System.Drawing.Color.Sienna;
             this.btnForgotPasswordlbl.Location = new System.Drawing.Point(1192, 501);
@@ -168,7 +172,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(4, 1);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(823, 783);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -180,7 +184,7 @@
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(987, 78);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(252, 196);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -189,6 +193,7 @@
             // 
             // closeBtn
             // 
+            this.closeBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.closeBtn.Image = global::NewInterior.Properties.Resources.close_24;
             this.closeBtn.Location = new System.Drawing.Point(1325, 9);
             this.closeBtn.Margin = new System.Windows.Forms.Padding(0);
@@ -218,7 +223,7 @@
             this.Controls.Add(this.labelUserId);
             this.Controls.Add(this.label4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "LoginFrom";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LoginFrom";

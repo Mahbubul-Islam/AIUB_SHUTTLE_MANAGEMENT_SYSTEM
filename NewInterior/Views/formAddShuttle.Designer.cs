@@ -38,17 +38,17 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtTime = new System.Windows.Forms.TextBox();
             this.btnAddShuttle = new System.Windows.Forms.Button();
-            this.closeBtn = new System.Windows.Forms.PictureBox();
             this.formWorkNameLabel = new System.Windows.Forms.Label();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.closeBtn)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.closeBtn = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.closeBtn)).BeginInit();
             this.SuspendLayout();
             // 
             // nameLabel
@@ -156,6 +156,7 @@
             // btnAddShuttle
             // 
             this.btnAddShuttle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnAddShuttle.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAddShuttle.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAddShuttle.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddShuttle.Location = new System.Drawing.Point(527, 309);
@@ -166,18 +167,6 @@
             this.btnAddShuttle.Text = "Add";
             this.btnAddShuttle.UseVisualStyleBackColor = false;
             this.btnAddShuttle.Click += new System.EventHandler(this.btnAddShuttle_Click);
-            // 
-            // closeBtn
-            // 
-            this.closeBtn.Image = global::NewInterior.Properties.Resources.close_24;
-            this.closeBtn.Location = new System.Drawing.Point(746, 9);
-            this.closeBtn.Margin = new System.Windows.Forms.Padding(0);
-            this.closeBtn.Name = "closeBtn";
-            this.closeBtn.Size = new System.Drawing.Size(45, 37);
-            this.closeBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.closeBtn.TabIndex = 256;
-            this.closeBtn.TabStop = false;
-            this.closeBtn.Click += new System.EventHandler(this.closeBtn_Click);
             // 
             // formWorkNameLabel
             // 
@@ -192,29 +181,17 @@
             this.formWorkNameLabel.TabIndex = 257;
             this.formWorkNameLabel.Text = "Add Shuttle";
             // 
-            // pictureBox7
+            // pictureBox3
             // 
-            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(23, 136);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(43, 32);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 258;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(23, 223);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(43, 32);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 259;
-            this.pictureBox1.TabStop = false;
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(383, 136);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(43, 32);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 261;
+            this.pictureBox3.TabStop = false;
             // 
             // pictureBox2
             // 
@@ -228,17 +205,42 @@
             this.pictureBox2.TabIndex = 260;
             this.pictureBox2.TabStop = false;
             // 
-            // pictureBox3
+            // pictureBox1
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(383, 136);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(43, 32);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 261;
-            this.pictureBox3.TabStop = false;
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(23, 223);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(43, 32);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 259;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(23, 136);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(43, 32);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 258;
+            this.pictureBox7.TabStop = false;
+            // 
+            // closeBtn
+            // 
+            this.closeBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.closeBtn.Image = global::NewInterior.Properties.Resources.close_24;
+            this.closeBtn.Location = new System.Drawing.Point(746, 9);
+            this.closeBtn.Margin = new System.Windows.Forms.Padding(0);
+            this.closeBtn.Name = "closeBtn";
+            this.closeBtn.Size = new System.Drawing.Size(45, 37);
+            this.closeBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.closeBtn.TabIndex = 256;
+            this.closeBtn.TabStop = false;
+            this.closeBtn.Click += new System.EventHandler(this.closeBtn_Click);
             // 
             // formAddShuttle
             // 
@@ -265,11 +267,11 @@
             this.Name = "formAddShuttle";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "formAddShuttle";
-            ((System.ComponentModel.ISupportInitialize)(this.closeBtn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.closeBtn)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

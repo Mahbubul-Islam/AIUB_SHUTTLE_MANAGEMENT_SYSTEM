@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NewInterior.Models;
+using System;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 
@@ -80,6 +81,7 @@ namespace NewInterior.userComponents
                     {
                         MessageBox.Show("Booking cancelled successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         LoadBookingInfo(); // Load the next available booking if any
+                        MakeNotification.AddNotification(_userId, $"{_userId} Your Booking is cancel!");
                     }
                     else
                     {

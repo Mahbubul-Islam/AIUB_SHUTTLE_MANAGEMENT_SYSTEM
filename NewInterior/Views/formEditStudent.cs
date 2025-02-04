@@ -1,4 +1,5 @@
 ﻿using NewInterior.Database;
+using NewInterior.Models;
 using System;
 using System.Data;
 using System.Data.SqlClient;
@@ -94,6 +95,7 @@ namespace NewInterior.Views
             }
             MessageBox.Show("Booking canceled successfully.");
             showData();
+            MakeNotification.AddNotification(_userId, $"{_userId} Your booking is cancel!");
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
@@ -116,6 +118,7 @@ namespace NewInterior.Views
                 }
             }
             MessageBox.Show("User details updated successfully.");
+            MakeNotification.AddNotification(_userId, $"{_userId} Your account is updated!");
         }
 
         private void btnCancle_Click(object sender, EventArgs e)

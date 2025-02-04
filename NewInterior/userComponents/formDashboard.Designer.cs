@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formDashboard));
             this.panel1 = new System.Windows.Forms.Panel();
             this.valueTotalStudent = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -45,13 +46,16 @@
             this.label5 = new System.Windows.Forms.Label();
             this.btnAddShuttle = new System.Windows.Forms.Button();
             this.btnShuttleList = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -208,6 +212,7 @@
             // btnAddShuttle
             // 
             this.btnAddShuttle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnAddShuttle.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAddShuttle.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAddShuttle.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddShuttle.Location = new System.Drawing.Point(309, 576);
@@ -222,6 +227,7 @@
             // btnShuttleList
             // 
             this.btnShuttleList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnShuttleList.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnShuttleList.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnShuttleList.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnShuttleList.Location = new System.Drawing.Point(575, 576);
@@ -232,16 +238,6 @@
             this.btnShuttleList.Text = "Shuttle List";
             this.btnShuttleList.UseVisualStyleBackColor = false;
             this.btnShuttleList.Click += new System.EventHandler(this.btnShuttleList_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::NewInterior.Properties.Resources.new_admingif;
-            this.pictureBox1.Location = new System.Drawing.Point(45, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
             // 
             // label6
             // 
@@ -254,11 +250,45 @@
             this.label6.TabIndex = 260;
             this.label6.Text = "Want to manage shuttles?";
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(417, 31);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(197, 40);
+            this.label7.TabIndex = 261;
+            this.label7.Text = "Dashboard";
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(350, 31);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(49, 40);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 262;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::NewInterior.Properties.Resources.new_admingif;
+            this.pictureBox1.Location = new System.Drawing.Point(45, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
             // formDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.Controls.Add(this.pictureBox7);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnShuttleList);
             this.Controls.Add(this.btnAddShuttle);
@@ -281,6 +311,7 @@
             this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -308,5 +339,7 @@
         private System.Windows.Forms.Button btnAddShuttle;
         private System.Windows.Forms.Button btnShuttleList;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.Label label7;
     }
 }

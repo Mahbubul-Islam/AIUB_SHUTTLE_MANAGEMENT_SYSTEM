@@ -8,13 +8,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using NewInterior.componentCards;
 using NewInterior.Database;
+using NewInterior.Models;
 
 namespace NewInterior.Views
 {
     public partial class formShuttleList : Form
     {
         private shuttleCard selectedCard; // Store the currently selected card
-
+        string _shuttleName;
         public formShuttleList()
         {
             InitializeComponent();
@@ -43,6 +44,7 @@ namespace NewInterior.Views
                     {
                         // Retrieve data from the database
                         string shuttleName = reader["ShuttleName"].ToString();
+                        _shuttleName = shuttleName; // Store the shuttle name for deletion
                         string route = reader["Route"].ToString();
                         string capacity = reader["Capacity"].ToString();
                         string time = DateTime.Parse(reader["Time"].ToString()).ToString("hh:mm tt");
@@ -107,6 +109,7 @@ namespace NewInterior.Views
                         pnlDisplayShuttleList.Controls.Remove(selectedCard);
                         selectedCard = null; // Reset the selected card
                         MessageBox.Show("Shuttle successfully deleted.");
+                        MakeNotification.AddNotification(_shuttleName, $"{_shuttleName} is removed!");
                     }
                     else
                     {

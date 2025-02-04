@@ -2,6 +2,7 @@
 using System.Data.SqlClient;
 using System.Windows.Forms;
 using NewInterior.Database;
+using NewInterior.Models;
 
 namespace NewInterior.Views
 {
@@ -11,6 +12,7 @@ namespace NewInterior.Views
         string _shuttleRoute;
         int _shuttleCapacity = 22; // Default capacity
         string _shuttleTime;
+        string adminId = "admin";
 
         public formAddShuttle()
         {
@@ -65,6 +67,7 @@ namespace NewInterior.Views
                         if (rowsAffected > 0)
                         {
                             MessageBox.Show("Shuttle added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MakeNotification.AddNotification(adminId, "A Shuttle is added!");
                         }
                         else
                         {

@@ -1,4 +1,5 @@
 ﻿using NewInterior.Database;
+using NewInterior.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -78,6 +79,7 @@ namespace NewInterior.Login
 
                 updateCommand.Dispose();
                 connection.Close();
+                MakeNotification.AddNotification(Userid, $"{Userid} You have changed password!");
             }
             catch (Exception ex)
             {

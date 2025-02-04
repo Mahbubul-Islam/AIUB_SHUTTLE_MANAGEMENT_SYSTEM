@@ -293,6 +293,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(792, 9);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
@@ -342,6 +343,7 @@
             // rbmale
             // 
             this.rbmale.AutoSize = true;
+            this.rbmale.Cursor = System.Windows.Forms.Cursors.Hand;
             this.rbmale.Location = new System.Drawing.Point(110, 402);
             this.rbmale.Name = "rbmale";
             this.rbmale.Size = new System.Drawing.Size(58, 20);
@@ -353,6 +355,7 @@
             // rbfemale
             // 
             this.rbfemale.AutoSize = true;
+            this.rbfemale.Cursor = System.Windows.Forms.Cursors.Hand;
             this.rbfemale.Location = new System.Drawing.Point(183, 402);
             this.rbfemale.Name = "rbfemale";
             this.rbfemale.Size = new System.Drawing.Size(74, 20);

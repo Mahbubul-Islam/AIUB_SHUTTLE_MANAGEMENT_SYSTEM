@@ -142,11 +142,11 @@
   <data name="new_shuttleschedules" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\new_shuttleschedules.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="drop_down_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\drop_down_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="new_mainlogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\new_mainlogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="home_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\home_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="new_dropdown1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\new_dropdown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -165,6 +165,9 @@
   </data>
   <data name="slidebar_24px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\slidebar_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="new_admingif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\new_admingif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="manage_account_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\manage_account_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -214,8 +217,8 @@
   <data name="about_24px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\about_24px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="drop_down_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\drop_down_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="home_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\home_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tools_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tools_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -226,7 +229,7 @@
   <data name="notification_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\notification_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="new_admingif" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\new_admingif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="new_bookSeat1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\new_bookSeat1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
