@@ -46,23 +46,26 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label4.Location = new System.Drawing.Point(239, 97);
+            this.label4.Location = new System.Drawing.Point(206, 97);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(323, 36);
+            this.label4.Size = new System.Drawing.Size(383, 44);
             this.label4.TabIndex = 1;
             this.label4.Text = "Reset Your Password";
             // 
             // btnResetpass
             // 
+            this.btnResetpass.BackColor = System.Drawing.Color.Sienna;
             this.btnResetpass.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnResetpass.Location = new System.Drawing.Point(333, 480);
+            this.btnResetpass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnResetpass.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnResetpass.Location = new System.Drawing.Point(308, 470);
             this.btnResetpass.Name = "btnResetpass";
-            this.btnResetpass.Size = new System.Drawing.Size(123, 33);
+            this.btnResetpass.Size = new System.Drawing.Size(170, 43);
             this.btnResetpass.TabIndex = 2;
             this.btnResetpass.Text = "SUBMIT";
-            this.btnResetpass.UseVisualStyleBackColor = true;
+            this.btnResetpass.UseVisualStyleBackColor = false;
             this.btnResetpass.Click += new System.EventHandler(this.btnResetpass_Click);
             // 
             // panel2
@@ -165,7 +168,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(818, 547);
             this.Controls.Add(this.closeBtn);
             this.Controls.Add(this.panel2);
