@@ -2,6 +2,15 @@
 
 AIUB Shuttle Management System is a C# project (see the repository for exact framework and project files) created to manage shuttle schedules, routes, drivers, and student bookings for the American International University — Bangladesh (AIUB). This README provides setup, structure, and development guidance for anyone who wants to run, inspect, or contribute to the project.
 
+## Group Members
+- Mahbubul Islam
+- Md.Mehedi Hasan Shuvo
+- Apu Barua
+- Mantasa Afrin Shinjon
+
+## Version
+v3
+
 ## Table of contents
 
 - Project overview
